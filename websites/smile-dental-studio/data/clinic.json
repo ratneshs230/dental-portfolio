@@ -1,0 +1,148 @@
+{
+  "id": "DENT-DEL-069",
+  "name": "Smile Dental Studio",
+  "type": "Dental Clinic",
+  "address": "815, Rajendra Nagar, New Delhi - 11070",
+  "area": "Rajendra Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.441384175243606,
+    "lng": 77.0497955513024
+  },
+  "phones": [
+    "+91-11-34547867",
+    "+91-9470035576"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.smiledentalstudio.com",
+  "established": 2009,
+  "experience": 26,
+  "dentists": 1,
+  "staff": 3,
+  "qualifications": [
+    "MDS (Endodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/3450/CA/2014",
+    "state_registration": "DDC/DEL/20229",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Bonding",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "Sleep Apnea Treatment",
+      "Pediatric Dentistry"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 1,
+    "equipment": [
+      "Laser Equipment",
+      "Intraoral Camera",
+      "Digital X-Ray"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Comfortable",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹700",
+  "avgTreatmentValue": "₹6011",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 272,
+  "patientBase": 3989,
+  "catchmentArea": "6 km radius",
+  "googleRating": null,
+  "totalReviews": 145,
+  "avgRating": 4.7,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Good results",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 65,
+  "digitalScore": 10,
+  "seo": {
+    "title": "Smile Dental Studio | Best Dentist in Rajendra Nagar, Delhi",
+    "description": "Smile Dental Studio - 26+ years of dental excellence in Rajendra Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Rajendra Nagar",
+      "dental clinic Rajendra Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Rajendra Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Smile Dental Studio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "815, Rajendra Nagar, New Delhi - 11070",
+        "addressLocality": "Rajendra Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-34547867",
+      "priceRange": "₹700",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "reviewCount": 145
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.683Z"
+}

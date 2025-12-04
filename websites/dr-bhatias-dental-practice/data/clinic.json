@@ -1,0 +1,160 @@
+{
+  "id": "DENT-DEL-037",
+  "name": "Dr. Bhatia's Dental Practice",
+  "type": "Dental Clinic",
+  "address": "120, Karol Bagh, New Delhi - 11078",
+  "area": "Karol Bagh",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.799182896141225,
+    "lng": 77.20117155384266
+  },
+  "phones": [
+    "+91-11-48646016",
+    "+91-7417329418"
+  ],
+  "email": "info@drbhatiasdentalpractice@gmail.com",
+  "existingWebsite": null,
+  "established": 2006,
+  "experience": 25,
+  "dentists": 5,
+  "staff": 8,
+  "qualifications": [
+    "MDS (Periodontics)",
+    "MDS (Endodontics)",
+    "Aesthetic Dentistry Certification"
+  ],
+  "registration": {
+    "dci_number": "DCI/8917/DB/2023",
+    "state_registration": "DDC/DEL/37775",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Bonding",
+      "Dental Veneers",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "Dental Implants",
+      "Oral Surgery",
+      "Pediatric Dentistry",
+      "Orthodontic Treatment"
+    ],
+    "emergency": false,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "CAD/CAM Technology",
+      "OPG Machine",
+      "Teeth Whitening Unit",
+      "Digital X-Ray",
+      "Intraoral Camera"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Basic",
+    "parking": "Available"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹2858",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Bajaj Allianz",
+    "Apollo Munich",
+    "ICICI Lombard"
+  ],
+  "monthlyPatients": 333,
+  "patientBase": 984,
+  "catchmentArea": "6 km radius",
+  "googleRating": null,
+  "totalReviews": 78,
+  "avgRating": 4.4,
+  "positiveThemes": [
+    "Gentle treatment",
+    "Good results",
+    "Reasonable prices",
+    "Minimal waiting"
+  ],
+  "opportunityScore": 81,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dr. Bhatia's Dental Practice | Best Dentist in Karol Bagh, Delhi",
+    "description": "Dr. Bhatia's Dental Practice - 25+ years of dental excellence in Karol Bagh. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Karol Bagh",
+      "dental clinic Karol Bagh",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Karol Bagh"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Bhatia's Dental Practice",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "120, Karol Bagh, New Delhi - 11078",
+        "addressLocality": "Karol Bagh",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-48646016",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "reviewCount": 78
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.550Z"
+}

@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.444Z",
+  "clinic": {
+    "id": "DENT-DEL-065",
+    "name": "32 Pearls Dental",
+    "area": "Vikaspuri"
+  },
+  "design": {
+    "archetype": "clean-saas",
+    "colorScheme": "calm-teal"
+  },
+  "features": [
+    {
+      "id": "multi-language",
+      "name": "Multi-Language Support"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    },
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

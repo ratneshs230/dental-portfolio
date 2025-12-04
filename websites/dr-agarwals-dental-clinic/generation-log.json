@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2025-12-04T15:03:30.304Z",
+  "clinic": {
+    "id": "DENT-DEL-025",
+    "name": "Dr. Agarwal's Dental Clinic",
+    "area": "Ashok Vihar"
+  },
+  "design": {
+    "archetype": "ethereal-flow",
+    "colorScheme": "trust-blue"
+  },
+  "features": [
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    },
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

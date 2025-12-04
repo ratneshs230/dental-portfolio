@@ -1,0 +1,155 @@
+{
+  "id": "DENT-DEL-086",
+  "name": "Dr. Sunita Bansal's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "27, Malviya Nagar, New Delhi - 11098",
+  "area": "Malviya Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.655508278354418,
+    "lng": 77.31254061650269
+  },
+  "phones": [
+    "+91-11-23156241",
+    "+91-9829442732"
+  ],
+  "email": null,
+  "existingWebsite": null,
+  "established": 1998,
+  "experience": 8,
+  "dentists": 3,
+  "staff": 5,
+  "qualifications": [
+    "MDS (Endodontics)",
+    "BDS"
+  ],
+  "registration": {
+    "dci_number": "DCI/2487/BC/2001",
+    "state_registration": "DDC/DEL/68015",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Dental Bonding"
+    ],
+    "specialized": [
+      "Orthodontic Treatment",
+      "TMJ Treatment",
+      "Oral Surgery"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Intraoral Camera",
+      "Microscope",
+      "Laser Equipment",
+      "Teeth Whitening Unit"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Comfortable",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹300",
+  "avgTreatmentValue": "₹4567",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Star Health",
+    "ICICI Lombard",
+    "Bajaj Allianz"
+  ],
+  "monthlyPatients": 426,
+  "patientBase": 2992,
+  "catchmentArea": "6 km radius",
+  "googleRating": 3.8,
+  "totalReviews": 102,
+  "avgRating": 3.7,
+  "positiveThemes": [
+    "Clean clinic",
+    "Professional staff",
+    "Reasonable prices"
+  ],
+  "opportunityScore": 85,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dr. Sunita Bansal's Dental Clinic | Best Dentist in Malviya Nagar, Delhi",
+    "description": "Dr. Sunita Bansal's Dental Clinic - 8+ years of dental excellence in Malviya Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Malviya Nagar",
+      "dental clinic Malviya Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Malviya Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Sunita Bansal's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "27, Malviya Nagar, New Delhi - 11098",
+        "addressLocality": "Malviya Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-23156241",
+      "priceRange": "₹300",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.7,
+        "reviewCount": 102
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.375Z"
+}

@@ -1,0 +1,153 @@
+{
+  "id": "DENT-DEL-050",
+  "name": "Pearl Dental Care",
+  "type": "Dental Clinic",
+  "address": "207, Saket, New Delhi - 11086",
+  "area": "Saket",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.595775870988543,
+    "lng": 77.03640970953677
+  },
+  "phones": [
+    "+91-11-44261008",
+    "+91-9859508412"
+  ],
+  "email": "info@pearldentalcare@gmail.com",
+  "existingWebsite": null,
+  "established": 2005,
+  "experience": 22,
+  "dentists": 2,
+  "staff": 8,
+  "qualifications": [
+    "MDS (Periodontics)",
+    "Certificate in Implantology",
+    "Aesthetic Dentistry Certification"
+  ],
+  "registration": {
+    "dci_number": "DCI/2371/AD/2007",
+    "state_registration": "DDC/DEL/89101",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "Oral Surgery",
+      "Orthodontic Treatment",
+      "Periodontal Treatment",
+      "Endodontic Surgery"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 4,
+    "equipment": [
+      "Digital X-Ray",
+      "Ultrasonic Scaler",
+      "Teeth Whitening Unit"
+    ],
+    "sterilization": "Autoclave",
+    "waiting_area": "Basic",
+    "parking": "No Parking"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹6033",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Apollo Munich"
+  ],
+  "monthlyPatients": 301,
+  "patientBase": 4050,
+  "catchmentArea": "3 km radius",
+  "googleRating": 4,
+  "totalReviews": 148,
+  "avgRating": 4.2,
+  "positiveThemes": [
+    "Clean clinic",
+    "Professional staff"
+  ],
+  "opportunityScore": 93,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Pearl Dental Care | Best Dentist in Saket, Delhi",
+    "description": "Pearl Dental Care - 22+ years of dental excellence in Saket. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Saket",
+      "dental clinic Saket",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Saket"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Pearl Dental Care",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "207, Saket, New Delhi - 11086",
+        "addressLocality": "Saket",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-44261008",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.2,
+        "reviewCount": 148
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.006Z"
+}

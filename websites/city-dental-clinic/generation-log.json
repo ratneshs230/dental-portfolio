@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.632Z",
+  "clinic": {
+    "id": "DENT-DEL-006",
+    "name": "City Dental Clinic",
+    "area": "Dwarka"
+  },
+  "design": {
+    "archetype": "ethereal-flow",
+    "colorScheme": "fresh-green"
+  },
+  "features": [
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation"
+    },
+    {
+      "id": "multi-language",
+      "name": "Multi-Language Support"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

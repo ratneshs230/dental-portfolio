@@ -1,0 +1,151 @@
+{
+  "id": "DENT-DEL-061",
+  "name": "Dr. Rao's Dental Studio",
+  "type": "Dental Clinic",
+  "address": "53, Shalimar Bagh, New Delhi - 11010",
+  "area": "Shalimar Bagh",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.442034343859753,
+    "lng": 77.2729216291893
+  },
+  "phones": [
+    "+91-11-32242947",
+    "+91-7671351088"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.drraosdentalstudio.com",
+  "established": 2015,
+  "experience": 21,
+  "dentists": 1,
+  "staff": 6,
+  "qualifications": [
+    "MDS (Periodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/8071/DB/2001",
+    "state_registration": "DDC/DEL/53369",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Gum Contouring",
+      "Smile Makeover"
+    ],
+    "specialized": [
+      "Dental Implants",
+      "Endodontic Surgery",
+      "Pediatric Dentistry"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 5,
+    "equipment": [
+      "Ultrasonic Scaler",
+      "Microscope",
+      "Rotary Endodontics",
+      "CAD/CAM Technology"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Comfortable",
+    "parking": "No Parking"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹9511",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 464,
+  "patientBase": 1396,
+  "catchmentArea": "9 km radius",
+  "googleRating": 3.9,
+  "totalReviews": 84,
+  "avgRating": 4.6,
+  "positiveThemes": [
+    "Professional staff",
+    "Minimal waiting",
+    "Gentle treatment",
+    "Good results"
+  ],
+  "opportunityScore": 79,
+  "digitalScore": 20,
+  "seo": {
+    "title": "Dr. Rao's Dental Studio | Best Dentist in Shalimar Bagh, Delhi",
+    "description": "Dr. Rao's Dental Studio - 21+ years of dental excellence in Shalimar Bagh. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Shalimar Bagh",
+      "dental clinic Shalimar Bagh",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Shalimar Bagh"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Rao's Dental Studio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "53, Shalimar Bagh, New Delhi - 11010",
+        "addressLocality": "Shalimar Bagh",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-32242947",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "reviewCount": 84
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.797Z"
+}

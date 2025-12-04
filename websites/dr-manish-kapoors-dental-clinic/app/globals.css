@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --dental-primary: #14B8A6;
+    --dental-secondary: #2DD4BF;
+    --dental-accent: #5EEAD4;
+    --dental-background: #F0FDFA;
+    --dental-foreground: #134E4A;
+  }
+
+  body {
+    @apply bg-dental-background text-dental-foreground antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .dental-btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl
+           bg-dental-primary text-white font-semibold
+           hover:opacity-90 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-dental-primary focus:ring-offset-2;
+  }
+
+  .dental-btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl
+           bg-white text-dental-primary font-semibold border-2 border-dental-primary
+           hover:bg-dental-primary hover:text-white transition-all duration-200;
+  }
+
+  .dental-card {
+    @apply bg-white rounded-2xl shadow-lg p-6
+           border border-gray-100 hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .dental-section {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .dental-container {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: #14B8A633;
+  color: #134E4A;
+}

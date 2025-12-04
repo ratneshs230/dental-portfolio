@@ -1,0 +1,156 @@
+{
+  "id": "DENT-DEL-072",
+  "name": "Dr. Priya Sharma's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "226, Karol Bagh, New Delhi - 11083",
+  "area": "Karol Bagh",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.451209041531406,
+    "lng": 77.2454326010591
+  },
+  "phones": [
+    "+91-11-35642357",
+    "+91-7275908755"
+  ],
+  "email": "info@drpriyasharmasdentalclinic@gmail.com",
+  "existingWebsite": "http://www.drpriyasharmasdentalclinic.com",
+  "established": 2001,
+  "experience": 4,
+  "dentists": 4,
+  "staff": 2,
+  "qualifications": [
+    "Certificate in Implantology"
+  ],
+  "registration": {
+    "dci_number": "DCI/6178/BC/2013",
+    "state_registration": "DDC/DEL/11860",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Smile Makeover",
+      "Dental Veneers",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "Orthodontic Treatment",
+      "TMJ Treatment",
+      "Dental Implants",
+      "Oral Surgery",
+      "Sleep Apnea Treatment"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "Digital X-Ray",
+      "Ultrasonic Scaler",
+      "Intraoral Camera",
+      "Teeth Whitening Unit",
+      "Laser Equipment",
+      "OPG Machine"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Comfortable",
+    "parking": "Available"
+  },
+  "consultationFee": "₹700",
+  "avgTreatmentValue": "₹8266",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 184,
+  "patientBase": 4348,
+  "catchmentArea": "10 km radius",
+  "googleRating": 4,
+  "totalReviews": 93,
+  "avgRating": 3.9,
+  "positiveThemes": [
+    "Gentle treatment",
+    "Professional staff",
+    "Minimal waiting",
+    "Reasonable prices"
+  ],
+  "opportunityScore": 72,
+  "digitalScore": 25,
+  "seo": {
+    "title": "Dr. Priya Sharma's Dental Clinic | Best Dentist in Karol Bagh, Delhi",
+    "description": "Dr. Priya Sharma's Dental Clinic - 4+ years of dental excellence in Karol Bagh. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Karol Bagh",
+      "dental clinic Karol Bagh",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Karol Bagh"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Priya Sharma's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "226, Karol Bagh, New Delhi - 11083",
+        "addressLocality": "Karol Bagh",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-35642357",
+      "priceRange": "₹700",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.9,
+        "reviewCount": 93
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.354Z"
+}

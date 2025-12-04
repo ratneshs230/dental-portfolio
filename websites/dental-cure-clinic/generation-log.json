@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.907Z",
+  "clinic": {
+    "id": "DENT-DEL-063",
+    "name": "Dental Cure Clinic",
+    "area": "Paschim Vihar"
+  },
+  "design": {
+    "archetype": "clean-saas",
+    "colorScheme": "trust-blue"
+  },
+  "features": [
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    },
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays"
+    },
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

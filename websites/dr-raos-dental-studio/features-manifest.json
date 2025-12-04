@@ -1,0 +1,30 @@
+{
+  "integratedFeatures": [
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot",
+      "integratedAt": "2025-12-04T15:03:29.808Z"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling",
+      "integratedAt": "2025-12-04T15:03:29.808Z"
+    },
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant",
+      "integratedAt": "2025-12-04T15:03:29.808Z"
+    },
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays",
+      "integratedAt": "2025-12-04T15:03:29.808Z"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz",
+      "integratedAt": "2025-12-04T15:03:29.808Z"
+    }
+  ],
+  "totalFeatures": 5
+}

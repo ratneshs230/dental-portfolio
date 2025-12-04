@@ -1,0 +1,153 @@
+{
+  "id": "DENT-DEL-040",
+  "name": "Dr. Chopra's Dental Centre",
+  "type": "Dental Clinic",
+  "address": "619, Rohini, New Delhi - 11048",
+  "area": "Rohini",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.739294508557503,
+    "lng": 77.27339820792398
+  },
+  "phones": [
+    "+91-11-23953024",
+    "+91-9289254829"
+  ],
+  "email": null,
+  "existingWebsite": null,
+  "established": 2016,
+  "experience": 22,
+  "dentists": 2,
+  "staff": 4,
+  "qualifications": [
+    "Laser Dentistry Training"
+  ],
+  "registration": {
+    "dci_number": "DCI/6765/DB/2002",
+    "state_registration": "DDC/DEL/16154",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Gum Contouring",
+      "Dental Bonding",
+      "Dental Veneers"
+    ],
+    "specialized": [
+      "Periodontal Treatment",
+      "Sleep Apnea Treatment",
+      "Oral Surgery"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Ultrasonic Scaler",
+      "Intraoral Camera",
+      "Digital X-Ray",
+      "Laser Equipment",
+      "Teeth Whitening Unit"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Basic",
+    "parking": "No Parking"
+  },
+  "consultationFee": "₹200",
+  "avgTreatmentValue": "₹8198",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 410,
+  "patientBase": 4239,
+  "catchmentArea": "9 km radius",
+  "googleRating": 4.5,
+  "totalReviews": 90,
+  "avgRating": 4,
+  "positiveThemes": [
+    "Clean clinic",
+    "Professional staff",
+    "Minimal waiting",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 95,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dr. Chopra's Dental Centre | Best Dentist in Rohini, Delhi",
+    "description": "Dr. Chopra's Dental Centre - 22+ years of dental excellence in Rohini. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Rohini",
+      "dental clinic Rohini",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Rohini"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Chopra's Dental Centre",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "619, Rohini, New Delhi - 11048",
+        "addressLocality": "Rohini",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-23953024",
+      "priceRange": "₹200",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "reviewCount": 90
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:28.910Z"
+}

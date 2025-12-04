@@ -1,0 +1,158 @@
+{
+  "id": "DENT-DEL-039",
+  "name": "Precision Dental Care",
+  "type": "Dental Clinic",
+  "address": "464, Pitampura, New Delhi - 11080",
+  "area": "Pitampura",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.752982349163986,
+    "lng": 77.29066524712408
+  },
+  "phones": [
+    "+91-11-40308358",
+    "+91-9350847843"
+  ],
+  "email": "info@precisiondentalcare@gmail.com",
+  "existingWebsite": "http://www.precisiondentalcare.com",
+  "established": 2006,
+  "experience": 22,
+  "dentists": 1,
+  "staff": 6,
+  "qualifications": [
+    "Certificate in Implantology",
+    "MDS (Periodontics)",
+    "BDS"
+  ],
+  "registration": {
+    "dci_number": "DCI/3161/BA/2001",
+    "state_registration": "DDC/DEL/30346",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Dental Veneers",
+      "Smile Makeover",
+      "Dental Bonding"
+    ],
+    "specialized": [
+      "Endodontic Surgery",
+      "Orthodontic Treatment",
+      "Periodontal Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 1,
+    "equipment": [
+      "OPG Machine",
+      "Rotary Endodontics",
+      "Teeth Whitening Unit",
+      "Microscope",
+      "Intraoral Camera"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Comfortable",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹700",
+  "avgTreatmentValue": "₹8973",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "ICICI Lombard"
+  ],
+  "monthlyPatients": 370,
+  "patientBase": 3930,
+  "catchmentArea": "8 km radius",
+  "googleRating": 3.6,
+  "totalReviews": 65,
+  "avgRating": 4.6,
+  "positiveThemes": [
+    "Gentle treatment",
+    "Professional staff",
+    "Minimal waiting",
+    "Good results"
+  ],
+  "opportunityScore": 77,
+  "digitalScore": 16,
+  "seo": {
+    "title": "Precision Dental Care | Best Dentist in Pitampura, Delhi",
+    "description": "Precision Dental Care - 22+ years of dental excellence in Pitampura. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Pitampura",
+      "dental clinic Pitampura",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Pitampura"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Precision Dental Care",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "464, Pitampura, New Delhi - 11080",
+        "addressLocality": "Pitampura",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-40308358",
+      "priceRange": "₹700",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "reviewCount": 65
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.876Z"
+}

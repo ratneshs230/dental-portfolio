@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.808Z",
+  "clinic": {
+    "id": "DENT-DEL-061",
+    "name": "Dr. Rao's Dental Studio",
+    "area": "Shalimar Bagh"
+  },
+  "design": {
+    "archetype": "playful-interactive",
+    "colorScheme": "trust-blue"
+  },
+  "features": [
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

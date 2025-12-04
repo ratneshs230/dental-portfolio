@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.976Z",
+  "clinic": {
+    "id": "DENT-DEL-004",
+    "name": "Dr. Gupta's Dental Care",
+    "area": "Pitampura"
+  },
+  "design": {
+    "archetype": "playful-interactive",
+    "colorScheme": "warm-coral"
+  },
+  "features": [
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation"
+    },
+    {
+      "id": "multi-language",
+      "name": "Multi-Language Support"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

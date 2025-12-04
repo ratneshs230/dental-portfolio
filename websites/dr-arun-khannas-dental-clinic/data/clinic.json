@@ -1,0 +1,156 @@
+{
+  "id": "DENT-DEL-081",
+  "name": "Dr. Arun Khanna's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "421, Lajpat Nagar, New Delhi - 11026",
+  "area": "Lajpat Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.76199717797895,
+    "lng": 77.12477204319698
+  },
+  "phones": [
+    "+91-11-40135275",
+    "+91-7277868472"
+  ],
+  "email": "info@drarunkhannasdentalclinic@gmail.com",
+  "existingWebsite": "http://www.drarunkhannasdentalclinic.com",
+  "established": 2003,
+  "experience": 6,
+  "dentists": 3,
+  "staff": 3,
+  "qualifications": [
+    "MDS (Oral Surgery)",
+    "Laser Dentistry Training"
+  ],
+  "registration": {
+    "dci_number": "DCI/9009/DB/2022",
+    "state_registration": "DDC/DEL/24052",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Smile Makeover",
+      "Dental Bonding",
+      "Gum Contouring",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "TMJ Treatment",
+      "Sleep Apnea Treatment",
+      "Oral Surgery"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 5,
+    "equipment": [
+      "Rotary Endodontics",
+      "Digital X-Ray",
+      "CAD/CAM Technology",
+      "OPG Machine",
+      "Laser Equipment",
+      "Microscope"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Premium",
+    "parking": "Available"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹3994",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 73,
+  "patientBase": 2189,
+  "catchmentArea": "10 km radius",
+  "googleRating": 4.8,
+  "totalReviews": 96,
+  "avgRating": 3.8,
+  "positiveThemes": [
+    "Clean clinic",
+    "Professional staff",
+    "Reasonable prices",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 77,
+  "digitalScore": 17,
+  "seo": {
+    "title": "Dr. Arun Khanna's Dental Clinic | Best Dentist in Lajpat Nagar, Delhi",
+    "description": "Dr. Arun Khanna's Dental Clinic - 6+ years of dental excellence in Lajpat Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Lajpat Nagar",
+      "dental clinic Lajpat Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Lajpat Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Arun Khanna's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "421, Lajpat Nagar, New Delhi - 11026",
+        "addressLocality": "Lajpat Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-40135275",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.8,
+        "reviewCount": 96
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.927Z"
+}

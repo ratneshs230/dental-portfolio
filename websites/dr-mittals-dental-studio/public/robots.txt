@@ -1,0 +1,10 @@
+# Robots.txt for Dr. Mittal's Dental Studio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.example.com/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /api/
+Disallow: /admin/

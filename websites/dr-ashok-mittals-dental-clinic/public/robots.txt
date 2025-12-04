@@ -1,0 +1,10 @@
+# Robots.txt for Dr. Ashok Mittal's Dental Clinic
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.example.com/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /api/
+Disallow: /admin/

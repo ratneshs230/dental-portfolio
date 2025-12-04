@@ -1,0 +1,25 @@
+{
+  "integratedFeatures": [
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation",
+      "integratedAt": "2025-12-04T15:03:30.326Z"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz",
+      "integratedAt": "2025-12-04T15:03:30.326Z"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization",
+      "integratedAt": "2025-12-04T15:03:30.326Z"
+    },
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant",
+      "integratedAt": "2025-12-04T15:03:30.326Z"
+    }
+  ],
+  "totalFeatures": 4
+}

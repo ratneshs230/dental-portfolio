@@ -1,0 +1,153 @@
+{
+  "id": "DENT-DEL-053",
+  "name": "Smile Zone Dental",
+  "type": "Dental Clinic",
+  "address": "90, Nehru Place, New Delhi - 11081",
+  "area": "Nehru Place",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.7896711383222,
+    "lng": 77.32971920028558
+  },
+  "phones": [
+    "+91-11-28923935",
+    "+91-7022972042"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.smilezonedental.com",
+  "established": 2004,
+  "experience": 15,
+  "dentists": 4,
+  "staff": 6,
+  "qualifications": [
+    "Aesthetic Dentistry Certification",
+    "MDS (Orthodontics)",
+    "MDS (Oral Surgery)"
+  ],
+  "registration": {
+    "dci_number": "DCI/8150/AD/2019",
+    "state_registration": "DDC/DEL/76522",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Gum Contouring"
+    ],
+    "specialized": [
+      "Orthodontic Treatment",
+      "Invisalign",
+      "Sleep Apnea Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "OPG Machine",
+      "Intraoral Camera",
+      "Ultrasonic Scaler",
+      "Microscope"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Premium",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹1000",
+  "avgTreatmentValue": "₹6284",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 356,
+  "patientBase": 789,
+  "catchmentArea": "10 km radius",
+  "googleRating": null,
+  "totalReviews": 48,
+  "avgRating": 4.4,
+  "positiveThemes": [
+    "Good results",
+    "Gentle treatment",
+    "Minimal waiting",
+    "Clean clinic"
+  ],
+  "opportunityScore": 75,
+  "digitalScore": 29,
+  "seo": {
+    "title": "Smile Zone Dental | Best Dentist in Nehru Place, Delhi",
+    "description": "Smile Zone Dental - 15+ years of dental excellence in Nehru Place. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Nehru Place",
+      "dental clinic Nehru Place",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Nehru Place"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Smile Zone Dental",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "90, Nehru Place, New Delhi - 11081",
+        "addressLocality": "Nehru Place",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-28923935",
+      "priceRange": "₹1000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "reviewCount": 48
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.059Z"
+}

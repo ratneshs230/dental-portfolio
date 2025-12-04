@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.383Z",
+  "clinic": {
+    "id": "DENT-DEL-086",
+    "name": "Dr. Sunita Bansal's Dental Clinic",
+    "area": "Malviya Nagar"
+  },
+  "design": {
+    "archetype": "ethereal-flow",
+    "colorScheme": "fresh-green"
+  },
+  "features": [
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

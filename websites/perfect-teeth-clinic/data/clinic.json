@@ -1,0 +1,148 @@
+{
+  "id": "DENT-DEL-003",
+  "name": "Perfect Teeth Clinic",
+  "type": "Dental Clinic",
+  "address": "760, Rajouri Garden, New Delhi - 11050",
+  "area": "Rajouri Garden",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.66261076394329,
+    "lng": 77.3907329508773
+  },
+  "phones": [
+    "+91-11-39244883",
+    "+91-9434372523"
+  ],
+  "email": "info@perfectteethclinic@gmail.com",
+  "existingWebsite": "http://www.perfectteethclinic.com",
+  "established": 2018,
+  "experience": 19,
+  "dentists": 5,
+  "staff": 3,
+  "qualifications": [
+    "MDS (Orthodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/4086/AB/2018",
+    "state_registration": "DDC/DEL/46038",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Bonding",
+      "Teeth Whitening",
+      "Smile Makeover"
+    ],
+    "specialized": [
+      "TMJ Treatment",
+      "Oral Surgery"
+    ],
+    "emergency": false,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Teeth Whitening Unit",
+      "Intraoral Camera",
+      "Digital X-Ray"
+    ],
+    "sterilization": "Autoclave",
+    "waiting_area": "Comfortable",
+    "parking": "Available"
+  },
+  "consultationFee": "₹700",
+  "avgTreatmentValue": "₹5247",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 222,
+  "patientBase": 2484,
+  "catchmentArea": "9 km radius",
+  "googleRating": 4.1,
+  "totalReviews": 50,
+  "avgRating": 3.8,
+  "positiveThemes": [
+    "Minimal waiting",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 70,
+  "digitalScore": 13,
+  "seo": {
+    "title": "Perfect Teeth Clinic | Best Dentist in Rajouri Garden, Delhi",
+    "description": "Perfect Teeth Clinic - 19+ years of dental excellence in Rajouri Garden. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Rajouri Garden",
+      "dental clinic Rajouri Garden",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Rajouri Garden"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Perfect Teeth Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "760, Rajouri Garden, New Delhi - 11050",
+        "addressLocality": "Rajouri Garden",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-39244883",
+      "priceRange": "₹700",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.8,
+        "reviewCount": 50
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.475Z"
+}

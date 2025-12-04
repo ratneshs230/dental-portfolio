@@ -1,0 +1,152 @@
+{
+  "id": "DENT-DEL-038",
+  "name": "Crown Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "336, Rajouri Garden, New Delhi - 11088",
+  "area": "Rajouri Garden",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.430304598897404,
+    "lng": 77.09113039578347
+  },
+  "phones": [
+    "+91-11-39057761",
+    "+91-8488265629"
+  ],
+  "email": "info@crowndentalclinic@gmail.com",
+  "existingWebsite": "http://www.crowndentalclinic.com",
+  "established": 2006,
+  "experience": 28,
+  "dentists": 1,
+  "staff": 3,
+  "qualifications": [
+    "MDS (Pedodontics)",
+    "MDS (Oral Surgery)"
+  ],
+  "registration": {
+    "dci_number": "DCI/5977/BD/2003",
+    "state_registration": "DDC/DEL/85097",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Gum Contouring",
+      "Dental Bonding",
+      "Dental Veneers"
+    ],
+    "specialized": [
+      "Invisalign",
+      "Oral Surgery",
+      "TMJ Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 3,
+    "equipment": [
+      "Microscope",
+      "Digital X-Ray",
+      "Teeth Whitening Unit",
+      "Intraoral Camera"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Basic",
+    "parking": "Available"
+  },
+  "consultationFee": "₹700",
+  "avgTreatmentValue": "₹8299",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 413,
+  "patientBase": 1796,
+  "catchmentArea": "5 km radius",
+  "googleRating": 4.7,
+  "totalReviews": 144,
+  "avgRating": 4.6,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Minimal waiting"
+  ],
+  "opportunityScore": 75,
+  "digitalScore": 24,
+  "seo": {
+    "title": "Crown Dental Clinic | Best Dentist in Rajouri Garden, Delhi",
+    "description": "Crown Dental Clinic - 28+ years of dental excellence in Rajouri Garden. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Rajouri Garden",
+      "dental clinic Rajouri Garden",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Rajouri Garden"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Crown Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "336, Rajouri Garden, New Delhi - 11088",
+        "addressLocality": "Rajouri Garden",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-39057761",
+      "priceRange": "₹700",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "reviewCount": 144
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.022Z"
+}

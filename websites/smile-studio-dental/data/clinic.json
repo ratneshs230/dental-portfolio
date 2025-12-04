@@ -1,0 +1,157 @@
+{
+  "id": "DENT-DEL-044",
+  "name": "Smile Studio Dental",
+  "type": "Dental Clinic",
+  "address": "615, Greater Kailash, New Delhi - 11066",
+  "area": "Greater Kailash",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.441019582288003,
+    "lng": 77.21332888405111
+  },
+  "phones": [
+    "+91-11-48519065",
+    "+91-9179049310"
+  ],
+  "email": "info@smilestudiodental@gmail.com",
+  "existingWebsite": "http://www.smilestudiodental.com",
+  "established": 2020,
+  "experience": 4,
+  "dentists": 5,
+  "staff": 4,
+  "qualifications": [
+    "Aesthetic Dentistry Certification",
+    "BDS"
+  ],
+  "registration": {
+    "dci_number": "DCI/8298/BC/2023",
+    "state_registration": "DDC/DEL/32544",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Smile Makeover",
+      "Gum Contouring",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "Invisalign",
+      "Periodontal Treatment",
+      "Orthodontic Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 5,
+    "equipment": [
+      "OPG Machine",
+      "Laser Equipment",
+      "Rotary Endodontics",
+      "Intraoral Camera"
+    ],
+    "sterilization": "Autoclave",
+    "waiting_area": "Comfortable",
+    "parking": "Available"
+  },
+  "consultationFee": "₹1000",
+  "avgTreatmentValue": "₹4004",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "HDFC Ergo",
+    "Apollo Munich",
+    "Star Health"
+  ],
+  "monthlyPatients": 410,
+  "patientBase": 1565,
+  "catchmentArea": "10 km radius",
+  "googleRating": 4.1,
+  "totalReviews": 36,
+  "avgRating": 4,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Good results",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 66,
+  "digitalScore": 38,
+  "seo": {
+    "title": "Smile Studio Dental | Best Dentist in Greater Kailash, Delhi",
+    "description": "Smile Studio Dental - 4+ years of dental excellence in Greater Kailash. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Greater Kailash",
+      "dental clinic Greater Kailash",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Greater Kailash"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Smile Studio Dental",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "615, Greater Kailash, New Delhi - 11066",
+        "addressLocality": "Greater Kailash",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-48519065",
+      "priceRange": "₹1000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "reviewCount": 36
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.668Z"
+}

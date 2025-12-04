@@ -1,0 +1,158 @@
+{
+  "id": "DENT-DEL-058",
+  "name": "Dr. Sethi's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "218, Shahdara, New Delhi - 11040",
+  "area": "Shahdara",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.460098818636098,
+    "lng": 77.22225596330385
+  },
+  "phones": [
+    "+91-11-24189358",
+    "+91-9743540510"
+  ],
+  "email": "info@drsethisdentalclinic@gmail.com",
+  "existingWebsite": "http://www.drsethisdentalclinic.com",
+  "established": 2019,
+  "experience": 27,
+  "dentists": 1,
+  "staff": 5,
+  "qualifications": [
+    "Certificate in Implantology",
+    "BDS"
+  ],
+  "registration": {
+    "dci_number": "DCI/5851/DC/2002",
+    "state_registration": "DDC/DEL/40022",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Gum Contouring",
+      "Smile Makeover",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "Oral Surgery",
+      "Periodontal Treatment"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 3,
+    "equipment": [
+      "CAD/CAM Technology",
+      "Laser Equipment",
+      "Digital X-Ray",
+      "Intraoral Camera",
+      "OPG Machine"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Basic",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹9051",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Star Health",
+    "Bajaj Allianz",
+    "Max Bupa"
+  ],
+  "monthlyPatients": 356,
+  "patientBase": 3548,
+  "catchmentArea": "3 km radius",
+  "googleRating": 4.2,
+  "totalReviews": 147,
+  "avgRating": 4.6,
+  "positiveThemes": [
+    "Gentle treatment",
+    "Clean clinic",
+    "Minimal waiting",
+    "Good results"
+  ],
+  "opportunityScore": 74,
+  "digitalScore": 28,
+  "seo": {
+    "title": "Dr. Sethi's Dental Clinic | Best Dentist in Shahdara, Delhi",
+    "description": "Dr. Sethi's Dental Clinic - 27+ years of dental excellence in Shahdara. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Shahdara",
+      "dental clinic Shahdara",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Shahdara"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Sethi's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "218, Shahdara, New Delhi - 11040",
+        "addressLocality": "Shahdara",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-24189358",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "reviewCount": 147
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.138Z"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2025-12-04T15:03:30.170Z",
+  "clinic": {
+    "id": "DENT-DEL-007",
+    "name": "Dr. Kumar's Dental Centre",
+    "area": "Janakpuri"
+  },
+  "design": {
+    "archetype": "ethereal-flow",
+    "colorScheme": "warm-coral"
+  },
+  "features": [
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

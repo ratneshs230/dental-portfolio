@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.526Z",
+  "clinic": {
+    "id": "DENT-DEL-028",
+    "name": "Dr. Jain's Dental Centre",
+    "area": "Paschim Vihar"
+  },
+  "design": {
+    "archetype": "ethereal-flow",
+    "colorScheme": "calm-teal"
+  },
+  "features": [
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

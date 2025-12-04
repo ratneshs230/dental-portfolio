@@ -1,0 +1,154 @@
+{
+  "id": "DENT-DEL-018",
+  "name": "Premier Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "49, Nehru Place, New Delhi - 11023",
+  "area": "Nehru Place",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.62533905075103,
+    "lng": 77.21773865396199
+  },
+  "phones": [
+    "+91-11-31342111",
+    "+91-8037294665"
+  ],
+  "email": null,
+  "existingWebsite": null,
+  "established": 2001,
+  "experience": 13,
+  "dentists": 3,
+  "staff": 8,
+  "qualifications": [
+    "MDS (Periodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/4836/DD/2012",
+    "state_registration": "DDC/DEL/81250",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Gum Contouring",
+      "Dental Bonding"
+    ],
+    "specialized": [
+      "TMJ Treatment",
+      "Oral Surgery",
+      "Orthodontic Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 4,
+    "equipment": [
+      "Rotary Endodontics",
+      "Teeth Whitening Unit",
+      "OPG Machine",
+      "CAD/CAM Technology",
+      "Intraoral Camera",
+      "Digital X-Ray"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Premium",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹200",
+  "avgTreatmentValue": "₹6181",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 404,
+  "patientBase": 740,
+  "catchmentArea": "10 km radius",
+  "googleRating": null,
+  "totalReviews": 52,
+  "avgRating": 4.4,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Professional staff",
+    "Minimal waiting",
+    "Clean clinic"
+  ],
+  "opportunityScore": 85,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Premier Dental Clinic | Best Dentist in Nehru Place, Delhi",
+    "description": "Premier Dental Clinic - 13+ years of dental excellence in Nehru Place. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Nehru Place",
+      "dental clinic Nehru Place",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Nehru Place"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Premier Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "49, Nehru Place, New Delhi - 11023",
+        "addressLocality": "Nehru Place",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-31342111",
+      "priceRange": "₹200",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "reviewCount": 52
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.291Z"
+}

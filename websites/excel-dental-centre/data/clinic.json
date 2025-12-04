@@ -1,0 +1,156 @@
+{
+  "id": "DENT-DEL-017",
+  "name": "Excel Dental Centre",
+  "type": "Dental Clinic",
+  "address": "29, Kalkaji, New Delhi - 11038",
+  "area": "Kalkaji",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.745356111307185,
+    "lng": 77.31260204222396
+  },
+  "phones": [
+    "+91-11-27288772",
+    "+91-8685284082"
+  ],
+  "email": "info@exceldentalcentre@gmail.com",
+  "existingWebsite": "http://www.exceldentalcentre.com",
+  "established": 2010,
+  "experience": 23,
+  "dentists": 1,
+  "staff": 8,
+  "qualifications": [
+    "Aesthetic Dentistry Certification",
+    "MDS (Oral Surgery)",
+    "Laser Dentistry Training"
+  ],
+  "registration": {
+    "dci_number": "DCI/5077/DD/2018",
+    "state_registration": "DDC/DEL/49110",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Smile Makeover",
+      "Gum Contouring"
+    ],
+    "specialized": [
+      "Endodontic Surgery",
+      "Oral Surgery",
+      "Invisalign",
+      "Sleep Apnea Treatment",
+      "Periodontal Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 5,
+    "equipment": [
+      "Teeth Whitening Unit",
+      "Intraoral Camera",
+      "Microscope",
+      "Laser Equipment",
+      "CAD/CAM Technology"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Basic",
+    "parking": "No Parking"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹3218",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 132,
+  "patientBase": 3405,
+  "catchmentArea": "7 km radius",
+  "googleRating": 4.8,
+  "totalReviews": 29,
+  "avgRating": 3.6,
+  "positiveThemes": [
+    "Professional staff",
+    "Reasonable prices",
+    "Gentle treatment",
+    "Good results"
+  ],
+  "opportunityScore": 74,
+  "digitalScore": 19,
+  "seo": {
+    "title": "Excel Dental Centre | Best Dentist in Kalkaji, Delhi",
+    "description": "Excel Dental Centre - 23+ years of dental excellence in Kalkaji. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Kalkaji",
+      "dental clinic Kalkaji",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Kalkaji"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Excel Dental Centre",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "29, Kalkaji, New Delhi - 11038",
+        "addressLocality": "Kalkaji",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-27288772",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.6,
+        "reviewCount": 29
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.099Z"
+}

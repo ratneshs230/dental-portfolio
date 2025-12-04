@@ -1,0 +1,152 @@
+{
+  "id": "DENT-DEL-066",
+  "name": "Dental Health Centre",
+  "type": "Dental Clinic",
+  "address": "936, Uttam Nagar, New Delhi - 11085",
+  "area": "Uttam Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.557537614211807,
+    "lng": 77.0796593773046
+  },
+  "phones": [
+    "+91-11-35384824",
+    "+91-9167019511"
+  ],
+  "email": null,
+  "existingWebsite": null,
+  "established": 2000,
+  "experience": 16,
+  "dentists": 3,
+  "staff": 8,
+  "qualifications": [
+    "Certificate in Implantology",
+    "Laser Dentistry Training",
+    "MDS (Oral Surgery)"
+  ],
+  "registration": {
+    "dci_number": "DCI/3321/AA/2018",
+    "state_registration": "DDC/DEL/86545",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Smile Makeover",
+      "Dental Veneers"
+    ],
+    "specialized": [
+      "Endodontic Surgery",
+      "Orthodontic Treatment",
+      "Pediatric Dentistry"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Laser Equipment",
+      "Teeth Whitening Unit",
+      "CAD/CAM Technology",
+      "Ultrasonic Scaler"
+    ],
+    "sterilization": "Autoclave",
+    "waiting_area": "Comfortable",
+    "parking": "No Parking"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹9594",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 427,
+  "patientBase": 1547,
+  "catchmentArea": "6 km radius",
+  "googleRating": 3.8,
+  "totalReviews": 56,
+  "avgRating": 3.5,
+  "positiveThemes": [
+    "Minimal waiting",
+    "Gentle treatment",
+    "Reasonable prices"
+  ],
+  "opportunityScore": 88,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dental Health Centre | Best Dentist in Uttam Nagar, Delhi",
+    "description": "Dental Health Centre - 16+ years of dental excellence in Uttam Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Uttam Nagar",
+      "dental clinic Uttam Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Uttam Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dental Health Centre",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "936, Uttam Nagar, New Delhi - 11085",
+        "addressLocality": "Uttam Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-35384824",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.5,
+        "reviewCount": 56
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.125Z"
+}

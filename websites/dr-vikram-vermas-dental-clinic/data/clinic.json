@@ -1,0 +1,155 @@
+{
+  "id": "DENT-DEL-115",
+  "name": "Dr. Vikram Verma's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "479, Defence Colony, New Delhi - 11050",
+  "area": "Defence Colony",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.669947010584835,
+    "lng": 77.01501318978221
+  },
+  "phones": [
+    "+91-11-40481061",
+    "+91-8897107180"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.drvikramvermasdentalclinic.com",
+  "established": 1998,
+  "experience": 21,
+  "dentists": 5,
+  "staff": 2,
+  "qualifications": [
+    "BDS",
+    "MDS (Endodontics)",
+    "MDS (Orthodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/7337/CB/2015",
+    "state_registration": "DDC/DEL/27681",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Dental Bonding",
+      "Dental Veneers"
+    ],
+    "specialized": [
+      "Sleep Apnea Treatment",
+      "Invisalign"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 4,
+    "equipment": [
+      "Digital X-Ray",
+      "Laser Equipment",
+      "Ultrasonic Scaler"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Premium",
+    "parking": "Available"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹7407",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Apollo Munich",
+    "HDFC Ergo",
+    "Star Health"
+  ],
+  "monthlyPatients": 220,
+  "patientBase": 4628,
+  "catchmentArea": "6 km radius",
+  "googleRating": 4.4,
+  "totalReviews": 176,
+  "avgRating": 4.5,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Gentle treatment",
+    "Professional staff"
+  ],
+  "opportunityScore": 81,
+  "digitalScore": 31,
+  "seo": {
+    "title": "Dr. Vikram Verma's Dental Clinic | Best Dentist in Defence Colony, Delhi",
+    "description": "Dr. Vikram Verma's Dental Clinic - 21+ years of dental excellence in Defence Colony. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Defence Colony",
+      "dental clinic Defence Colony",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Defence Colony"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Vikram Verma's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "479, Defence Colony, New Delhi - 11050",
+        "addressLocality": "Defence Colony",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-40481061",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "reviewCount": 176
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.602Z"
+}

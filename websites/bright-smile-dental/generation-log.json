@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.001Z",
+  "clinic": {
+    "id": "DENT-DEL-008",
+    "name": "Bright Smile Dental",
+    "area": "Vasant Kunj"
+  },
+  "design": {
+    "archetype": "clean-saas",
+    "colorScheme": "warm-coral"
+  },
+  "features": [
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "multi-language",
+      "name": "Multi-Language Support"
+    },
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

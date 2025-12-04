@@ -1,0 +1,827 @@
+{
+  "generated": "2025-12-04T16:59:36.395Z",
+  "baseUrl": "https://YOUR_USERNAME.github.io/dental-portfolio",
+  "totalSites": 82,
+  "sites": [
+    {
+      "name": "32 Pearls Dental",
+      "folder": "32-pearls-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/32-pearls-dental/",
+      "area": "Vikaspuri",
+      "phone": "+91-11-29295987",
+      "experience": 8,
+      "rating": 4,
+      "reviews": 80
+    },
+    {
+      "name": "Advanced Dental Clinic",
+      "folder": "advanced-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/advanced-dental-clinic/",
+      "area": "Lajpat Nagar",
+      "phone": "+91-11-44928498",
+      "experience": 16,
+      "rating": 0,
+      "reviews": 70
+    },
+    {
+      "name": "Advanced Oral Care",
+      "folder": "advanced-oral-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/advanced-oral-care/",
+      "area": "Defence Colony",
+      "phone": "+91-11-43304084",
+      "experience": 4,
+      "rating": 3.7,
+      "reviews": 99
+    },
+    {
+      "name": "Bright Smile Dental",
+      "folder": "bright-smile-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/bright-smile-dental/",
+      "area": "Vasant Kunj",
+      "phone": "+91-11-29237755",
+      "experience": 26,
+      "rating": 4.5,
+      "reviews": 99
+    },
+    {
+      "name": "City Dental Clinic",
+      "folder": "city-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/city-dental-clinic/",
+      "area": "Dwarka",
+      "phone": "+91-11-45918838",
+      "experience": 27,
+      "rating": 4.7,
+      "reviews": 80
+    },
+    {
+      "name": "Comprehensive Dental",
+      "folder": "comprehensive-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/comprehensive-dental/",
+      "area": "Green Park",
+      "phone": "+91-11-47808575",
+      "experience": 5,
+      "rating": 4.4,
+      "reviews": 23
+    },
+    {
+      "name": "Crown Dental Clinic",
+      "folder": "crown-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/crown-dental-clinic/",
+      "area": "Rajouri Garden",
+      "phone": "+91-11-39057761",
+      "experience": 28,
+      "rating": 4.7,
+      "reviews": 144
+    },
+    {
+      "name": "Dental Arts Clinic",
+      "folder": "dental-arts-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-arts-clinic/",
+      "area": "Mayur Vihar",
+      "phone": "+91-11-30559433",
+      "experience": 11,
+      "rating": 4.2,
+      "reviews": 95
+    },
+    {
+      "name": "Dental Care Centre",
+      "folder": "dental-care-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-care-centre/",
+      "area": "Preet Vihar",
+      "phone": "+91-11-34600047",
+      "experience": 22,
+      "rating": 4.5,
+      "reviews": 183
+    },
+    {
+      "name": "Dental Care Plus",
+      "folder": "dental-care-plus",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-care-plus/",
+      "area": "Patel Nagar",
+      "phone": "+91-11-20485097",
+      "experience": 23,
+      "rating": 4,
+      "reviews": 46
+    },
+    {
+      "name": "Dental Cure Clinic",
+      "folder": "dental-cure-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-cure-clinic/",
+      "area": "Paschim Vihar",
+      "phone": "+91-11-47550378",
+      "experience": 18,
+      "rating": 0,
+      "reviews": 138
+    },
+    {
+      "name": "Dental Excellence",
+      "folder": "dental-excellence",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-excellence/",
+      "area": "Dwarka",
+      "phone": "+91-11-35985095",
+      "experience": 29,
+      "rating": 4.4,
+      "reviews": 56
+    },
+    {
+      "name": "Dental Experts Clinic",
+      "folder": "dental-experts-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-experts-clinic/",
+      "area": "South Extension",
+      "phone": "+91-11-22135221",
+      "experience": 15,
+      "rating": 0,
+      "reviews": 156
+    },
+    {
+      "name": "Dental Health Centre",
+      "folder": "dental-health-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-health-centre/",
+      "area": "Uttam Nagar",
+      "phone": "+91-11-35384824",
+      "experience": 16,
+      "rating": 3.8,
+      "reviews": 56
+    },
+    {
+      "name": "Dental Health Clinic",
+      "folder": "dental-health-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-health-clinic/",
+      "area": "Tilak Nagar",
+      "phone": "+91-11-23770253",
+      "experience": 25,
+      "rating": 3.8,
+      "reviews": 96
+    },
+    {
+      "name": "Dental Solutions",
+      "folder": "dental-solutions",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-solutions/",
+      "area": "South Extension",
+      "phone": "+91-11-26510051",
+      "experience": 10,
+      "rating": 0,
+      "reviews": 127
+    },
+    {
+      "name": "Dental Speciality Centre",
+      "folder": "dental-speciality-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-speciality-centre/",
+      "area": "Malviya Nagar",
+      "phone": "+91-11-43227248",
+      "experience": 24,
+      "rating": 4.6,
+      "reviews": 149
+    },
+    {
+      "name": "Dental Treatment Centre",
+      "folder": "dental-treatment-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dental-treatment-centre/",
+      "area": "Ashok Vihar",
+      "phone": "+91-11-42676498",
+      "experience": 14,
+      "rating": 0,
+      "reviews": 185
+    },
+    {
+      "name": "Dr. Agarwal's Dental Clinic",
+      "folder": "dr-agarwals-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-agarwals-dental-clinic/",
+      "area": "Ashok Vihar",
+      "phone": "+91-11-31536149",
+      "experience": 6,
+      "rating": 4.5,
+      "reviews": 67
+    },
+    {
+      "name": "Dr. Amit Gupta's Dental Clinic",
+      "folder": "dr-amit-guptas-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-amit-guptas-dental-clinic/",
+      "area": "Rajouri Garden",
+      "phone": "+91-11-44871677",
+      "experience": 26,
+      "rating": 4.8,
+      "reviews": 100
+    },
+    {
+      "name": "Dr. Anjali Mehta's Dental Clinic",
+      "folder": "dr-anjali-mehtas-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-anjali-mehtas-dental-clinic/",
+      "area": "Shalimar Bagh",
+      "phone": "+91-11-21654426",
+      "experience": 29,
+      "rating": 4.6,
+      "reviews": 149
+    },
+    {
+      "name": "Dr. Arora's Dental Centre",
+      "folder": "dr-aroras-dental-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-aroras-dental-centre/",
+      "area": "Mayur Vihar",
+      "phone": "+91-11-24009286",
+      "experience": 14,
+      "rating": 0,
+      "reviews": 92
+    },
+    {
+      "name": "Dr. Arun Khanna's Dental Clinic",
+      "folder": "dr-arun-khannas-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-arun-khannas-dental-clinic/",
+      "area": "Lajpat Nagar",
+      "phone": "+91-11-40135275",
+      "experience": 6,
+      "rating": 4.8,
+      "reviews": 96
+    },
+    {
+      "name": "Dr. Ashok Mittal's Dental Clinic",
+      "folder": "dr-ashok-mittals-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-ashok-mittals-dental-clinic/",
+      "area": "Kalkaji",
+      "phone": "+91-11-21357370",
+      "experience": 25,
+      "rating": 3.6,
+      "reviews": 41
+    },
+    {
+      "name": "Dr. Bansal's Dental Care",
+      "folder": "dr-bansals-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-bansals-dental-care/",
+      "area": "Lajpat Nagar",
+      "phone": "+91-11-29537166",
+      "experience": 16,
+      "rating": 0,
+      "reviews": 120
+    },
+    {
+      "name": "Dr. Bhatia's Dental Practice",
+      "folder": "dr-bhatias-dental-practice",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-bhatias-dental-practice/",
+      "area": "Karol Bagh",
+      "phone": "+91-11-48646016",
+      "experience": 25,
+      "rating": 0,
+      "reviews": 78
+    },
+    {
+      "name": "Dr. Chopra's Dental Centre",
+      "folder": "dr-chopras-dental-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-chopras-dental-centre/",
+      "area": "Rohini",
+      "phone": "+91-11-23953024",
+      "experience": 22,
+      "rating": 4.5,
+      "reviews": 90
+    },
+    {
+      "name": "Dr. Das Dental Practice",
+      "folder": "dr-das-dental-practice",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-das-dental-practice/",
+      "area": "Najafgarh",
+      "phone": "+91-11-46528737",
+      "experience": 24,
+      "rating": 0,
+      "reviews": 99
+    },
+    {
+      "name": "Dr. Deepa Malhotra's Dental Clinic",
+      "folder": "dr-deepa-malhotras-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-deepa-malhotras-dental-clinic/",
+      "area": "Najafgarh",
+      "phone": "+91-11-46836259",
+      "experience": 21,
+      "rating": 4.6,
+      "reviews": 62
+    },
+    {
+      "name": "Dr. Goyal's Dental Practice",
+      "folder": "dr-goyals-dental-practice",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-goyals-dental-practice/",
+      "area": "Kalkaji",
+      "phone": "+91-11-41750446",
+      "experience": 9,
+      "rating": 4.2,
+      "reviews": 78
+    },
+    {
+      "name": "Dr. Gupta's Dental Care",
+      "folder": "dr-guptas-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-guptas-dental-care/",
+      "area": "Pitampura",
+      "phone": "+91-11-46610813",
+      "experience": 5,
+      "rating": 3.9,
+      "reviews": 164
+    },
+    {
+      "name": "Dr. Jain's Dental Centre",
+      "folder": "dr-jains-dental-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-jains-dental-centre/",
+      "area": "Paschim Vihar",
+      "phone": "+91-11-30756416",
+      "experience": 8,
+      "rating": 3.8,
+      "reviews": 153
+    },
+    {
+      "name": "Dr. Kapoor's Dental Clinic",
+      "folder": "dr-kapoors-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-kapoors-dental-clinic/",
+      "area": "Vasant Kunj",
+      "phone": "+91-11-24672901",
+      "experience": 25,
+      "rating": 4.7,
+      "reviews": 153
+    },
+    {
+      "name": "Dr. Kavita Jain's Dental Clinic",
+      "folder": "dr-kavita-jains-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-kavita-jains-dental-clinic/",
+      "area": "Saket",
+      "phone": "+91-11-22318852",
+      "experience": 13,
+      "rating": 4.7,
+      "reviews": 110
+    },
+    {
+      "name": "Dr. Khanna's Dental Studio",
+      "folder": "dr-khannas-dental-studio",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-khannas-dental-studio/",
+      "area": "Uttam Nagar",
+      "phone": "+91-11-31494151",
+      "experience": 23,
+      "rating": 4.5,
+      "reviews": 25
+    },
+    {
+      "name": "Dr. Kumar's Dental Centre",
+      "folder": "dr-kumars-dental-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-kumars-dental-centre/",
+      "area": "Janakpuri",
+      "phone": "+91-11-31486105",
+      "experience": 5,
+      "rating": 4.2,
+      "reviews": 170
+    },
+    {
+      "name": "Dr. Malhotra's Dental",
+      "folder": "dr-malhotras-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-malhotras-dental/",
+      "area": "Rajendra Nagar",
+      "phone": "+91-11-20022618",
+      "experience": 11,
+      "rating": 3.8,
+      "reviews": 104
+    },
+    {
+      "name": "Dr. Manish Kapoor's Dental Clinic",
+      "folder": "dr-manish-kapoors-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-manish-kapoors-dental-clinic/",
+      "area": "Patel Nagar",
+      "phone": "+91-11-28423032",
+      "experience": 19,
+      "rating": 4.4,
+      "reviews": 25
+    },
+    {
+      "name": "Dr. Meera Goyal's Dental Clinic",
+      "folder": "dr-meera-goyals-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-meera-goyals-dental-clinic/",
+      "area": "Nehru Place",
+      "phone": "+91-11-35326282",
+      "experience": 24,
+      "rating": 3.7,
+      "reviews": 115
+    },
+    {
+      "name": "Dr. Mehta's Dental Clinic",
+      "folder": "dr-mehtas-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-mehtas-dental-clinic/",
+      "area": "Malviya Nagar",
+      "phone": "+91-11-49950455",
+      "experience": 14,
+      "rating": 3.8,
+      "reviews": 46
+    },
+    {
+      "name": "Dr. Mittal's Dental Studio",
+      "folder": "dr-mittals-dental-studio",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-mittals-dental-studio/",
+      "area": "Hauz Khas",
+      "phone": "+91-11-27595323",
+      "experience": 14,
+      "rating": 0,
+      "reviews": 69
+    },
+    {
+      "name": "Dr. Nair's Dental Centre",
+      "folder": "dr-nairs-dental-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-nairs-dental-centre/",
+      "area": "Patel Nagar",
+      "phone": "+91-11-27423541",
+      "experience": 7,
+      "rating": 3.7,
+      "reviews": 88
+    },
+    {
+      "name": "Dr. Neha Singh's Dental Clinic",
+      "folder": "dr-neha-singhs-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-neha-singhs-dental-clinic/",
+      "area": "Model Town",
+      "phone": "+91-11-48402630",
+      "experience": 27,
+      "rating": 4.3,
+      "reviews": 109
+    },
+    {
+      "name": "Dr. Pooja Reddy's Dental Clinic",
+      "folder": "dr-pooja-reddys-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-pooja-reddys-dental-clinic/",
+      "area": "Green Park",
+      "phone": "+91-11-39569199",
+      "experience": 18,
+      "rating": 0,
+      "reviews": 44
+    },
+    {
+      "name": "Dr. Priya Sharma's Dental Clinic",
+      "folder": "dr-priya-sharmas-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-priya-sharmas-dental-clinic/",
+      "area": "Karol Bagh",
+      "phone": "+91-11-35642357",
+      "experience": 4,
+      "rating": 4,
+      "reviews": 93
+    },
+    {
+      "name": "Dr. Rahul Agarwal's Dental Clinic",
+      "folder": "dr-rahul-agarwals-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-rahul-agarwals-dental-clinic/",
+      "area": "Tilak Nagar",
+      "phone": "+91-11-26264534",
+      "experience": 23,
+      "rating": 4.3,
+      "reviews": 73
+    },
+    {
+      "name": "Dr. Rajesh Kumar's Dental Clinic",
+      "folder": "dr-rajesh-kumars-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-rajesh-kumars-dental-clinic/",
+      "area": "Connaught Place",
+      "phone": "+91-11-43834726",
+      "experience": 29,
+      "rating": 0,
+      "reviews": 88
+    },
+    {
+      "name": "Dr. Rao's Dental Studio",
+      "folder": "dr-raos-dental-studio",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-raos-dental-studio/",
+      "area": "Shalimar Bagh",
+      "phone": "+91-11-32242947",
+      "experience": 21,
+      "rating": 3.9,
+      "reviews": 84
+    },
+    {
+      "name": "Dr. Rashmi Sethi's Dental Clinic",
+      "folder": "dr-rashmi-sethis-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-rashmi-sethis-dental-clinic/",
+      "area": "Mayur Vihar",
+      "phone": "+91-11-30152436",
+      "experience": 10,
+      "rating": 3.5,
+      "reviews": 96
+    },
+    {
+      "name": "Dr. Reddy's Dental Practice",
+      "folder": "dr-reddys-dental-practice",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-reddys-dental-practice/",
+      "area": "Laxmi Nagar",
+      "phone": "+91-11-29065084",
+      "experience": 23,
+      "rating": 3.8,
+      "reviews": 73
+    },
+    {
+      "name": "Dr. Rita Chopra's Dental Clinic",
+      "folder": "dr-rita-chopras-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-rita-chopras-dental-clinic/",
+      "area": "Rajendra Nagar",
+      "phone": "+91-11-49751311",
+      "experience": 28,
+      "rating": 4.2,
+      "reviews": 139
+    },
+    {
+      "name": "Dr. Sanjeev Bhatia's Dental Clinic",
+      "folder": "dr-sanjeev-bhatias-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-sanjeev-bhatias-dental-clinic/",
+      "area": "Green Park",
+      "phone": "+91-11-41922043",
+      "experience": 29,
+      "rating": 4.1,
+      "reviews": 40
+    },
+    {
+      "name": "Dr. Saxena's Dental Care",
+      "folder": "dr-saxenas-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-saxenas-dental-care/",
+      "area": "Tilak Nagar",
+      "phone": "+91-11-43663803",
+      "experience": 24,
+      "rating": 4.7,
+      "reviews": 81
+    },
+    {
+      "name": "Dr. Sethi's Dental Clinic",
+      "folder": "dr-sethis-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-sethis-dental-clinic/",
+      "area": "Shahdara",
+      "phone": "+91-11-24189358",
+      "experience": 27,
+      "rating": 4.2,
+      "reviews": 147
+    },
+    {
+      "name": "Dr. Sharma's Dental Clinic",
+      "folder": "dr-sharmas-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-sharmas-dental-clinic/",
+      "area": "Connaught Place",
+      "phone": "+91-11-45565955",
+      "experience": 6,
+      "rating": 3.7,
+      "reviews": 132
+    },
+    {
+      "name": "Dr. Singh's Dental Studio",
+      "folder": "dr-singhs-dental-studio",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-singhs-dental-studio/",
+      "area": "Green Park",
+      "phone": "+91-11-38094690",
+      "experience": 29,
+      "rating": 0,
+      "reviews": 93
+    },
+    {
+      "name": "Dr. Sunita Bansal's Dental Clinic",
+      "folder": "dr-sunita-bansals-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-sunita-bansals-dental-clinic/",
+      "area": "Malviya Nagar",
+      "phone": "+91-11-23156241",
+      "experience": 8,
+      "rating": 3.8,
+      "reviews": 102
+    },
+    {
+      "name": "Dr. Suresh Patel's Dental Clinic",
+      "folder": "dr-suresh-patels-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-suresh-patels-dental-clinic/",
+      "area": "South Extension",
+      "phone": "+91-11-45128494",
+      "experience": 14,
+      "rating": 0,
+      "reviews": 41
+    },
+    {
+      "name": "Dr. Verma's Dental Practice",
+      "folder": "dr-vermas-dental-practice",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-vermas-dental-practice/",
+      "area": "Defence Colony",
+      "phone": "+91-11-22911174",
+      "experience": 14,
+      "rating": 3.6,
+      "reviews": 9
+    },
+    {
+      "name": "Dr. Vikram Verma's Dental Clinic",
+      "folder": "dr-vikram-vermas-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/dr-vikram-vermas-dental-clinic/",
+      "area": "Defence Colony",
+      "phone": "+91-11-40481061",
+      "experience": 21,
+      "rating": 4.4,
+      "reviews": 176
+    },
+    {
+      "name": "Elite Dental Care",
+      "folder": "elite-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/elite-dental-care/",
+      "area": "Model Town",
+      "phone": "+91-11-25835174",
+      "experience": 24,
+      "rating": 0,
+      "reviews": 83
+    },
+    {
+      "name": "Excel Dental Centre",
+      "folder": "excel-dental-centre",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/excel-dental-centre/",
+      "area": "Kalkaji",
+      "phone": "+91-11-27288772",
+      "experience": 23,
+      "rating": 4.8,
+      "reviews": 29
+    },
+    {
+      "name": "Expert Dental Clinic",
+      "folder": "expert-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/expert-dental-clinic/",
+      "area": "Kirti Nagar",
+      "phone": "+91-11-24715016",
+      "experience": 18,
+      "rating": 4.6,
+      "reviews": 16
+    },
+    {
+      "name": "Family Dental Care",
+      "folder": "family-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/family-dental-care/",
+      "area": "Greater Kailash",
+      "phone": "+91-11-30508544",
+      "experience": 12,
+      "rating": 4.3,
+      "reviews": 33
+    },
+    {
+      "name": "Family Oral Care",
+      "folder": "family-oral-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/family-oral-care/",
+      "area": "Laxmi Nagar",
+      "phone": "+91-11-40635677",
+      "experience": 7,
+      "rating": 3.9,
+      "reviews": 169
+    },
+    {
+      "name": "Gentle Dental Care",
+      "folder": "gentle-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/gentle-dental-care/",
+      "area": "Saket",
+      "phone": "+91-11-49221132",
+      "experience": 18,
+      "rating": 0,
+      "reviews": 146
+    },
+    {
+      "name": "Happy Smiles Dental",
+      "folder": "happy-smiles-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/happy-smiles-dental/",
+      "area": "Rohini",
+      "phone": "+91-11-33258191",
+      "experience": 4,
+      "rating": 3.7,
+      "reviews": 25
+    },
+    {
+      "name": "Modern Dental Studio",
+      "folder": "modern-dental-studio",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/modern-dental-studio/",
+      "area": "Preet Vihar",
+      "phone": "+91-11-32783524",
+      "experience": 18,
+      "rating": 3.5,
+      "reviews": 24
+    },
+    {
+      "name": "Oral Care Clinic",
+      "folder": "oral-care-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/oral-care-clinic/",
+      "area": "Kirti Nagar",
+      "phone": "+91-11-38715664",
+      "experience": 15,
+      "rating": 3.9,
+      "reviews": 100
+    },
+    {
+      "name": "Oral Health Clinic",
+      "folder": "oral-health-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/oral-health-clinic/",
+      "area": "Okhla",
+      "phone": "+91-11-28373002",
+      "experience": 29,
+      "rating": 3.9,
+      "reviews": 91
+    },
+    {
+      "name": "Pearl Dental Care",
+      "folder": "pearl-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/pearl-dental-care/",
+      "area": "Saket",
+      "phone": "+91-11-44261008",
+      "experience": 22,
+      "rating": 4,
+      "reviews": 148
+    },
+    {
+      "name": "Perfect Teeth Clinic",
+      "folder": "perfect-teeth-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/perfect-teeth-clinic/",
+      "area": "Rajouri Garden",
+      "phone": "+91-11-39244883",
+      "experience": 19,
+      "rating": 4.1,
+      "reviews": 50
+    },
+    {
+      "name": "Precision Dental Care",
+      "folder": "precision-dental-care",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/precision-dental-care/",
+      "area": "Pitampura",
+      "phone": "+91-11-40308358",
+      "experience": 22,
+      "rating": 3.6,
+      "reviews": 65
+    },
+    {
+      "name": "Premier Dental Clinic",
+      "folder": "premier-dental-clinic",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/premier-dental-clinic/",
+      "area": "Nehru Place",
+      "phone": "+91-11-31342111",
+      "experience": 13,
+      "rating": 0,
+      "reviews": 52
+    },
+    {
+      "name": "Quality Dental Services",
+      "folder": "quality-dental-services",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/quality-dental-services/",
+      "area": "Punjabi Bagh",
+      "phone": "+91-11-45553139",
+      "experience": 6,
+      "rating": 4.6,
+      "reviews": 42
+    },
+    {
+      "name": "Smile Bright Dental",
+      "folder": "smile-bright-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/smile-bright-dental/",
+      "area": "Punjabi Bagh",
+      "phone": "+91-11-40949051",
+      "experience": 7,
+      "rating": 4,
+      "reviews": 154
+    },
+    {
+      "name": "Smile Dental Studio",
+      "folder": "smile-dental-studio",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/smile-dental-studio/",
+      "area": "Rajendra Nagar",
+      "phone": "+91-11-34547867",
+      "experience": 26,
+      "rating": 0,
+      "reviews": 145
+    },
+    {
+      "name": "Smile Studio Dental",
+      "folder": "smile-studio-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/smile-studio-dental/",
+      "area": "Greater Kailash",
+      "phone": "+91-11-48519065",
+      "experience": 4,
+      "rating": 4.1,
+      "reviews": 36
+    },
+    {
+      "name": "Smile Zone Dental",
+      "folder": "smile-zone-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/smile-zone-dental/",
+      "area": "Nehru Place",
+      "phone": "+91-11-28923935",
+      "experience": 15,
+      "rating": 0,
+      "reviews": 48
+    },
+    {
+      "name": "Superior Dental Services",
+      "folder": "superior-dental-services",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/superior-dental-services/",
+      "area": "Connaught Place",
+      "phone": "+91-11-23945624",
+      "experience": 26,
+      "rating": 4.4,
+      "reviews": 17
+    },
+    {
+      "name": "Tooth Care Dental",
+      "folder": "tooth-care-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/tooth-care-dental/",
+      "area": "Model Town",
+      "phone": "+91-11-45193781",
+      "experience": 14,
+      "rating": 3.6,
+      "reviews": 197
+    },
+    {
+      "name": "White Pearl Dental",
+      "folder": "white-pearl-dental",
+      "url": "https://YOUR_USERNAME.github.io/dental-portfolio/site/white-pearl-dental/",
+      "area": "Hauz Khas",
+      "phone": "+91-11-43434625",
+      "experience": 25,
+      "rating": 4.7,
+      "reviews": 73
+    }
+  ]
+}

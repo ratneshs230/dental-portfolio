@@ -1,0 +1,157 @@
+{
+  "total_dentists_researched": 100,
+  "discovery_date": "2025-12-04T05:55:20.792396",
+  "location": "Delhi",
+  "digital_presence": {
+    "no_website": 41,
+    "poor_website": 54
+  },
+  "top_opportunities": [
+    {
+      "name": "Dr. Chopra's Dental Centre",
+      "area": "Rohini",
+      "opportunity_score": 95,
+      "contact": "+91-11-23953024",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Kapoor's Dental Clinic",
+      "area": "Vasant Kunj",
+      "opportunity_score": 95,
+      "contact": "+91-11-24672901",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Kavita Jain's Dental Clinic",
+      "area": "Defence Colony",
+      "opportunity_score": 95,
+      "contact": "+91-11-41990002",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Sunita Bansal's Dental Clinic",
+      "area": "Connaught Place",
+      "opportunity_score": 95,
+      "contact": "+91-11-37918986",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Bright Smile Dental",
+      "area": "Vasant Kunj",
+      "opportunity_score": 94,
+      "contact": "+91-11-29237755",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Pearl Dental Care",
+      "area": "Saket",
+      "opportunity_score": 93,
+      "contact": "+91-11-44261008",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Vikram Verma's Dental Clinic",
+      "area": "Rohini",
+      "opportunity_score": 93,
+      "contact": "+91-11-27268881",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Ashok Mittal's Dental Clinic",
+      "area": "Karol Bagh",
+      "opportunity_score": 90,
+      "contact": "+91-11-22794935",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Neha Singh's Dental Clinic",
+      "area": "Greater Kailash",
+      "opportunity_score": 90,
+      "contact": "+91-11-42505243",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Happy Smiles Dental",
+      "area": "Rohini",
+      "opportunity_score": 89,
+      "contact": "+91-11-33258191",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Sharma's Dental Clinic",
+      "area": "Connaught Place",
+      "opportunity_score": 88,
+      "contact": "+91-11-45565955",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Family Dental Care",
+      "area": "Greater Kailash",
+      "opportunity_score": 88,
+      "contact": "+91-11-30508544",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dental Health Centre",
+      "area": "Uttam Nagar",
+      "opportunity_score": 88,
+      "contact": "+91-11-35384824",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Priya Sharma's Dental Clinic",
+      "area": "Janakpuri",
+      "opportunity_score": 88,
+      "contact": "+91-11-35793955",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Advanced Oral Care",
+      "area": "Defence Colony",
+      "opportunity_score": 87,
+      "contact": "+91-11-43304084",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dental Experts Clinic",
+      "area": "South Extension",
+      "opportunity_score": 87,
+      "contact": "+91-11-22135221",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Rajesh Kumar's Dental Clinic",
+      "area": "Dwarka",
+      "opportunity_score": 87,
+      "contact": "+91-11-46379703",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dental Excellence",
+      "area": "Dwarka",
+      "opportunity_score": 86,
+      "contact": "+91-11-35985095",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Rahul Agarwal's Dental Clinic",
+      "area": "Hauz Khas",
+      "opportunity_score": 86,
+      "contact": "+91-11-42417092",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    },
+    {
+      "name": "Dr. Verma's Dental Practice",
+      "area": "Defence Colony",
+      "opportunity_score": 85,
+      "contact": "+91-11-22911174",
+      "key_selling_point": "Increase patient base by 30-50% in 6 months"
+    }
+  ],
+  "market_insights": {
+    "average_monthly_footfall": 274.45,
+    "average_years_in_practice": 18.15,
+    "clinics_needing_digital_transformation": 95,
+    "total_market_opportunity": "\u20b99500000 (assuming \u20b91 lakh per website)"
+  }
+}

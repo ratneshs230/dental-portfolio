@@ -1,0 +1,56 @@
+import './globals.css'
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-jakarta' })
+
+export const metadata = {
+  title: 'Dr. Ashok Mittal's Dental Clinic | Best Dentist in Kalkaji, Delhi',
+  description: 'Dr. Ashok Mittal's Dental Clinic - 25+ years of dental excellence in Kalkaji. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!',
+  keywords: ["dentist Kalkaji","dental clinic Kalkaji","best dentist Delhi","dental checkup","teeth cleaning","cavity filling","tooth extraction","root canal treatment","teeth treatment Kalkaji"],
+  openGraph: {
+    title: 'Dr. Ashok Mittal's Dental Clinic | Best Dentist in Kalkaji, Delhi',
+    description: 'Dr. Ashok Mittal's Dental Clinic - 25+ years of dental excellence in Kalkaji. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!',
+    type: 'website',
+  },
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dr. Ashok Mittal's Dental Clinic",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "27, Kalkaji, New Delhi - 11063",
+    "addressLocality": "Kalkaji",
+    "addressRegion": "Delhi",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-11-21357370",
+  "priceRange": "₹300",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 41
+  }
+})
+          }}
+        />
+      </head>
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  )
+}

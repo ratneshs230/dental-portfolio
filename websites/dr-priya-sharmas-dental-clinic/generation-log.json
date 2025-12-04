@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:30.365Z",
+  "clinic": {
+    "id": "DENT-DEL-072",
+    "name": "Dr. Priya Sharma's Dental Clinic",
+    "area": "Karol Bagh"
+  },
+  "design": {
+    "archetype": "ethereal-flow",
+    "colorScheme": "professional-slate"
+  },
+  "features": [
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "multi-language",
+      "name": "Multi-Language Support"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

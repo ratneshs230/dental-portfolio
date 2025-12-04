@@ -1,0 +1,155 @@
+{
+  "id": "DENT-DEL-005",
+  "name": "Happy Smiles Dental",
+  "type": "Dental Clinic",
+  "address": "69, Rohini, New Delhi - 11080",
+  "area": "Rohini",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.599342438338095,
+    "lng": 77.01194267835321
+  },
+  "phones": [
+    "+91-11-33258191",
+    "+91-9054029012"
+  ],
+  "email": null,
+  "existingWebsite": null,
+  "established": 1999,
+  "experience": 4,
+  "dentists": 2,
+  "staff": 7,
+  "qualifications": [
+    "BDS",
+    "MDS (Oral Surgery)"
+  ],
+  "registration": {
+    "dci_number": "DCI/4406/CC/2021",
+    "state_registration": "DDC/DEL/76174",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Smile Makeover",
+      "Dental Veneers",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "TMJ Treatment",
+      "Periodontal Treatment",
+      "Orthodontic Treatment",
+      "Sleep Apnea Treatment",
+      "Endodontic Surgery"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "Intraoral Camera",
+      "OPG Machine",
+      "Teeth Whitening Unit",
+      "Laser Equipment",
+      "Rotary Endodontics"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Comfortable",
+    "parking": "Available"
+  },
+  "consultationFee": "₹200",
+  "avgTreatmentValue": "₹6683",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 313,
+  "patientBase": 4638,
+  "catchmentArea": "7 km radius",
+  "googleRating": 3.7,
+  "totalReviews": 25,
+  "avgRating": 4.7,
+  "positiveThemes": [
+    "Clean clinic",
+    "Good results",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 89,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Happy Smiles Dental | Best Dentist in Rohini, Delhi",
+    "description": "Happy Smiles Dental - 4+ years of dental excellence in Rohini. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Rohini",
+      "dental clinic Rohini",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Rohini"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Happy Smiles Dental",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "69, Rohini, New Delhi - 11080",
+        "addressLocality": "Rohini",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-33258191",
+      "priceRange": "₹200",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "reviewCount": 25
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.075Z"
+}

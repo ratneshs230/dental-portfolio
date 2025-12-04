@@ -1,0 +1,25 @@
+{
+  "integratedFeatures": [
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz",
+      "integratedAt": "2025-12-04T15:03:30.169Z"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling",
+      "integratedAt": "2025-12-04T15:03:30.169Z"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot",
+      "integratedAt": "2025-12-04T15:03:30.169Z"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization",
+      "integratedAt": "2025-12-04T15:03:30.169Z"
+    }
+  ],
+  "totalFeatures": 4
+}

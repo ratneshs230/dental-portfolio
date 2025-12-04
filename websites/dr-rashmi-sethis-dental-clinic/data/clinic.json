@@ -1,0 +1,159 @@
+{
+  "id": "DENT-DEL-090",
+  "name": "Dr. Rashmi Sethi's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "51, Mayur Vihar, New Delhi - 11018",
+  "area": "Mayur Vihar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.528425018588834,
+    "lng": 77.02146119812393
+  },
+  "phones": [
+    "+91-11-30152436",
+    "+91-9829987958"
+  ],
+  "email": "info@drrashmisethisdentalclinic@gmail.com",
+  "existingWebsite": null,
+  "established": 2001,
+  "experience": 10,
+  "dentists": 3,
+  "staff": 8,
+  "qualifications": [
+    "MDS (Prosthodontics)",
+    "MDS (Periodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/7111/AA/2007",
+    "state_registration": "DDC/DEL/94699",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Bonding",
+      "Smile Makeover",
+      "Gum Contouring",
+      "Dental Veneers"
+    ],
+    "specialized": [
+      "Periodontal Treatment",
+      "Pediatric Dentistry",
+      "Endodontic Surgery",
+      "Oral Surgery",
+      "Sleep Apnea Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 1,
+    "equipment": [
+      "Digital X-Ray",
+      "Teeth Whitening Unit",
+      "Microscope",
+      "Intraoral Camera",
+      "Rotary Endodontics",
+      "OPG Machine"
+    ],
+    "sterilization": "Autoclave",
+    "waiting_area": "Premium",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹1000",
+  "avgTreatmentValue": "₹2831",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Max Bupa"
+  ],
+  "monthlyPatients": 245,
+  "patientBase": 4285,
+  "catchmentArea": "5 km radius",
+  "googleRating": 3.5,
+  "totalReviews": 96,
+  "avgRating": 4.5,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Good results",
+    "Minimal waiting"
+  ],
+  "opportunityScore": 81,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dr. Rashmi Sethi's Dental Clinic | Best Dentist in Mayur Vihar, Delhi",
+    "description": "Dr. Rashmi Sethi's Dental Clinic - 10+ years of dental excellence in Mayur Vihar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Mayur Vihar",
+      "dental clinic Mayur Vihar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Mayur Vihar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Rashmi Sethi's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "51, Mayur Vihar, New Delhi - 11018",
+        "addressLocality": "Mayur Vihar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-30152436",
+      "priceRange": "₹1000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "reviewCount": 96
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.567Z"
+}

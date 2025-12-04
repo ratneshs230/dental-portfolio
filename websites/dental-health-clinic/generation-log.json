@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.429Z",
+  "clinic": {
+    "id": "DENT-DEL-029",
+    "name": "Dental Health Clinic",
+    "area": "Tilak Nagar"
+  },
+  "design": {
+    "archetype": "ethereal-flow",
+    "colorScheme": "trust-blue"
+  },
+  "features": [
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    },
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays"
+    },
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0",
+    "target_framework": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui_library": "shadcn/ui",
+    "animation_engine": "Framer Motion"
+  },
+  "archetypes": [
+    {
+      "id": "ethereal-flow",
+      "name": "Ethereal & Organic",
+      "description": "Soft, fluid interfaces with heavy use of gradients, blur effects, and smooth motion. Ideal for wellness, art, or modern SaaS brands.",
+      "color_palette_token": "pastel-gradients",
+      "dependencies": ["framer-motion", "clsx", "tailwind-merge"],
+      "component_mapping": {
+        "hero_background": "AuroraBackground",
+        "primary_visual": "AnimatedGradientWithSVG",
+        "secondary_visual": "WavyBackground",
+        "overlay_effect": "EtherealShadow",
+        "card_style": "DisplayCards (Glassmorphism)",
+        "loader": "Glow"
+      },
+      "animation_style": {
+        "type": "fluid",
+        "speed": "slow",
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "cyber-grid",
+      "name": "Retro-Futuristic Cyber",
+      "description": "High-contrast dark mode designs featuring grids, beams, and geometric precision. Ideal for developer tools, crypto, or tech documentation.",
+      "color_palette_token": "neon-dark",
+      "dependencies": ["framer-motion", "lucide-react"],
+      "component_mapping": {
+        "hero_background": "HeroSectionDark (RetroGrid)",
+        "active_background": "BackgroundBoxes",
+        "visual_effect": "BackgroundBeamsWithCollision",
+        "decorative_element": "GridPattern",
+        "navigation": "Sidebar (Dark Mode)",
+        "highlight": "Meteors"
+      },
+      "animation_style": {
+        "type": "mechanical",
+        "speed": "fast",
+        "interaction": "hover-trigger"
+      }
+    },
+    {
+      "id": "immersive-3d",
+      "name": "High-Fidelity 3D",
+      "description": "Canvas-heavy experiences utilizing Three.js and complex shaders for deep immersion. Ideal for portfolios, agencies, or high-end product showcases.",
+      "color_palette_token": "monochrome-depth",
+      "dependencies": ["three", "@react-three/fiber", "@react-three/drei", "simplex-noise"],
+      "component_mapping": {
+        "hero_background": "StarsBackground",
+        "hero_main": "SplineScene",
+        "data_visualization": "DottedSurface",
+        "complex_visual": "SpiralAnimation",
+        "texture_effect": "DotShaderBackground",
+        "timeline": "RadialOrbitalTimeline"
+      },
+      "animation_style": {
+        "type": "physics-based",
+        "interaction": "cursor-tracking"
+      }
+    },
+    {
+      "id": "clean-saas",
+      "name": "Modern Structural SaaS",
+      "description": "Clean, structured, and information-dense layouts focusing on clarity and conversion. Ideal for B2B software, dashboards, and startup landing pages.",
+      "color_palette_token": "slate-clean",
+      "dependencies": ["framer-motion", "lucide-react", "@tabler/icons-react"],
+      "component_mapping": {
+        "layout_structure": "BentoGrid",
+        "feature_showcase": "FeatureSteps",
+        "social_proof": "AnimatedTestimonials",
+        "timeline": "Timeline (Vertical)",
+        "hero_interaction": "ContainerScrollAnimation",
+        "card_interaction": "MorphingCardStack"
+      },
+      "animation_style": {
+        "type": "spring",
+        "stiffness": 300,
+        "damping": 30
+      }
+    },
+    {
+      "id": "playful-interactive",
+      "name": "Gamified & Interactive",
+      "description": "High-engagement UI with particle effects and destructible elements. Ideal for gaming, creative studios, or campaigns.",
+      "color_palette_token": "vibrant-pop",
+      "dependencies": ["framer-motion", "confetti", "uuid"],
+      "component_mapping": {
+        "cursor_effect": "PixelTrail",
+        "typography": "ParticleTextEffect",
+        "background": "SparklesCore",
+        "action_button": "ShatterButton",
+        "dynamic_element": "Typewriter",
+        "interaction_card": "TestimonialCards (Shuffle)"
+      },
+      "animation_style": {
+        "type": "bouncy",
+        "feedback": "immediate"
+      }
+    }
+  ],
+  "global_components": {
+    "auth": "SignInFlow1",
+    "scroll_effect": "GoogleGeminiEffect",
+    "background_decoration": "BackgroundPaths"
+  }
+}

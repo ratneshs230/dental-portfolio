@@ -1,0 +1,10 @@
+# Robots.txt for Dental Treatment Centre
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.example.com/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /api/
+Disallow: /admin/

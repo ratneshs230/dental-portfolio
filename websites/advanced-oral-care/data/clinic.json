@@ -1,0 +1,156 @@
+{
+  "id": "DENT-DEL-045",
+  "name": "Advanced Oral Care",
+  "type": "Dental Clinic",
+  "address": "496, Defence Colony, New Delhi - 11011",
+  "area": "Defence Colony",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.436434235335383,
+    "lng": 77.25738948352992
+  },
+  "phones": [
+    "+91-11-43304084",
+    "+91-7322428811"
+  ],
+  "email": "info@advancedoralcare@gmail.com",
+  "existingWebsite": "http://www.advancedoralcare.com",
+  "established": 2007,
+  "experience": 4,
+  "dentists": 1,
+  "staff": 5,
+  "qualifications": [
+    "Aesthetic Dentistry Certification"
+  ],
+  "registration": {
+    "dci_number": "DCI/2199/CC/2014",
+    "state_registration": "DDC/DEL/54798",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Bonding",
+      "Teeth Whitening",
+      "Dental Veneers",
+      "Gum Contouring"
+    ],
+    "specialized": [
+      "Oral Surgery",
+      "Orthodontic Treatment",
+      "Invisalign",
+      "TMJ Treatment",
+      "Periodontal Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "OPG Machine",
+      "CAD/CAM Technology",
+      "Ultrasonic Scaler",
+      "Laser Equipment",
+      "Rotary Endodontics",
+      "Microscope"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Premium",
+    "parking": "No Parking"
+  },
+  "consultationFee": "₹1000",
+  "avgTreatmentValue": "₹3709",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 87,
+  "patientBase": 3395,
+  "catchmentArea": "7 km radius",
+  "googleRating": 3.7,
+  "totalReviews": 99,
+  "avgRating": 4,
+  "positiveThemes": [
+    "Professional staff",
+    "Gentle treatment",
+    "Clean clinic"
+  ],
+  "opportunityScore": 87,
+  "digitalScore": 23,
+  "seo": {
+    "title": "Advanced Oral Care | Best Dentist in Defence Colony, Delhi",
+    "description": "Advanced Oral Care - 4+ years of dental excellence in Defence Colony. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Defence Colony",
+      "dental clinic Defence Colony",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Defence Colony"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Advanced Oral Care",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "496, Defence Colony, New Delhi - 11011",
+        "addressLocality": "Defence Colony",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-43304084",
+      "priceRange": "₹1000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "reviewCount": 99
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.156Z"
+}

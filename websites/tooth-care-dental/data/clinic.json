@@ -1,0 +1,158 @@
+{
+  "id": "DENT-DEL-059",
+  "name": "Tooth Care Dental",
+  "type": "Dental Clinic",
+  "address": "236, Model Town, New Delhi - 11045",
+  "area": "Model Town",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.577538077829974,
+    "lng": 77.20827767577231
+  },
+  "phones": [
+    "+91-11-45193781",
+    "+91-9470011626"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.toothcaredental.com",
+  "established": 2001,
+  "experience": 14,
+  "dentists": 4,
+  "staff": 3,
+  "qualifications": [
+    "BDS",
+    "MDS (Pedodontics)",
+    "MDS (Periodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/4987/BD/2021",
+    "state_registration": "DDC/DEL/43371",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Dental Bonding",
+      "Smile Makeover"
+    ],
+    "specialized": [
+      "Sleep Apnea Treatment",
+      "Pediatric Dentistry",
+      "Endodontic Surgery",
+      "Oral Surgery",
+      "Periodontal Treatment"
+    ],
+    "emergency": false,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "Rotary Endodontics",
+      "OPG Machine",
+      "CAD/CAM Technology",
+      "Ultrasonic Scaler",
+      "Digital X-Ray",
+      "Intraoral Camera"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Comfortable",
+    "parking": "Available"
+  },
+  "consultationFee": "₹700",
+  "avgTreatmentValue": "₹5180",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 111,
+  "patientBase": 4993,
+  "catchmentArea": "6 km radius",
+  "googleRating": 3.6,
+  "totalReviews": 197,
+  "avgRating": 3.9,
+  "positiveThemes": [
+    "Minimal waiting",
+    "Clean clinic",
+    "Good results",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 73,
+  "digitalScore": 33,
+  "seo": {
+    "title": "Tooth Care Dental | Best Dentist in Model Town, Delhi",
+    "description": "Tooth Care Dental - 14+ years of dental excellence in Model Town. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Model Town",
+      "dental clinic Model Town",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Model Town"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Tooth Care Dental",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "236, Model Town, New Delhi - 11045",
+        "addressLocality": "Model Town",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-45193781",
+      "priceRange": "₹700",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.9,
+        "reviewCount": 197
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.228Z"
+}

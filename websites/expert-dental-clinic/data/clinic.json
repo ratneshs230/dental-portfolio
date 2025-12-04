@@ -1,0 +1,155 @@
+{
+  "id": "DENT-DEL-033",
+  "name": "Expert Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "729, Kirti Nagar, New Delhi - 11071",
+  "area": "Kirti Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.558690069420237,
+    "lng": 77.03169666388
+  },
+  "phones": [
+    "+91-11-24715016",
+    "+91-9870852254"
+  ],
+  "email": "info@expertdentalclinic@gmail.com",
+  "existingWebsite": "http://www.expertdentalclinic.com",
+  "established": 1996,
+  "experience": 18,
+  "dentists": 2,
+  "staff": 2,
+  "qualifications": [
+    "BDS",
+    "MDS (Endodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/8223/BA/2017",
+    "state_registration": "DDC/DEL/35810",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Smile Makeover"
+    ],
+    "specialized": [
+      "Invisalign",
+      "Dental Implants",
+      "Endodontic Surgery",
+      "Periodontal Treatment",
+      "Pediatric Dentistry"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 5,
+    "equipment": [
+      "Ultrasonic Scaler",
+      "Microscope",
+      "Digital X-Ray",
+      "Intraoral Camera",
+      "Teeth Whitening Unit"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Premium",
+    "parking": "No Parking"
+  },
+  "consultationFee": "₹300",
+  "avgTreatmentValue": "₹9192",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 321,
+  "patientBase": 3191,
+  "catchmentArea": "10 km radius",
+  "googleRating": 4.6,
+  "totalReviews": 16,
+  "avgRating": 4.3,
+  "positiveThemes": [
+    "Minimal waiting",
+    "Clean clinic",
+    "Gentle treatment",
+    "Good results"
+  ],
+  "opportunityScore": 71,
+  "digitalScore": 21,
+  "seo": {
+    "title": "Expert Dental Clinic | Best Dentist in Kirti Nagar, Delhi",
+    "description": "Expert Dental Clinic - 18+ years of dental excellence in Kirti Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Kirti Nagar",
+      "dental clinic Kirti Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Kirti Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Expert Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "729, Kirti Nagar, New Delhi - 11071",
+        "addressLocality": "Kirti Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-24715016",
+      "priceRange": "₹300",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.3,
+        "reviewCount": 16
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.391Z"
+}

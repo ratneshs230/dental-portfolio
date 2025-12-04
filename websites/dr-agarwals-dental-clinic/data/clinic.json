@@ -1,0 +1,151 @@
+{
+  "id": "DENT-DEL-025",
+  "name": "Dr. Agarwal's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "93, Ashok Vihar, New Delhi - 11072",
+  "area": "Ashok Vihar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.716862928984284,
+    "lng": 77.1140158374968
+  },
+  "phones": [
+    "+91-11-31536149",
+    "+91-7170718623"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.dragarwalsdentalclinic.com",
+  "established": 2009,
+  "experience": 6,
+  "dentists": 5,
+  "staff": 2,
+  "qualifications": [
+    "MDS (Orthodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/4073/AB/2019",
+    "state_registration": "DDC/DEL/94512",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Smile Makeover",
+      "Dental Bonding"
+    ],
+    "specialized": [
+      "Invisalign",
+      "TMJ Treatment",
+      "Endodontic Surgery",
+      "Pediatric Dentistry",
+      "Periodontal Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "Digital X-Ray",
+      "Laser Equipment",
+      "Intraoral Camera"
+    ],
+    "sterilization": "Autoclave",
+    "waiting_area": "Basic",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹1000",
+  "avgTreatmentValue": "₹5669",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 142,
+  "patientBase": 2565,
+  "catchmentArea": "8 km radius",
+  "googleRating": 4.5,
+  "totalReviews": 67,
+  "avgRating": 4.5,
+  "positiveThemes": [
+    "Good results",
+    "Reasonable prices"
+  ],
+  "opportunityScore": 72,
+  "digitalScore": 16,
+  "seo": {
+    "title": "Dr. Agarwal's Dental Clinic | Best Dentist in Ashok Vihar, Delhi",
+    "description": "Dr. Agarwal's Dental Clinic - 6+ years of dental excellence in Ashok Vihar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Ashok Vihar",
+      "dental clinic Ashok Vihar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Ashok Vihar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Agarwal's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "93, Ashok Vihar, New Delhi - 11072",
+        "addressLocality": "Ashok Vihar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-31536149",
+      "priceRange": "₹1000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "reviewCount": 67
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.283Z"
+}

@@ -1,0 +1,4101 @@
+{
+  "totalWebsites": 82,
+  "generatedAt": "2025-12-04T15:11:37.150Z",
+  "websites": [
+    {
+      "id": "DENT-DEL-065",
+      "folder": "32-pearls-dental",
+      "name": "32 Pearls Dental",
+      "area": "Vikaspuri",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.444Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.444Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.444Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.444Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.444Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.444Z",
+      "phone": "+91-11-29295987",
+      "experience": 8,
+      "rating": 4,
+      "reviews": 80,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-011",
+      "folder": "advanced-dental-clinic",
+      "name": "Advanced Dental Clinic",
+      "area": "Lajpat Nagar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.270Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.270Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.270Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.270Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.270Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.270Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.270Z",
+      "phone": "+91-11-44928498",
+      "experience": 16,
+      "rating": 4.3,
+      "reviews": 70,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-045",
+      "folder": "advanced-oral-care",
+      "name": "Advanced Oral Care",
+      "area": "Defence Colony",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.169Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.169Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.169Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.169Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.169Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.169Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.169Z",
+      "phone": "+91-11-43304084",
+      "experience": 4,
+      "rating": 4,
+      "reviews": 99,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-008",
+      "folder": "bright-smile-dental",
+      "name": "Bright Smile Dental",
+      "area": "Vasant Kunj",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.000Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.000Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.000Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.000Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.000Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.001Z",
+      "phone": "+91-11-29237755",
+      "experience": 26,
+      "rating": 4.6,
+      "reviews": 99,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-006",
+      "folder": "city-dental-clinic",
+      "name": "City Dental Clinic",
+      "area": "Dwarka",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.631Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.631Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.631Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.631Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.631Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.632Z",
+      "phone": "+91-11-45918838",
+      "experience": 27,
+      "rating": 4.2,
+      "reviews": 80,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-048",
+      "folder": "comprehensive-dental",
+      "name": "Comprehensive Dental",
+      "area": "Green Park",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.053Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.053Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.053Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.053Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.053Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.053Z",
+      "phone": "+91-11-47808575",
+      "experience": 5,
+      "rating": 4.2,
+      "reviews": 23,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-038",
+      "folder": "crown-dental-clinic",
+      "name": "Crown Dental Clinic",
+      "area": "Rajouri Garden",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.035Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.035Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.035Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.035Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.035Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.035Z",
+      "phone": "+91-11-39057761",
+      "experience": 28,
+      "rating": 4.6,
+      "reviews": 144,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-020",
+      "folder": "dental-arts-clinic",
+      "name": "Dental Arts Clinic",
+      "area": "Mayur Vihar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.270Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.270Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.270Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.270Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.270Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.271Z",
+      "phone": "+91-11-30559433",
+      "experience": 11,
+      "rating": 3.6,
+      "reviews": 95,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-056",
+      "folder": "dental-care-centre",
+      "name": "Dental Care Centre",
+      "area": "Preet Vihar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.768Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.768Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.768Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.768Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.768Z",
+      "phone": "+91-11-34600047",
+      "experience": 22,
+      "rating": 4.5,
+      "reviews": 183,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-035",
+      "folder": "dental-care-plus",
+      "name": "Dental Care Plus",
+      "area": "Patel Nagar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.203Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.203Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.203Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.203Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.203Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.203Z",
+      "phone": "+91-11-20485097",
+      "experience": 23,
+      "rating": 3.8,
+      "reviews": 46,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-063",
+      "folder": "dental-cure-clinic",
+      "name": "Dental Cure Clinic",
+      "area": "Paschim Vihar",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.907Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.907Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.907Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.907Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.907Z",
+      "phone": "+91-11-47550378",
+      "experience": 18,
+      "rating": 4.7,
+      "reviews": 138,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-041",
+      "folder": "dental-excellence",
+      "name": "Dental Excellence",
+      "area": "Dwarka",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.215Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.215Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.215Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.215Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.216Z",
+      "phone": "+91-11-35985095",
+      "experience": 29,
+      "rating": 4.5,
+      "reviews": 56,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-047",
+      "folder": "dental-experts-clinic",
+      "name": "Dental Experts Clinic",
+      "area": "South Extension",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.187Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.187Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.187Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.187Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.187Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.188Z",
+      "phone": "+91-11-22135221",
+      "experience": 15,
+      "rating": 4.7,
+      "reviews": 156,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-066",
+      "folder": "dental-health-centre",
+      "name": "Dental Health Centre",
+      "area": "Uttam Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.136Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.136Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.136Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.136Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.136Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.136Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.137Z",
+      "phone": "+91-11-35384824",
+      "experience": 16,
+      "rating": 3.5,
+      "reviews": 56,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-029",
+      "folder": "dental-health-clinic",
+      "name": "Dental Health Clinic",
+      "area": "Tilak Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.428Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.428Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.428Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.428Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.428Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.429Z",
+      "phone": "+91-11-23770253",
+      "experience": 25,
+      "rating": 3.8,
+      "reviews": 96,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-012",
+      "folder": "dental-solutions",
+      "name": "Dental Solutions",
+      "area": "South Extension",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.385Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.385Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.385Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.385Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.385Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.385Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.386Z",
+      "phone": "+91-11-26510051",
+      "experience": 10,
+      "rating": 4.7,
+      "reviews": 127,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-051",
+      "folder": "dental-speciality-centre",
+      "name": "Dental Speciality Centre",
+      "area": "Malviya Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.223Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.223Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.223Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.223Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.223Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.223Z",
+      "phone": "+91-11-43227248",
+      "experience": 24,
+      "rating": 4.4,
+      "reviews": 149,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-060",
+      "folder": "dental-treatment-centre",
+      "name": "Dental Treatment Centre",
+      "area": "Ashok Vihar",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.791Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.791Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.791Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.791Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.791Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.791Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.791Z",
+      "phone": "+91-11-42676498",
+      "experience": 14,
+      "rating": 3.9,
+      "reviews": 185,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-025",
+      "folder": "dr-agarwals-dental-clinic",
+      "name": "Dr. Agarwal's Dental Clinic",
+      "area": "Ashok Vihar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.303Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.303Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.303Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.303Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.303Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.303Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.304Z",
+      "phone": "+91-11-31536149",
+      "experience": 6,
+      "rating": 4.5,
+      "reviews": 67,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-073",
+      "folder": "dr-amit-guptas-dental-clinic",
+      "name": "Dr. Amit Gupta's Dental Clinic",
+      "area": "Rajouri Garden",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.921Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.921Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.921Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.921Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.921Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.922Z",
+      "phone": "+91-11-44871677",
+      "experience": 26,
+      "rating": 4.2,
+      "reviews": 100,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-096",
+      "folder": "dr-anjali-mehtas-dental-clinic",
+      "name": "Dr. Anjali Mehta's Dental Clinic",
+      "area": "Shalimar Bagh",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.456Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.456Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.456Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.456Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.456Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.456Z",
+      "phone": "+91-11-21654426",
+      "experience": 29,
+      "rating": 4.6,
+      "reviews": 149,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-055",
+      "folder": "dr-aroras-dental-centre",
+      "name": "Dr. Arora's Dental Centre",
+      "area": "Mayur Vihar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.509Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.509Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.509Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.509Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.509Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.509Z",
+      "phone": "+91-11-24009286",
+      "experience": 14,
+      "rating": 4,
+      "reviews": 92,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-081",
+      "folder": "dr-arun-khannas-dental-clinic",
+      "name": "Dr. Arun Khanna's Dental Clinic",
+      "area": "Lajpat Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.936Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.936Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.936Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.936Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.936Z",
+      "phone": "+91-11-40135275",
+      "experience": 6,
+      "rating": 3.8,
+      "reviews": 96,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-087",
+      "folder": "dr-ashok-mittals-dental-clinic",
+      "name": "Dr. Ashok Mittal's Dental Clinic",
+      "area": "Kalkaji",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.845Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.845Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.845Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.845Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.845Z",
+      "phone": "+91-11-21357370",
+      "experience": 25,
+      "rating": 4.7,
+      "reviews": 41,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-046",
+      "folder": "dr-bansals-dental-care",
+      "name": "Dr. Bansal's Dental Care",
+      "area": "Lajpat Nagar",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.133Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.133Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.133Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.133Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.133Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.133Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.134Z",
+      "phone": "+91-11-29537166",
+      "experience": 16,
+      "rating": 3.8,
+      "reviews": 120,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-037",
+      "folder": "dr-bhatias-dental-practice",
+      "name": "Dr. Bhatia's Dental Practice",
+      "area": "Karol Bagh",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.560Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.560Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.560Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.560Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.561Z",
+      "phone": "+91-11-48646016",
+      "experience": 25,
+      "rating": 4.4,
+      "reviews": 78,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-040",
+      "folder": "dr-chopras-dental-centre",
+      "name": "Dr. Chopra's Dental Centre",
+      "area": "Rohini",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:28.922Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:28.922Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:28.922Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:28.922Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:28.922Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:28.923Z",
+      "phone": "+91-11-23953024",
+      "experience": 22,
+      "rating": 4,
+      "reviews": 90,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-067",
+      "folder": "dr-das-dental-practice",
+      "name": "Dr. Das Dental Practice",
+      "area": "Najafgarh",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.631Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.631Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.631Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.631Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.632Z",
+      "phone": "+91-11-46528737",
+      "experience": 24,
+      "rating": 3.9,
+      "reviews": 99,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-102",
+      "folder": "dr-deepa-malhotras-dental-clinic",
+      "name": "Dr. Deepa Malhotra's Dental Clinic",
+      "area": "Najafgarh",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.868Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.868Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.868Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.868Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.868Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.869Z",
+      "phone": "+91-11-46836259",
+      "experience": 21,
+      "rating": 3.8,
+      "reviews": 62,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-052",
+      "folder": "dr-goyals-dental-practice",
+      "name": "Dr. Goyal's Dental Practice",
+      "area": "Kalkaji",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.332Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.332Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.332Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.332Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.332Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.332Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.333Z",
+      "phone": "+91-11-41750446",
+      "experience": 9,
+      "rating": 3.9,
+      "reviews": 78,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-004",
+      "folder": "dr-guptas-dental-care",
+      "name": "Dr. Gupta's Dental Care",
+      "area": "Pitampura",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.975Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.975Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.975Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.975Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.975Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.976Z",
+      "phone": "+91-11-46610813",
+      "experience": 5,
+      "rating": 3.7,
+      "reviews": 164,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-028",
+      "folder": "dr-jains-dental-centre",
+      "name": "Dr. Jain's Dental Centre",
+      "area": "Paschim Vihar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.525Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.525Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.525Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.525Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.525Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.526Z",
+      "phone": "+91-11-30756416",
+      "experience": 8,
+      "rating": 3.5,
+      "reviews": 153,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-043",
+      "folder": "dr-kapoors-dental-clinic",
+      "name": "Dr. Kapoor's Dental Clinic",
+      "area": "Vasant Kunj",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:28.947Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:28.947Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:28.947Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:28.947Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:28.947Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:28.947Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:28.947Z",
+      "phone": "+91-11-24672901",
+      "experience": 25,
+      "rating": 4.5,
+      "reviews": 153,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-120",
+      "folder": "dr-kavita-jains-dental-clinic",
+      "name": "Dr. Kavita Jain's Dental Clinic",
+      "area": "Saket",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.469Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.469Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.469Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.469Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.469Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.470Z",
+      "phone": "+91-11-22318852",
+      "experience": 13,
+      "rating": 4.7,
+      "reviews": 110,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-031",
+      "folder": "dr-khannas-dental-studio",
+      "name": "Dr. Khanna's Dental Studio",
+      "area": "Uttam Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.572Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.572Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.572Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.572Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.572Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.572Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.573Z",
+      "phone": "+91-11-31494151",
+      "experience": 23,
+      "rating": 4.8,
+      "reviews": 25,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-007",
+      "folder": "dr-kumars-dental-centre",
+      "name": "Dr. Kumar's Dental Centre",
+      "area": "Janakpuri",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.169Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.169Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.169Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.169Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.170Z",
+      "phone": "+91-11-31486105",
+      "experience": 5,
+      "rating": 4.4,
+      "reviews": 170,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-034",
+      "folder": "dr-malhotras-dental",
+      "name": "Dr. Malhotra's Dental",
+      "area": "Rajendra Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.679Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.679Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.679Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.679Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.679Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.680Z",
+      "phone": "+91-11-20022618",
+      "experience": 11,
+      "rating": 3.8,
+      "reviews": 104,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-105",
+      "folder": "dr-manish-kapoors-dental-clinic",
+      "name": "Dr. Manish Kapoor's Dental Clinic",
+      "area": "Patel Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.830Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.830Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.830Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.830Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.830Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.830Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.831Z",
+      "phone": "+91-11-28423032",
+      "experience": 19,
+      "rating": 4.3,
+      "reviews": 25,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-088",
+      "folder": "dr-meera-goyals-dental-clinic",
+      "name": "Dr. Meera Goyal's Dental Clinic",
+      "area": "Nehru Place",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.706Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.706Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.706Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.706Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.707Z",
+      "phone": "+91-11-35326282",
+      "experience": 24,
+      "rating": 4.7,
+      "reviews": 115,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-016",
+      "folder": "dr-mehtas-dental-clinic",
+      "name": "Dr. Mehta's Dental Clinic",
+      "area": "Malviya Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.994Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.994Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.994Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.994Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.995Z",
+      "phone": "+91-11-49950455",
+      "experience": 14,
+      "rating": 3.7,
+      "reviews": 46,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-049",
+      "folder": "dr-mittals-dental-studio",
+      "name": "Dr. Mittal's Dental Studio",
+      "area": "Hauz Khas",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.326Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.326Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.326Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.326Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.327Z",
+      "phone": "+91-11-27595323",
+      "experience": 14,
+      "rating": 3.6,
+      "reviews": 69,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-070",
+      "folder": "dr-nairs-dental-centre",
+      "name": "Dr. Nair's Dental Centre",
+      "area": "Patel Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.429Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.429Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.429Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.429Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.429Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.429Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.429Z",
+      "phone": "+91-11-27423541",
+      "experience": 7,
+      "rating": 4.7,
+      "reviews": 88,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-094",
+      "folder": "dr-neha-singhs-dental-clinic",
+      "name": "Dr. Neha Singh's Dental Clinic",
+      "area": "Model Town",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.398Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.398Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.398Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.398Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.398Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.398Z",
+      "phone": "+91-11-48402630",
+      "experience": 27,
+      "rating": 3.9,
+      "reviews": 109,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-118",
+      "folder": "dr-pooja-reddys-dental-clinic",
+      "name": "Dr. Pooja Reddy's Dental Clinic",
+      "area": "Green Park",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.601Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.601Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.601Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.601Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.601Z",
+      "phone": "+91-11-39569199",
+      "experience": 18,
+      "rating": 3.9,
+      "reviews": 44,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-072",
+      "folder": "dr-priya-sharmas-dental-clinic",
+      "name": "Dr. Priya Sharma's Dental Clinic",
+      "area": "Karol Bagh",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.365Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.365Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.365Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.365Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.365Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.365Z",
+      "phone": "+91-11-35642357",
+      "experience": 4,
+      "rating": 3.9,
+      "reviews": 93,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-099",
+      "folder": "dr-rahul-agarwals-dental-clinic",
+      "name": "Dr. Rahul Agarwal's Dental Clinic",
+      "area": "Tilak Nagar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.088Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.088Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.088Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.088Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.088Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.088Z",
+      "phone": "+91-11-26264534",
+      "experience": 23,
+      "rating": 4.6,
+      "reviews": 73,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-071",
+      "folder": "dr-rajesh-kumars-dental-clinic",
+      "name": "Dr. Rajesh Kumar's Dental Clinic",
+      "area": "Connaught Place",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.692Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.692Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.692Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.692Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.692Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.692Z",
+      "phone": "+91-11-43834726",
+      "experience": 29,
+      "rating": 4,
+      "reviews": 88,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-061",
+      "folder": "dr-raos-dental-studio",
+      "name": "Dr. Rao's Dental Studio",
+      "area": "Shalimar Bagh",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.808Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.808Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.808Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.808Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.808Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.808Z",
+      "phone": "+91-11-32242947",
+      "experience": 21,
+      "rating": 4.6,
+      "reviews": 84,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-090",
+      "folder": "dr-rashmi-sethis-dental-clinic",
+      "name": "Dr. Rashmi Sethi's Dental Clinic",
+      "area": "Mayur Vihar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.579Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.579Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.579Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.579Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.579Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.580Z",
+      "phone": "+91-11-30152436",
+      "experience": 10,
+      "rating": 4.5,
+      "reviews": 96,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-022",
+      "folder": "dr-reddys-dental-practice",
+      "name": "Dr. Reddy's Dental Practice",
+      "area": "Laxmi Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.617Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.617Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.617Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.617Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.617Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.617Z",
+      "phone": "+91-11-29065084",
+      "experience": 23,
+      "rating": 3.7,
+      "reviews": 73,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-104",
+      "folder": "dr-rita-chopras-dental-clinic",
+      "name": "Dr. Rita Chopra's Dental Clinic",
+      "area": "Rajendra Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.708Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.708Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.708Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.708Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.708Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.708Z",
+      "phone": "+91-11-49751311",
+      "experience": 28,
+      "rating": 4.6,
+      "reviews": 139,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-083",
+      "folder": "dr-sanjeev-bhatias-dental-clinic",
+      "name": "Dr. Sanjeev Bhatia's Dental Clinic",
+      "area": "Green Park",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.528Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.528Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.528Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.528Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.528Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.528Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.528Z",
+      "phone": "+91-11-41922043",
+      "experience": 29,
+      "rating": 4.5,
+      "reviews": 40,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-064",
+      "folder": "dr-saxenas-dental-care",
+      "name": "Dr. Saxena's Dental Care",
+      "area": "Tilak Nagar",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.955Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.955Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.955Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.955Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.955Z",
+      "phone": "+91-11-43663803",
+      "experience": 24,
+      "rating": 4.4,
+      "reviews": 81,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-058",
+      "folder": "dr-sethis-dental-clinic",
+      "name": "Dr. Sethi's Dental Clinic",
+      "area": "Shahdara",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.153Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.153Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.153Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.153Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.153Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.153Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.153Z",
+      "phone": "+91-11-24189358",
+      "experience": 27,
+      "rating": 4.6,
+      "reviews": 147,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-001",
+      "folder": "dr-sharmas-dental-clinic",
+      "name": "Dr. Sharma's Dental Clinic",
+      "area": "Connaught Place",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.106Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.106Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.106Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.106Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.106Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.106Z",
+      "phone": "+91-11-45565955",
+      "experience": 6,
+      "rating": 4.5,
+      "reviews": 132,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-013",
+      "folder": "dr-singhs-dental-studio",
+      "name": "Dr. Singh's Dental Studio",
+      "area": "Green Park",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.187Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.187Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.187Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.187Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.187Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.187Z",
+      "phone": "+91-11-38094690",
+      "experience": 29,
+      "rating": 4.5,
+      "reviews": 93,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-086",
+      "folder": "dr-sunita-bansals-dental-clinic",
+      "name": "Dr. Sunita Bansal's Dental Clinic",
+      "area": "Malviya Nagar",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.383Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.383Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.383Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.383Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.383Z",
+      "phone": "+91-11-23156241",
+      "experience": 8,
+      "rating": 3.7,
+      "reviews": 102,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-117",
+      "folder": "dr-suresh-patels-dental-clinic",
+      "name": "Dr. Suresh Patel's Dental Clinic",
+      "area": "South Extension",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.553Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.553Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.553Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.553Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.553Z",
+      "phone": "+91-11-45128494",
+      "experience": 14,
+      "rating": 4.1,
+      "reviews": 41,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-010",
+      "folder": "dr-vermas-dental-practice",
+      "name": "Dr. Verma's Dental Practice",
+      "area": "Defence Colony",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.254Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.254Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.254Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.254Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.254Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.254Z",
+      "phone": "+91-11-22911174",
+      "experience": 14,
+      "rating": 4.8,
+      "reviews": 9,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-115",
+      "folder": "dr-vikram-vermas-dental-clinic",
+      "name": "Dr. Vikram Verma's Dental Clinic",
+      "area": "Defence Colony",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.614Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.614Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.614Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.614Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.614Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.614Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.614Z",
+      "phone": "+91-11-40481061",
+      "experience": 21,
+      "rating": 4.5,
+      "reviews": 176,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-024",
+      "folder": "elite-dental-care",
+      "name": "Elite Dental Care",
+      "area": "Model Town",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.663Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.663Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.663Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.663Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.663Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.663Z",
+      "phone": "+91-11-25835174",
+      "experience": 24,
+      "rating": 4,
+      "reviews": 83,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-017",
+      "folder": "excel-dental-centre",
+      "name": "Excel Dental Centre",
+      "area": "Kalkaji",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.115Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.115Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.115Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.115Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.115Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.115Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.116Z",
+      "phone": "+91-11-27288772",
+      "experience": 23,
+      "rating": 3.6,
+      "reviews": 29,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-033",
+      "folder": "expert-dental-clinic",
+      "name": "Expert Dental Clinic",
+      "area": "Kirti Nagar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.410Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.410Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.410Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.410Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.410Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.410Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.410Z",
+      "phone": "+91-11-24715016",
+      "experience": 18,
+      "rating": 4.3,
+      "reviews": 16,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-009",
+      "folder": "family-dental-care",
+      "name": "Family Dental Care",
+      "area": "Greater Kailash",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.119Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.119Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.119Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.119Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.120Z",
+      "phone": "+91-11-30508544",
+      "experience": 12,
+      "rating": 3.9,
+      "reviews": 33,
+      "consultationFee": "₹300"
+    },
+    {
+      "id": "DENT-DEL-057",
+      "folder": "family-oral-care",
+      "name": "Family Oral Care",
+      "area": "Laxmi Nagar",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.589Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.589Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.589Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.589Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.589Z",
+      "phone": "+91-11-40635677",
+      "experience": 7,
+      "rating": 3.6,
+      "reviews": 169,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-015",
+      "folder": "gentle-dental-care",
+      "name": "Gentle Dental Care",
+      "area": "Saket",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.286Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.286Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.286Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.286Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.286Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.287Z",
+      "phone": "+91-11-49221132",
+      "experience": 18,
+      "rating": 4.4,
+      "reviews": 146,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-005",
+      "folder": "happy-smiles-dental",
+      "name": "Happy Smiles Dental",
+      "area": "Rohini",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.090Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.090Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.090Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.090Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.090Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.090Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.090Z",
+      "phone": "+91-11-33258191",
+      "experience": 4,
+      "rating": 4.7,
+      "reviews": 25,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-021",
+      "folder": "modern-dental-studio",
+      "name": "Modern Dental Studio",
+      "area": "Preet Vihar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.664Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.664Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.664Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.664Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.665Z",
+      "phone": "+91-11-32783524",
+      "experience": 18,
+      "rating": 3.7,
+      "reviews": 24,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-068",
+      "folder": "oral-care-clinic",
+      "name": "Oral Care Clinic",
+      "area": "Kirti Nagar",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.351Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.351Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.351Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.351Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.351Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.351Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.352Z",
+      "phone": "+91-11-38715664",
+      "experience": 15,
+      "rating": 4.8,
+      "reviews": 100,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-054",
+      "folder": "oral-health-clinic",
+      "name": "Oral Health Clinic",
+      "area": "Okhla",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.543Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.543Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.543Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.543Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.543Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.544Z",
+      "phone": "+91-11-28373002",
+      "experience": 29,
+      "rating": 3.8,
+      "reviews": 91,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-050",
+      "folder": "pearl-dental-care",
+      "name": "Pearl Dental Care",
+      "area": "Saket",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.019Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.019Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.019Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.019Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.019Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.019Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.019Z",
+      "phone": "+91-11-44261008",
+      "experience": 22,
+      "rating": 4.2,
+      "reviews": 148,
+      "consultationFee": "₹500"
+    },
+    {
+      "id": "DENT-DEL-003",
+      "folder": "perfect-teeth-clinic",
+      "name": "Perfect Teeth Clinic",
+      "area": "Rajouri Garden",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "trust-blue"
+      },
+      "features": [
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.488Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.488Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.488Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.488Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.488Z",
+      "phone": "+91-11-39244883",
+      "experience": 19,
+      "rating": 3.8,
+      "reviews": 50,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-039",
+      "folder": "precision-dental-care",
+      "name": "Precision Dental Care",
+      "area": "Pitampura",
+      "design": {
+        "archetype": "ethereal-flow",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.890Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.890Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.890Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.890Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.890Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.890Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.891Z",
+      "phone": "+91-11-40308358",
+      "experience": 22,
+      "rating": 4.6,
+      "reviews": 65,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-018",
+      "folder": "premier-dental-clinic",
+      "name": "Premier Dental Clinic",
+      "area": "Nehru Place",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.299Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.299Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.299Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.299Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.300Z",
+      "phone": "+91-11-31342111",
+      "experience": 13,
+      "rating": 4.4,
+      "reviews": 52,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-027",
+      "folder": "quality-dental-services",
+      "name": "Quality Dental Services",
+      "area": "Punjabi Bagh",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:29.315Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.315Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:29.315Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:29.315Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.315Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.315Z",
+      "phone": "+91-11-45553139",
+      "experience": 6,
+      "rating": 4.2,
+      "reviews": 42,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-062",
+      "folder": "smile-bright-dental",
+      "name": "Smile Bright Dental",
+      "area": "Punjabi Bagh",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.349Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.349Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.349Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.349Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.349Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.349Z"
+        }
+      ],
+      "featureCount": 6,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.349Z",
+      "phone": "+91-11-40949051",
+      "experience": 7,
+      "rating": 4.2,
+      "reviews": 154,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-069",
+      "folder": "smile-dental-studio",
+      "name": "Smile Dental Studio",
+      "area": "Rajendra Nagar",
+      "design": {
+        "archetype": "playful-interactive",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.695Z"
+        },
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:30.695Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.695Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.695Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.695Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.696Z",
+      "phone": "+91-11-34547867",
+      "experience": 26,
+      "rating": 4.7,
+      "reviews": 145,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-044",
+      "folder": "smile-studio-dental",
+      "name": "Smile Studio Dental",
+      "area": "Greater Kailash",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "fresh-green"
+      },
+      "features": [
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.678Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.678Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:30.678Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.678Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.678Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.678Z",
+      "phone": "+91-11-48519065",
+      "experience": 4,
+      "rating": 4,
+      "reviews": 36,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-053",
+      "folder": "smile-zone-dental",
+      "name": "Smile Zone Dental",
+      "area": "Nehru Place",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "warm-coral"
+      },
+      "features": [
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.071Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:30.071Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.071Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.071Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.072Z",
+      "phone": "+91-11-28923935",
+      "experience": 15,
+      "rating": 4.4,
+      "reviews": 48,
+      "consultationFee": "₹1000"
+    },
+    {
+      "id": "DENT-DEL-036",
+      "folder": "superior-dental-services",
+      "name": "Superior Dental Services",
+      "area": "Connaught Place",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "calm-teal"
+      },
+      "features": [
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.016Z"
+        },
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.016Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.016Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:30.016Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.016Z",
+      "phone": "+91-11-23945624",
+      "experience": 26,
+      "rating": 4.2,
+      "reviews": 17,
+      "consultationFee": "₹200"
+    },
+    {
+      "id": "DENT-DEL-059",
+      "folder": "tooth-care-dental",
+      "name": "Tooth Care Dental",
+      "area": "Model Town",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "seo-geo",
+          "name": "SEO & Geo Optimization",
+          "integratedAt": "2025-12-04T15:03:30.241Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:30.241Z"
+        },
+        {
+          "id": "smile-assessment",
+          "name": "Cost Estimate / Smile Assessment Quiz",
+          "integratedAt": "2025-12-04T15:03:30.241Z"
+        },
+        {
+          "id": "bill-generation",
+          "name": "Bill Generation",
+          "integratedAt": "2025-12-04T15:03:30.241Z"
+        }
+      ],
+      "featureCount": 4,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:30.242Z",
+      "phone": "+91-11-45193781",
+      "experience": 14,
+      "rating": 3.9,
+      "reviews": 197,
+      "consultationFee": "₹700"
+    },
+    {
+      "id": "DENT-DEL-014",
+      "folder": "white-pearl-dental",
+      "name": "White Pearl Dental",
+      "area": "Hauz Khas",
+      "design": {
+        "archetype": "clean-saas",
+        "colorScheme": "professional-slate"
+      },
+      "features": [
+        {
+          "id": "voice-assistant",
+          "name": "Voice Assistant",
+          "integratedAt": "2025-12-04T15:03:29.650Z"
+        },
+        {
+          "id": "ai-chatbot",
+          "name": "AI Enabled Chatbot",
+          "integratedAt": "2025-12-04T15:03:29.650Z"
+        },
+        {
+          "id": "multi-language",
+          "name": "Multi-Language Support",
+          "integratedAt": "2025-12-04T15:03:29.650Z"
+        },
+        {
+          "id": "file-upload",
+          "name": "File Upload for Reports/X-rays",
+          "integratedAt": "2025-12-04T15:03:29.650Z"
+        },
+        {
+          "id": "appointment-booking",
+          "name": "Online Appointment & Scheduling",
+          "integratedAt": "2025-12-04T15:03:29.650Z"
+        }
+      ],
+      "featureCount": 5,
+      "framework": {
+        "base": "Next.js",
+        "styling": "Tailwind CSS",
+        "ui": "shadcn/ui",
+        "animations": "Framer Motion"
+      },
+      "generatedAt": "2025-12-04T15:03:29.651Z",
+      "phone": "+91-11-43434625",
+      "experience": 25,
+      "rating": 3.9,
+      "reviews": 73,
+      "consultationFee": "₹1000"
+    }
+  ]
+}

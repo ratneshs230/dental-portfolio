@@ -1,0 +1,19 @@
+{
+  "name": "dental-website-generator",
+  "version": "1.0.0",
+  "description": "Sub-agent system for generating 100 dental clinic websites",
+  "type": "module",
+  "main": "orchestrator.js",
+  "scripts": {
+    "start": "node orchestrator.js",
+    "generate": "node orchestrator.js --generate",
+    "generate-single": "node orchestrator.js --single",
+    "preview": "node orchestrator.js --preview"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-progress": "^3.12.0",
+    "fs-extra": "^11.2.0",
+    "uuid": "^9.0.0"
+  }
+}

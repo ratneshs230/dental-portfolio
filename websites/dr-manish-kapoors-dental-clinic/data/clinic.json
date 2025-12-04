@@ -1,0 +1,161 @@
+{
+  "id": "DENT-DEL-105",
+  "name": "Dr. Manish Kapoor's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "391, Patel Nagar, New Delhi - 11046",
+  "area": "Patel Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.70955838428484,
+    "lng": 77.31674628791698
+  },
+  "phones": [
+    "+91-11-28423032",
+    "+91-9955829863"
+  ],
+  "email": "info@drmanishkapoorsdentalclinic@gmail.com",
+  "existingWebsite": null,
+  "established": 2017,
+  "experience": 19,
+  "dentists": 4,
+  "staff": 8,
+  "qualifications": [
+    "MDS (Prosthodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/1149/CD/2005",
+    "state_registration": "DDC/DEL/80046",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Teeth Whitening",
+      "Dental Bonding",
+      "Dental Veneers",
+      "Smile Makeover"
+    ],
+    "specialized": [
+      "Pediatric Dentistry",
+      "Sleep Apnea Treatment",
+      "Endodontic Surgery",
+      "Dental Implants",
+      "Orthodontic Treatment"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 3,
+    "equipment": [
+      "OPG Machine",
+      "Digital X-Ray",
+      "CAD/CAM Technology",
+      "Ultrasonic Scaler",
+      "Intraoral Camera",
+      "Teeth Whitening Unit"
+    ],
+    "sterilization": "Autoclave",
+    "waiting_area": "Premium",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹300",
+  "avgTreatmentValue": "₹4958",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "HDFC Ergo",
+    "Bajaj Allianz",
+    "Max Bupa"
+  ],
+  "monthlyPatients": 154,
+  "patientBase": 3137,
+  "catchmentArea": "5 km radius",
+  "googleRating": 4.4,
+  "totalReviews": 25,
+  "avgRating": 4.3,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Good results",
+    "Professional staff",
+    "Clean clinic"
+  ],
+  "opportunityScore": 79,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dr. Manish Kapoor's Dental Clinic | Best Dentist in Patel Nagar, Delhi",
+    "description": "Dr. Manish Kapoor's Dental Clinic - 19+ years of dental excellence in Patel Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Patel Nagar",
+      "dental clinic Patel Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Patel Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Manish Kapoor's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "391, Patel Nagar, New Delhi - 11046",
+        "addressLocality": "Patel Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-28423032",
+      "priceRange": "₹300",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.3,
+        "reviewCount": 25
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.815Z"
+}

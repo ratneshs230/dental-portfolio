@@ -1,0 +1,155 @@
+{
+  "id": "DENT-DEL-012",
+  "name": "Dental Solutions",
+  "type": "Dental Clinic",
+  "address": "751, South Extension, New Delhi - 11098",
+  "area": "South Extension",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.75393073022317,
+    "lng": 77.40162649562178
+  },
+  "phones": [
+    "+91-11-26510051",
+    "+91-8030824507"
+  ],
+  "email": "info@dentalsolutions@gmail.com",
+  "existingWebsite": "http://www.dentalsolutions.com",
+  "established": 1995,
+  "experience": 10,
+  "dentists": 2,
+  "staff": 2,
+  "qualifications": [
+    "MDS (Pedodontics)",
+    "MDS (Prosthodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/8371/AC/2021",
+    "state_registration": "DDC/DEL/64370",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Bonding",
+      "Smile Makeover",
+      "Dental Veneers"
+    ],
+    "specialized": [
+      "Dental Implants",
+      "Invisalign",
+      "Pediatric Dentistry"
+    ],
+    "emergency": false,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Digital X-Ray",
+      "Microscope",
+      "Rotary Endodontics"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Basic",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹9543",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Star Health",
+    "ICICI Lombard"
+  ],
+  "monthlyPatients": 247,
+  "patientBase": 602,
+  "catchmentArea": "8 km radius",
+  "googleRating": null,
+  "totalReviews": 127,
+  "avgRating": 4.7,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Minimal waiting",
+    "Gentle treatment",
+    "Good results"
+  ],
+  "opportunityScore": 71,
+  "digitalScore": 16,
+  "seo": {
+    "title": "Dental Solutions | Best Dentist in South Extension, Delhi",
+    "description": "Dental Solutions - 10+ years of dental excellence in South Extension. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist South Extension",
+      "dental clinic South Extension",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment South Extension"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dental Solutions",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "751, South Extension, New Delhi - 11098",
+        "addressLocality": "South Extension",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-26510051",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "reviewCount": 127
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.371Z"
+}

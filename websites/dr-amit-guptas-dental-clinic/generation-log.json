@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.922Z",
+  "clinic": {
+    "id": "DENT-DEL-073",
+    "name": "Dr. Amit Gupta's Dental Clinic",
+    "area": "Rajouri Garden"
+  },
+  "design": {
+    "archetype": "playful-interactive",
+    "colorScheme": "calm-teal"
+  },
+  "features": [
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "multi-language",
+      "name": "Multi-Language Support"
+    },
+    {
+      "id": "voice-assistant",
+      "name": "Voice Assistant"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization"
+    },
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

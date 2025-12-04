@@ -1,0 +1,157 @@
+{
+  "id": "DENT-DEL-016",
+  "name": "Dr. Mehta's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "529, Malviya Nagar, New Delhi - 11097",
+  "area": "Malviya Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.781740115479135,
+    "lng": 77.18877156664969
+  },
+  "phones": [
+    "+91-11-49950455",
+    "+91-7772509262"
+  ],
+  "email": "info@drmehtasdentalclinic@gmail.com",
+  "existingWebsite": "http://www.drmehtasdentalclinic.com",
+  "established": 2003,
+  "experience": 14,
+  "dentists": 5,
+  "staff": 6,
+  "qualifications": [
+    "Aesthetic Dentistry Certification",
+    "MDS (Prosthodontics)",
+    "MDS (Oral Surgery)"
+  ],
+  "registration": {
+    "dci_number": "DCI/2406/AD/2020",
+    "state_registration": "DDC/DEL/51448",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Gum Contouring",
+      "Dental Bonding",
+      "Dental Veneers",
+      "Teeth Whitening"
+    ],
+    "specialized": [
+      "Pediatric Dentistry",
+      "Sleep Apnea Treatment",
+      "Orthodontic Treatment",
+      "TMJ Treatment",
+      "Dental Implants"
+    ],
+    "emergency": false,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Laser Equipment",
+      "Microscope",
+      "Intraoral Camera",
+      "Digital X-Ray"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Basic",
+    "parking": "Available"
+  },
+  "consultationFee": "₹1000",
+  "avgTreatmentValue": "₹8717",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 54,
+  "patientBase": 4017,
+  "catchmentArea": "4 km radius",
+  "googleRating": 3.8,
+  "totalReviews": 46,
+  "avgRating": 3.7,
+  "positiveThemes": [
+    "Minimal waiting",
+    "Reasonable prices",
+    "Clean clinic",
+    "Professional staff"
+  ],
+  "opportunityScore": 75,
+  "digitalScore": 31,
+  "seo": {
+    "title": "Dr. Mehta's Dental Clinic | Best Dentist in Malviya Nagar, Delhi",
+    "description": "Dr. Mehta's Dental Clinic - 14+ years of dental excellence in Malviya Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Malviya Nagar",
+      "dental clinic Malviya Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Malviya Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Mehta's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "529, Malviya Nagar, New Delhi - 11097",
+        "addressLocality": "Malviya Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-49950455",
+      "priceRange": "₹1000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.7,
+        "reviewCount": 46
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.982Z"
+}

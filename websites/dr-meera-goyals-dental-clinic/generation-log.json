@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2025-12-04T15:03:29.707Z",
+  "clinic": {
+    "id": "DENT-DEL-088",
+    "name": "Dr. Meera Goyal's Dental Clinic",
+    "area": "Nehru Place"
+  },
+  "design": {
+    "archetype": "playful-interactive",
+    "colorScheme": "fresh-green"
+  },
+  "features": [
+    {
+      "id": "multi-language",
+      "name": "Multi-Language Support"
+    },
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz"
+    },
+    {
+      "id": "appointment-booking",
+      "name": "Online Appointment & Scheduling"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot"
+    }
+  ],
+  "framework": {
+    "base": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui": "shadcn/ui",
+    "animations": "Framer Motion"
+  }
+}

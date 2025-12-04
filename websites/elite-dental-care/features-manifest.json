@@ -1,0 +1,30 @@
+{
+  "integratedFeatures": [
+    {
+      "id": "smile-assessment",
+      "name": "Cost Estimate / Smile Assessment Quiz",
+      "integratedAt": "2025-12-04T15:03:30.663Z"
+    },
+    {
+      "id": "seo-geo",
+      "name": "SEO & Geo Optimization",
+      "integratedAt": "2025-12-04T15:03:30.663Z"
+    },
+    {
+      "id": "bill-generation",
+      "name": "Bill Generation",
+      "integratedAt": "2025-12-04T15:03:30.663Z"
+    },
+    {
+      "id": "ai-chatbot",
+      "name": "AI Enabled Chatbot",
+      "integratedAt": "2025-12-04T15:03:30.663Z"
+    },
+    {
+      "id": "file-upload",
+      "name": "File Upload for Reports/X-rays",
+      "integratedAt": "2025-12-04T15:03:30.663Z"
+    }
+  ],
+  "totalFeatures": 5
+}

@@ -1,0 +1,152 @@
+{
+  "id": "DENT-DEL-104",
+  "name": "Dr. Rita Chopra's Dental Clinic",
+  "type": "Dental Clinic",
+  "address": "208, Rajendra Nagar, New Delhi - 11057",
+  "area": "Rajendra Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.56640368743731,
+    "lng": 77.03198889511636
+  },
+  "phones": [
+    "+91-11-49751311",
+    "+91-7120850481"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.drritachoprasdentalclinic.com",
+  "established": 2001,
+  "experience": 28,
+  "dentists": 5,
+  "staff": 5,
+  "qualifications": [
+    "Laser Dentistry Training",
+    "MDS (Periodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/2605/BB/2014",
+    "state_registration": "DDC/DEL/65244",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Dental Bonding"
+    ],
+    "specialized": [
+      "Oral Surgery",
+      "Dental Implants",
+      "Orthodontic Treatment"
+    ],
+    "emergency": false,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 6,
+    "equipment": [
+      "CAD/CAM Technology",
+      "Laser Equipment",
+      "Rotary Endodontics",
+      "Ultrasonic Scaler",
+      "Digital X-Ray"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Basic",
+    "parking": "Available"
+  },
+  "consultationFee": "₹700",
+  "avgTreatmentValue": "₹6902",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 148,
+  "patientBase": 3023,
+  "catchmentArea": "3 km radius",
+  "googleRating": 4.2,
+  "totalReviews": 139,
+  "avgRating": 4.6,
+  "positiveThemes": [
+    "Good results",
+    "Minimal waiting",
+    "Clean clinic"
+  ],
+  "opportunityScore": 59,
+  "digitalScore": 39,
+  "seo": {
+    "title": "Dr. Rita Chopra's Dental Clinic | Best Dentist in Rajendra Nagar, Delhi",
+    "description": "Dr. Rita Chopra's Dental Clinic - 28+ years of dental excellence in Rajendra Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Rajendra Nagar",
+      "dental clinic Rajendra Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Rajendra Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Rita Chopra's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "208, Rajendra Nagar, New Delhi - 11057",
+        "addressLocality": "Rajendra Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-49751311",
+      "priceRange": "₹700",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "reviewCount": 139
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.699Z"
+}

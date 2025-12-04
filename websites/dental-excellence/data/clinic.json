@@ -1,0 +1,154 @@
+{
+  "id": "DENT-DEL-041",
+  "name": "Dental Excellence",
+  "type": "Dental Clinic",
+  "address": "847, Dwarka, New Delhi - 11064",
+  "area": "Dwarka",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.68314797193827,
+    "lng": 77.2855057696007
+  },
+  "phones": [
+    "+91-11-35985095",
+    "+91-9643119957"
+  ],
+  "email": "info@dentalexcellence@gmail.com",
+  "existingWebsite": null,
+  "established": 2009,
+  "experience": 29,
+  "dentists": 2,
+  "staff": 8,
+  "qualifications": [
+    "BDS",
+    "MDS (Periodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/6065/AA/2001",
+    "state_registration": "DDC/DEL/45789",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Dental Bonding",
+      "Gum Contouring",
+      "Smile Makeover"
+    ],
+    "specialized": [
+      "Pediatric Dentistry",
+      "Dental Implants",
+      "Invisalign"
+    ],
+    "emergency": false,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 1,
+    "equipment": [
+      "Ultrasonic Scaler",
+      "Intraoral Camera",
+      "Rotary Endodontics",
+      "Microscope"
+    ],
+    "sterilization": "UV Sterilization",
+    "waiting_area": "Premium",
+    "parking": "Available"
+  },
+  "consultationFee": "₹200",
+  "avgTreatmentValue": "₹6836",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 368,
+  "patientBase": 3491,
+  "catchmentArea": "3 km radius",
+  "googleRating": 4.4,
+  "totalReviews": 56,
+  "avgRating": 4.5,
+  "positiveThemes": [
+    "Reasonable prices",
+    "Minimal waiting",
+    "Clean clinic",
+    "Professional staff"
+  ],
+  "opportunityScore": 86,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dental Excellence | Best Dentist in Dwarka, Delhi",
+    "description": "Dental Excellence - 29+ years of dental excellence in Dwarka. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Dwarka",
+      "dental clinic Dwarka",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Dwarka"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dental Excellence",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "847, Dwarka, New Delhi - 11064",
+        "addressLocality": "Dwarka",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-35985095",
+      "priceRange": "₹200",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "reviewCount": 56
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.206Z"
+}

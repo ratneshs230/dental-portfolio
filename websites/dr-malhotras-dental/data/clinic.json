@@ -1,0 +1,153 @@
+{
+  "id": "DENT-DEL-034",
+  "name": "Dr. Malhotra's Dental",
+  "type": "Dental Clinic",
+  "address": "942, Rajendra Nagar, New Delhi - 11036",
+  "area": "Rajendra Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.79401087895889,
+    "lng": 77.05699425145592
+  },
+  "phones": [
+    "+91-11-20022618",
+    "+91-7246569626"
+  ],
+  "email": "info@drmalhotrasdental@gmail.com",
+  "existingWebsite": null,
+  "established": 2017,
+  "experience": 11,
+  "dentists": 3,
+  "staff": 3,
+  "qualifications": [
+    "MDS (Orthodontics)",
+    "Certificate in Implantology"
+  ],
+  "registration": {
+    "dci_number": "DCI/1069/AA/2005",
+    "state_registration": "DDC/DEL/85992",
+    "verified": false
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Dental Veneers",
+      "Smile Makeover"
+    ],
+    "specialized": [
+      "Dental Implants",
+      "Oral Surgery",
+      "Pediatric Dentistry"
+    ],
+    "emergency": true,
+    "homeVisits": false
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Digital X-Ray",
+      "Laser Equipment",
+      "Ultrasonic Scaler",
+      "Rotary Endodontics",
+      "OPG Machine"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Premium",
+    "parking": "Street Parking"
+  },
+  "consultationFee": "₹1000",
+  "avgTreatmentValue": "₹6909",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [],
+  "monthlyPatients": 256,
+  "patientBase": 2662,
+  "catchmentArea": "5 km radius",
+  "googleRating": 3.8,
+  "totalReviews": 104,
+  "avgRating": 3.8,
+  "positiveThemes": [
+    "Professional staff",
+    "Minimal waiting",
+    "Reasonable prices",
+    "Gentle treatment"
+  ],
+  "opportunityScore": 80,
+  "digitalScore": 0,
+  "seo": {
+    "title": "Dr. Malhotra's Dental | Best Dentist in Rajendra Nagar, Delhi",
+    "description": "Dr. Malhotra's Dental - 11+ years of dental excellence in Rajendra Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Rajendra Nagar",
+      "dental clinic Rajendra Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Rajendra Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Malhotra's Dental",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "942, Rajendra Nagar, New Delhi - 11036",
+        "addressLocality": "Rajendra Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-20022618",
+      "priceRange": "₹1000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.8,
+        "reviewCount": 104
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:29.670Z"
+}

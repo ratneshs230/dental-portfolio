@@ -1,0 +1,156 @@
+{
+  "id": "DENT-DEL-031",
+  "name": "Dr. Khanna's Dental Studio",
+  "type": "Dental Clinic",
+  "address": "49, Uttam Nagar, New Delhi - 11021",
+  "area": "Uttam Nagar",
+  "city": "Delhi",
+  "coordinates": {
+    "lat": 28.5814053972182,
+    "lng": 77.04202751665647
+  },
+  "phones": [
+    "+91-11-31494151",
+    "+91-9142792960"
+  ],
+  "email": null,
+  "existingWebsite": "http://www.drkhannasdentalstudio.com",
+  "established": 2005,
+  "experience": 23,
+  "dentists": 3,
+  "staff": 4,
+  "qualifications": [
+    "MDS (Endodontics)",
+    "MDS (Pedodontics)"
+  ],
+  "registration": {
+    "dci_number": "DCI/3193/DA/2013",
+    "state_registration": "DDC/DEL/24345",
+    "verified": true
+  },
+  "services": {
+    "general": [
+      "Dental Checkup",
+      "Teeth Cleaning",
+      "Cavity Filling",
+      "Tooth Extraction",
+      "Root Canal Treatment"
+    ],
+    "cosmetic": [
+      "Smile Makeover",
+      "Dental Veneers"
+    ],
+    "specialized": [
+      "Periodontal Treatment",
+      "Pediatric Dentistry"
+    ],
+    "emergency": true,
+    "homeVisits": true
+  },
+  "infrastructure": {
+    "chairs": 2,
+    "equipment": [
+      "Laser Equipment",
+      "Microscope",
+      "Digital X-Ray",
+      "Ultrasonic Scaler",
+      "OPG Machine"
+    ],
+    "sterilization": "Both",
+    "waiting_area": "Comfortable",
+    "parking": "Available"
+  },
+  "consultationFee": "₹500",
+  "avgTreatmentValue": "₹8770",
+  "paymentModes": [
+    "Cash",
+    "Card",
+    "UPI",
+    "Insurance"
+  ],
+  "insuranceTieUps": [
+    "Star Health",
+    "Max Bupa",
+    "Apollo Munich"
+  ],
+  "monthlyPatients": 183,
+  "patientBase": 1865,
+  "catchmentArea": "6 km radius",
+  "googleRating": 4.5,
+  "totalReviews": 25,
+  "avgRating": 4.8,
+  "positiveThemes": [
+    "Minimal waiting",
+    "Clean clinic",
+    "Reasonable prices",
+    "Good results"
+  ],
+  "opportunityScore": 69,
+  "digitalScore": 29,
+  "seo": {
+    "title": "Dr. Khanna's Dental Studio | Best Dentist in Uttam Nagar, Delhi",
+    "description": "Dr. Khanna's Dental Studio - 23+ years of dental excellence in Uttam Nagar. Services include Dental Checkup, Teeth Cleaning, Cavity Filling. Book appointment today!",
+    "keywords": [
+      "dentist Uttam Nagar",
+      "dental clinic Uttam Nagar",
+      "best dentist Delhi",
+      "dental checkup",
+      "teeth cleaning",
+      "cavity filling",
+      "tooth extraction",
+      "root canal treatment",
+      "teeth treatment Uttam Nagar"
+    ],
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Khanna's Dental Studio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "49, Uttam Nagar, New Delhi - 11021",
+        "addressLocality": "Uttam Nagar",
+        "addressRegion": "Delhi",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-11-31494151",
+      "priceRange": "₹500",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "reviewCount": 25
+      }
+    }
+  },
+  "hours": {
+    "monday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "tuesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "wednesday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "thursday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "friday": {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    "saturday": {
+      "open": "09:00",
+      "close": "18:00"
+    },
+    "sunday": {
+      "open": "10:00",
+      "close": "14:00",
+      "note": "By Appointment"
+    }
+  },
+  "generatedAt": "2025-12-04T15:03:30.558Z"
+}
