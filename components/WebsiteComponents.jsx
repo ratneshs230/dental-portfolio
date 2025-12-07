@@ -1641,20 +1641,57 @@ export function MicIcon() {
 // Live Audio Widget Component - Manages Gemini voice session
 export function LiveAudioWidget({ clinic }) {
   const [status, setStatus] = useState('idle') // 'idle' | 'connecting' | 'connected' | 'error'
+  const sessionManagerRef = useRef(null)
 
   const startSession = async () => {
     if (status === 'connecting' || status === 'connected') return
 
     setStatus('connecting')
 
-    // Simulate connection for demo
-    setTimeout(() => {
-      setStatus('connected')
-      window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: true } }))
-    }, 500)
+    try {
+      // Dynamically import to avoid SSR issues
+      const { LiveSessionManager } = await import('../services/geminiService')
+
+      sessionManagerRef.current = new LiveSessionManager({
+        name: clinic?.name,
+        address: clinic?.address || (clinic?.area ? `${clinic.area}, ${clinic.city || 'Delhi'}` : 'Delhi, India'),
+        phone: clinic?.phone,
+        services: clinic?.services || []
+      })
+
+      sessionManagerRef.current.onConnect = () => {
+        console.log('Voice session connected!')
+        setStatus('connected')
+        window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: true } }))
+      }
+
+      sessionManagerRef.current.onDisconnect = () => {
+        console.log('Voice session disconnected')
+        setStatus('idle')
+        window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: false } }))
+      }
+
+      sessionManagerRef.current.onError = (err) => {
+        console.error('Voice session error:', err)
+        setStatus('error')
+        window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: false } }))
+        // Show error to user
+        alert(err.message || 'Failed to connect to voice assistant. Please try again.')
+      }
+
+      await sessionManagerRef.current.connect()
+    } catch (err) {
+      console.error('Failed to start session:', err)
+      setStatus('error')
+      alert('Failed to start voice session. Please check your microphone permissions.')
+    }
   }
 
   const endSession = async () => {
+    if (sessionManagerRef.current) {
+      await sessionManagerRef.current.disconnect()
+      sessionManagerRef.current = null
+    }
     setStatus('idle')
     window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: false } }))
   }
@@ -1663,12 +1700,21 @@ export function LiveAudioWidget({ clinic }) {
     const handleOpen = () => startSession()
     window.addEventListener('open-live-audio', handleOpen)
     return () => window.removeEventListener('open-live-audio', handleOpen)
-  }, [status])
+  }, [status, clinic])
 
   useEffect(() => {
     const handleEnd = () => endSession()
     window.addEventListener('end-live-audio', handleEnd)
     return () => window.removeEventListener('end-live-audio', handleEnd)
+  }, [])
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (sessionManagerRef.current) {
+        sessionManagerRef.current.disconnect()
+      }
+    }
   }, [])
 
   return null
