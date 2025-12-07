@@ -1461,10 +1461,11 @@ export function RoboDentist() {
   )
 }
 
-// Floating Robot Head Component - Peeking from bottom right
+// Floating Robot Head Component - Peeking from bottom right with voice indicator
 export function FloatingRobotHead() {
   const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
+  const [isVoiceActive, setIsVoiceActive] = useState(false)
   const headRef = useRef(null)
   const eyesRef = useRef(null)
 
@@ -1472,6 +1473,18 @@ export function FloatingRobotHead() {
   useEffect(() => {
     setIsMounted(true)
   }, [])
+
+  // Listen for voice session changes
+  useEffect(() => {
+    if (!isMounted) return
+
+    const handleVoiceChange = (e) => {
+      setIsVoiceActive(e.detail?.active || false)
+    }
+
+    window.addEventListener('voice-session-change', handleVoiceChange)
+    return () => window.removeEventListener('voice-session-change', handleVoiceChange)
+  }, [isMounted])
 
   useEffect(() => {
     if (!isMounted) return
@@ -1535,6 +1548,28 @@ export function FloatingRobotHead() {
           98% { transform: scaleY(0.1); }
         }
 
+        /* Radial sine wave animations for active voice */
+        @keyframes radialWave1 {
+          0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.8; }
+          100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+        }
+        @keyframes radialWave2 {
+          0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.6; }
+          100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+        }
+        @keyframes radialWave3 {
+          0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.4; }
+          100% { transform: translate(-50%, -50%) scale(1.9); opacity: 0; }
+        }
+        @keyframes voicePulse {
+          0%, 100% { box-shadow: 0 0 20px rgba(0,229,255,0.4), inset 0 0 15px rgba(0,229,255,0.2); }
+          50% { box-shadow: 0 0 40px rgba(0,229,255,0.6), inset 0 0 25px rgba(0,229,255,0.3); }
+        }
+        @keyframes eyeGlow {
+          0%, 100% { box-shadow: 0 0 12px #00e5ff; }
+          50% { box-shadow: 0 0 25px #00e5ff, 0 0 40px rgba(0,229,255,0.5); }
+        }
+
         .floating-robot-container {
           position: fixed;
           bottom: 0;
@@ -1551,6 +1586,33 @@ export function FloatingRobotHead() {
 
         .floating-head-wrapper {
           animation: floatBob 3s ease-in-out infinite;
+          position: relative;
+        }
+
+        /* Radial sine wave rings - only visible when voice active */
+        .voice-wave-ring {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100px;
+          height: 100px;
+          border: 2px solid rgba(0,229,255,0.6);
+          border-radius: 50%;
+          pointer-events: none;
+          opacity: 0;
+        }
+
+        .voice-active .voice-wave-ring:nth-child(1) {
+          animation: radialWave1 1.5s ease-out infinite;
+        }
+        .voice-active .voice-wave-ring:nth-child(2) {
+          animation: radialWave2 1.5s ease-out infinite 0.3s;
+        }
+        .voice-active .voice-wave-ring:nth-child(3) {
+          animation: radialWave3 1.5s ease-out infinite 0.6s;
+        }
+        .voice-active .voice-wave-ring:nth-child(4) {
+          animation: radialWave1 1.5s ease-out infinite 0.9s;
         }
 
         .floating-robot-head {
@@ -1561,8 +1623,12 @@ export function FloatingRobotHead() {
           position: relative;
           box-shadow: inset 5px 5px 15px rgba(255,255,255,0.9), inset -5px -5px 15px rgba(0,0,0,0.1), 0 -5px 25px rgba(0,0,0,0.15), 0 0 40px rgba(0,229,255,0.2);
           transform-style: preserve-3d;
-          transition: transform 0.1s ease-out;
+          transition: transform 0.1s ease-out, box-shadow 0.3s ease;
           perspective: 1000px;
+        }
+
+        .voice-active .floating-robot-head {
+          animation: voicePulse 1s ease-in-out infinite;
         }
 
         .floating-robot-head::before {
@@ -1609,6 +1675,10 @@ export function FloatingRobotHead() {
           position: relative;
         }
 
+        .voice-active .floating-eye {
+          animation: blinkEyes 4s infinite ease-in-out, eyeGlow 0.8s ease-in-out infinite;
+        }
+
         .floating-eye::after {
           content: '';
           position: absolute;
@@ -1640,6 +1710,12 @@ export function FloatingRobotHead() {
           transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
+        .voice-active .robot-tooltip {
+          opacity: 1 !important;
+          background: linear-gradient(135deg, rgba(0,229,255,0.9), rgba(0,180,220,0.9));
+          transform: translateX(-50%) translateY(-5px);
+        }
+
         .robot-tooltip::after {
           content: '';
           position: absolute;
@@ -1648,6 +1724,10 @@ export function FloatingRobotHead() {
           transform: translateX(-50%);
           border: 6px solid transparent;
           border-top-color: rgba(0,0,0,0.9);
+        }
+
+        .voice-active .robot-tooltip::after {
+          border-top-color: rgba(0,180,220,0.9);
         }
 
         .floating-robot-container:hover .robot-tooltip {
@@ -1677,11 +1757,22 @@ export function FloatingRobotHead() {
           border-radius: 50%;
           box-shadow: 0 0 8px rgba(255,255,255,0.8);
         }
+
+        .voice-active .floating-mirror {
+          box-shadow: 0 0 15px rgba(0,229,255,0.8), 0 0 30px rgba(0,229,255,0.4);
+          border-color: rgba(0,229,255,0.6);
+        }
       `}</style>
 
-      <div className="floating-robot-container" onClick={handleClick}>
-        <div className="robot-tooltip">Talk to AI Assistant</div>
+      <div className={`floating-robot-container ${isVoiceActive ? 'voice-active' : ''}`} onClick={handleClick}>
+        <div className="robot-tooltip">{isVoiceActive ? 'AI Speaking...' : 'Talk to AI Assistant'}</div>
         <div className="floating-head-wrapper">
+          {/* Radial wave rings for voice activity */}
+          <div className="voice-wave-ring"></div>
+          <div className="voice-wave-ring"></div>
+          <div className="voice-wave-ring"></div>
+          <div className="voice-wave-ring"></div>
+
           <div ref={headRef} className="floating-robot-head">
             <div className="floating-mirror-stick"></div>
             <div className="floating-mirror"></div>
