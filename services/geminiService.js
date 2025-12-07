@@ -1,9 +1,38 @@
-import { GoogleGenAI, Modality } from "@google/genai";
+import { GoogleGenAI, Modality, Type } from "@google/genai";
 import { createPcmBlob, decodeAudioData, base64ToUint8Array } from "./audioUtils";
 import { getSystemInstruction, TOOL_DESCRIPTIONS } from "./livePrompt";
 
 /**
- * Manages the Live API Session (WebSocket) for real-time voice conversation
+ * Tool declarations for function calling
+ */
+const bookAppointmentTool = {
+  name: TOOL_DESCRIPTIONS.bookAppointment.name,
+  description: TOOL_DESCRIPTIONS.bookAppointment.description,
+  parameters: {
+    type: Type.OBJECT,
+    properties: {
+      date: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.date },
+      time: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.time },
+      service: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.service }
+    },
+    required: TOOL_DESCRIPTIONS.bookAppointment.required
+  }
+};
+
+const endSessionTool = {
+  name: TOOL_DESCRIPTIONS.endSession.name,
+  description: TOOL_DESCRIPTIONS.endSession.description,
+  parameters: {
+    type: Type.OBJECT,
+    properties: {
+      reason: { type: Type.STRING, description: TOOL_DESCRIPTIONS.endSession.parameters.reason }
+    },
+    required: TOOL_DESCRIPTIONS.endSession.required
+  }
+};
+
+/**
+ * Manages the Live API Session (WebSocket)
  */
 export class LiveSessionManager {
   constructor(clinicData = {}) {
@@ -12,17 +41,15 @@ export class LiveSessionManager {
     this.outputAudioContext = null;
     this.nextStartTime = 0;
     this.sources = new Set();
-    this.session = null;
+    this.sessionPromise = null;
     this.stream = null;
     this.scriptProcessor = null;
     this.inputSource = null;
-    this.isConnected = false;
 
     // Callbacks
     this.onConnect = () => {};
     this.onDisconnect = () => {};
     this.onError = () => {};
-    this.onTranscript = () => {};
   }
 
   async connect() {
@@ -31,8 +58,7 @@ export class LiveSessionManager {
 
     if (!API_KEY) {
       console.error("Gemini API Key not found!");
-      console.log("To enable voice: Set NEXT_PUBLIC_GEMINI_API_KEY in .env.local");
-      this.onError(new Error("API Key not configured. Please set NEXT_PUBLIC_GEMINI_API_KEY"));
+      this.onError(new Error("API Key not configured"));
       return;
     }
 
@@ -47,33 +73,6 @@ export class LiveSessionManager {
       // Initialize Google GenAI
       const ai = new GoogleGenAI({ apiKey: API_KEY });
 
-      // Build tool declarations
-      const bookAppointmentTool = {
-        name: TOOL_DESCRIPTIONS.bookAppointment.name,
-        description: TOOL_DESCRIPTIONS.bookAppointment.description,
-        parameters: {
-          type: "OBJECT",
-          properties: {
-            date: { type: "STRING", description: TOOL_DESCRIPTIONS.bookAppointment.parameters.date },
-            time: { type: "STRING", description: TOOL_DESCRIPTIONS.bookAppointment.parameters.time },
-            service: { type: "STRING", description: TOOL_DESCRIPTIONS.bookAppointment.parameters.service }
-          },
-          required: TOOL_DESCRIPTIONS.bookAppointment.required
-        }
-      };
-
-      const endSessionTool = {
-        name: TOOL_DESCRIPTIONS.endSession.name,
-        description: TOOL_DESCRIPTIONS.endSession.description,
-        parameters: {
-          type: "OBJECT",
-          properties: {
-            reason: { type: "STRING", description: TOOL_DESCRIPTIONS.endSession.parameters.reason }
-          },
-          required: TOOL_DESCRIPTIONS.endSession.required
-        }
-      };
-
       // Generate system instruction based on clinic data
       const systemInstruction = getSystemInstruction(
         this.clinicData.name,
@@ -82,24 +81,24 @@ export class LiveSessionManager {
         this.clinicData.services
       );
 
-      // Connect to Gemini Live API
-      this.session = await ai.live.connect({
-        model: 'gemini-2.0-flash-live-001',
+      console.log("Connecting to Gemini Live API...");
+
+      // Connect to Gemini Live API - store the promise
+      this.sessionPromise = ai.live.connect({
+        model: 'gemini-2.0-flash-exp',
         callbacks: {
           onopen: () => {
-            console.log("Live Session Connected!");
-            this.isConnected = true;
+            console.log("Live Session Opened");
             this.startAudioInput();
             this.onConnect();
           },
           onmessage: (message) => this.handleMessage(message),
           onerror: (e) => {
-            console.error("Live Session Error:", e);
+            console.error("Live Session Error", e);
             this.onError(e);
           },
           onclose: (e) => {
             console.log("Live Session Closed", e);
-            this.isConnected = false;
             this.onDisconnect();
           }
         },
@@ -120,37 +119,43 @@ export class LiveSessionManager {
   }
 
   startAudioInput() {
-    if (!this.inputAudioContext || !this.stream || !this.session) return;
+    if (!this.inputAudioContext || !this.stream || !this.sessionPromise) {
+      console.error("Cannot start audio input - missing dependencies");
+      return;
+    }
+
+    console.log("Starting audio input...");
 
     this.inputSource = this.inputAudioContext.createMediaStreamSource(this.stream);
     this.scriptProcessor = this.inputAudioContext.createScriptProcessor(4096, 1, 1);
 
     this.scriptProcessor.onaudioprocess = (audioProcessingEvent) => {
-      if (!this.isConnected || !this.session) return;
-
       const inputData = audioProcessingEvent.inputBuffer.getChannelData(0);
       const pcmBlob = createPcmBlob(inputData);
 
-      try {
-        this.session.sendRealtimeInput({ media: pcmBlob });
-      } catch (e) {
-        console.error("Error sending audio:", e);
-      }
+      // Use the session promise to send audio
+      this.sessionPromise?.then((session) => {
+        session.sendRealtimeInput({ media: pcmBlob });
+      }).catch(e => {
+        // Ignore errors when session is closing
+      });
     };
 
     this.inputSource.connect(this.scriptProcessor);
     this.scriptProcessor.connect(this.inputAudioContext.destination);
+
+    console.log("Audio input started");
   }
 
   async handleMessage(message) {
     // Handle Audio Output
-    const audioPart = message.serverContent?.modelTurn?.parts?.find(p => p.inlineData?.data);
-    const base64Audio = audioPart?.inlineData?.data;
+    const base64Audio = message.serverContent?.modelTurn?.parts?.[0]?.inlineData?.data;
 
     if (base64Audio && this.outputAudioContext) {
-      try {
-        this.nextStartTime = Math.max(this.nextStartTime, this.outputAudioContext.currentTime);
+      // Ensure time monotonicity
+      this.nextStartTime = Math.max(this.nextStartTime, this.outputAudioContext.currentTime);
 
+      try {
         const audioBuffer = await decodeAudioData(
           base64ToUint8Array(base64Audio),
           this.outputAudioContext,
@@ -161,8 +166,8 @@ export class LiveSessionManager {
         const source = this.outputAudioContext.createBufferSource();
         source.buffer = audioBuffer;
 
+        // Basic gain node for volume control
         const gainNode = this.outputAudioContext.createGain();
-        gainNode.gain.value = 1.0;
         source.connect(gainNode);
         gainNode.connect(this.outputAudioContext.destination);
 
@@ -180,33 +185,29 @@ export class LiveSessionManager {
 
     // Handle Tool Calls (Function Calling)
     if (message.toolCall) {
-      console.log("Tool call received:", message.toolCall);
+      console.log("Received tool call:", message.toolCall);
       let shouldEndSession = false;
 
       const functionResponses = message.toolCall.functionCalls.map(fc => {
         if (fc.name === 'bookAppointment') {
           const { date, time, service } = fc.args || {};
-          console.log(`Booking: ${date} at ${time} for ${service || 'checkup'}`);
-
-          // In production, send this to your backend
+          console.log(`Booking confirmed: ${date} at ${time} for ${service || 'checkup'}`);
           return {
             id: fc.id,
             name: fc.name,
-            response: { result: `Appointment booked for ${date} at ${time}. You will receive a confirmation shortly.` }
+            response: { result: `Success. Appointment booked for ${date} at ${time}.` }
           };
         }
-
         if (fc.name === 'endSession') {
           const { reason } = fc.args || {};
-          console.log(`Session ending: ${reason}`);
+          console.log(`AI ending session: ${reason}`);
           shouldEndSession = true;
           return {
             id: fc.id,
             name: fc.name,
-            response: { result: `Session ended: ${reason}` }
+            response: { result: `Session ending: ${reason}` }
           };
         }
-
         return {
           id: fc.id,
           name: fc.name,
@@ -214,24 +215,21 @@ export class LiveSessionManager {
         };
       });
 
-      // Send tool response back
-      if (this.session) {
-        try {
-          this.session.sendToolResponse({ functionResponses });
-        } catch (e) {
-          console.error("Error sending tool response:", e);
-        }
-      }
+      // Send the tool response back to the model
+      this.sessionPromise?.then((session) => {
+        session.sendToolResponse({
+          functionResponses: functionResponses
+        });
+      });
 
-      // End session after goodbye plays
+      // If AI wants to end the session, trigger disconnect after a brief delay
       if (shouldEndSession) {
         setTimeout(() => {
           window.dispatchEvent(new CustomEvent('end-live-audio'));
-        }, 3000);
+        }, 2000);
       }
     }
 
-    // Handle interruptions
     if (message.serverContent?.interrupted) {
       this.stopPlayback();
     }
@@ -246,7 +244,7 @@ export class LiveSessionManager {
   }
 
   async disconnect() {
-    this.isConnected = false;
+    console.log("Disconnecting...");
 
     // Stop input
     if (this.scriptProcessor && this.inputSource) {
@@ -255,11 +253,9 @@ export class LiveSessionManager {
         this.scriptProcessor.disconnect();
       } catch (e) {}
     }
-
     if (this.stream) {
       this.stream.getTracks().forEach(t => t.stop());
     }
-
     if (this.inputAudioContext && this.inputAudioContext.state !== 'closed') {
       try {
         await this.inputAudioContext.close();
@@ -274,13 +270,8 @@ export class LiveSessionManager {
       } catch (e) {}
     }
 
-    // Close session
-    if (this.session) {
-      try {
-        this.session.close();
-      } catch (e) {}
-      this.session = null;
-    }
+    // Clear session promise
+    this.sessionPromise = null;
   }
 }
 
@@ -292,14 +283,14 @@ export const sendChatMessage = async (history, newMessage, clinicData = {}) => {
                   (typeof window !== 'undefined' ? window.GEMINI_API_KEY : null);
 
   if (!API_KEY) {
-    return "Voice assistant is not configured. Please contact the clinic directly.";
+    return "Voice assistant not configured.";
   }
 
   try {
     const ai = new GoogleGenAI({ apiKey: API_KEY });
 
     const chat = ai.chats.create({
-      model: 'gemini-2.0-flash',
+      model: 'gemini-2.0-flash-exp',
       history: history.map(h => ({
         role: h.role,
         parts: [{ text: h.text }]
@@ -318,6 +309,6 @@ export const sendChatMessage = async (history, newMessage, clinicData = {}) => {
     return result.text || "I apologize, I could not generate a response.";
   } catch (error) {
     console.error("Chat Error:", error);
-    return "An error occurred. Please try again or contact the clinic directly.";
+    return "An error occurred.";
   }
 };
