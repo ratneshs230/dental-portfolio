@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Arun Khanna's Dental Clinic",
-  "description": "Dental clinic in Lajpat Nagar with 6 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

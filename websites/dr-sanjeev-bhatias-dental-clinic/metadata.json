@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Sanjeev Bhatia's Dental Clinic",
-  "description": "Dental clinic in Green Park with 29 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "name": "Smile Zone Dental",
-  "description": "Dental clinic in Nehru Place with 15 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Anjali Mehta's Dental Clinic",
-  "description": "Dental clinic in Shalimar Bagh with 29 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

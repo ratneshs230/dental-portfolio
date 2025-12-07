@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Rajesh Kumar's Dental Clinic",
-  "description": "Dental clinic in Connaught Place with 29 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

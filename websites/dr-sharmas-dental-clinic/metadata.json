@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Sharma's Dental Clinic",
-  "description": "Dental clinic in Connaught Place with 6 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

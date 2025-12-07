@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Rashmi Sethi's Dental Clinic",
-  "description": "Dental clinic in Mayur Vihar with 10 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

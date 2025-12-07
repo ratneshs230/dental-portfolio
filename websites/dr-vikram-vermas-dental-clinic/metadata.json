@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Vikram Verma's Dental Clinic",
-  "description": "Dental clinic in Defence Colony with 21 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

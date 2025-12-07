@@ -1,7 +1,0 @@
-{
-  "name": "Premier Dental Clinic",
-  "description": "Dental clinic in Nehru Place with 13 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

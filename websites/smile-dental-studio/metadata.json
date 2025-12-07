@@ -1,7 +1,0 @@
-{
-  "name": "Smile Dental Studio",
-  "description": "Dental clinic in Rajendra Nagar with 26 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
