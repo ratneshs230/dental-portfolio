@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Chopra's Dental Centre",
-  "description": "Dental clinic in Rohini with 22 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

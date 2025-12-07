@@ -1,7 +1,0 @@
-{
-  "name": "Tooth Care Dental",
-  "description": "Dental clinic in Model Town with 14 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

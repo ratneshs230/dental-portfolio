@@ -1,7 +1,0 @@
-{
-  "name": "Superior Dental Services",
-  "description": "Dental clinic in Connaught Place with 26 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

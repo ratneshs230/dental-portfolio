@@ -1,7 +1,0 @@
-{
-  "name": "Family Oral Care",
-  "description": "Dental clinic in Laxmi Nagar with 7 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

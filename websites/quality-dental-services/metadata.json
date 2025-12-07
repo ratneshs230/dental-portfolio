@@ -1,7 +1,0 @@
-{
-  "name": "Quality Dental Services",
-  "description": "Dental clinic in Punjabi Bagh with 6 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

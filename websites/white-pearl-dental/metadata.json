@@ -1,7 +1,0 @@
-{
-  "name": "White Pearl Dental",
-  "description": "Dental clinic in Hauz Khas with 25 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

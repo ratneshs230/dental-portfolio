@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Amit Gupta's Dental Clinic",
-  "description": "Dental clinic in Rajouri Garden with 26 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

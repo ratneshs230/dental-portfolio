@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Malhotra's Dental",
-  "description": "Dental clinic in Rajendra Nagar with 11 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

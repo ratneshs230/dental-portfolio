@@ -1,7 +1,0 @@
-{
-  "name": "Bright Smile Dental",
-  "description": "Dental clinic in Vasant Kunj with 26 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

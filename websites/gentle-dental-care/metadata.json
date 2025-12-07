@@ -1,7 +1,0 @@
-{
-  "name": "Gentle Dental Care",
-  "description": "Dental clinic in Saket with 18 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

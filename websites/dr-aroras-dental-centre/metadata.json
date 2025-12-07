@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Arora's Dental Centre",
-  "description": "Dental clinic in Mayur Vihar with 14 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

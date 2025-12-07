@@ -1,7 +1,0 @@
-{
-  "name": "Family Dental Care",
-  "description": "Dental clinic in Greater Kailash with 12 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
