@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 // Color themes based on clinic name hash
 const COLOR_THEMES = [
@@ -890,5 +890,926 @@ export function LeadPopup({ clinic }) {
         </div>
       </div>
     </>
+  )
+}
+
+// Cursor Follower Component
+export function CursorFollower() {
+  const [isVisible, setIsVisible] = useState(false)
+  const [position, setPosition] = useState({ x: -100, y: -100 })
+  const positionRef = useRef({ x: -100, y: -100 })
+  const mouseRef = useRef({ x: -100, y: -100 })
+  const cursorRef = useRef(null)
+
+  useEffect(() => {
+    const onMouseMove = (e) => {
+      if (!isVisible) {
+        positionRef.current = { x: e.clientX, y: e.clientY }
+        setIsVisible(true)
+      }
+      mouseRef.current = { x: e.clientX, y: e.clientY }
+    }
+
+    window.addEventListener('mousemove', onMouseMove)
+    return () => window.removeEventListener('mousemove', onMouseMove)
+  }, [isVisible])
+
+  useEffect(() => {
+    let animationFrameId
+
+    const animate = () => {
+      const { x: targetX, y: targetY } = mouseRef.current
+      const { x: currentX, y: currentY } = positionRef.current
+
+      const strength = 0.15
+      const newX = currentX + (targetX - currentX) * strength
+      const newY = currentY + (targetY - currentY) * strength
+
+      positionRef.current = { x: newX, y: newY }
+
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate3d(${newX}px, ${newY}px, 0) translate(-50%, -50%)`
+      }
+
+      animationFrameId = requestAnimationFrame(animate)
+    }
+
+    animate()
+    return () => cancelAnimationFrame(animationFrameId)
+  }, [])
+
+  return (
+    <div
+      ref={cursorRef}
+      className={`fixed top-0 left-0 pointer-events-none z-[100] hidden md:block transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      style={{ willChange: 'transform' }}
+    >
+      <div className="w-12 h-12 border border-gray-800/30 rounded-full bg-white/5 backdrop-blur-[1px]" />
+    </div>
+  )
+}
+
+// Molecule Background Component
+export function MoleculeBackground() {
+  const canvasRef = useRef(null)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    let animationFrameId
+    let particles = []
+    const particleCount = 60
+    const connectionDistance = 150
+
+    const resizeCanvas = () => {
+      canvas.width = canvas.parentElement?.offsetWidth || window.innerWidth
+      canvas.height = canvas.parentElement?.offsetHeight || window.innerHeight
+    }
+
+    const createParticles = () => {
+      particles = []
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
+          size: Math.random() * 2 + 1,
+        })
+      }
+    }
+
+    const drawParticles = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+      particles.forEach((p, i) => {
+        p.x += p.vx
+        p.y += p.vy
+
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1
+
+        ctx.beginPath()
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(200, 210, 230, 0.6)'
+        ctx.fill()
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j]
+          const dx = p.x - p2.x
+          const dy = p.y - p2.y
+          const distance = Math.sqrt(dx * dx + dy * dy)
+
+          if (distance < connectionDistance) {
+            ctx.beginPath()
+            ctx.strokeStyle = `rgba(200, 210, 230, ${1 - distance / connectionDistance})`
+            ctx.lineWidth = 0.5
+            ctx.moveTo(p.x, p.y)
+            ctx.lineTo(p2.x, p2.y)
+            ctx.stroke()
+          }
+        }
+      })
+
+      animationFrameId = requestAnimationFrame(drawParticles)
+    }
+
+    resizeCanvas()
+    createParticles()
+    drawParticles()
+
+    const handleResize = () => {
+      resizeCanvas()
+      createParticles()
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      cancelAnimationFrame(animationFrameId)
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 w-full h-full pointer-events-none opacity-60"
+    />
+  )
+}
+
+// Sine Wave Animation Component
+export function SineWaveAnimation({ isHovered }) {
+  const canvasRef = useRef(null)
+  const [isVoiceActive, setIsVoiceActive] = useState(false)
+  const animationRef = useRef(0)
+  const voiceIntensityRef = useRef(0)
+  const hoverIntensityRef = useRef(0)
+
+  useEffect(() => {
+    const handleVoiceChange = (e) => {
+      setIsVoiceActive(e.detail.active)
+    }
+    window.addEventListener('voice-session-change', handleVoiceChange)
+    return () => window.removeEventListener('voice-session-change', handleVoiceChange)
+  }, [])
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const resize = () => {
+      const dpr = window.devicePixelRatio || 1
+      const rect = canvas.getBoundingClientRect()
+      canvas.width = rect.width * dpr
+      canvas.height = rect.height * dpr
+      ctx.scale(dpr, dpr)
+    }
+    resize()
+    window.addEventListener('resize', resize)
+
+    let time = 0
+
+    const gradientColors = [
+      { start: '#00e5ff', end: '#0088ff' },
+      { start: '#00ffcc', end: '#00e5ff' },
+      { start: '#88ffff', end: '#00ccff' },
+      { start: '#00ffaa', end: '#00e5ff' },
+    ]
+
+    const activeGradientColors = [
+      { start: '#ff00ff', end: '#00e5ff' },
+      { start: '#00e5ff', end: '#ff6600' },
+      { start: '#ffff00', end: '#00ff88' },
+      { start: '#ff0088', end: '#8800ff' },
+    ]
+
+    const animate = () => {
+      const rect = canvas.getBoundingClientRect()
+      const width = rect.width
+      const height = rect.height
+      const centerY = height / 2
+
+      const targetVoiceIntensity = isVoiceActive ? 1 : 0
+      voiceIntensityRef.current += (targetVoiceIntensity - voiceIntensityRef.current) * 0.04
+
+      const targetHoverIntensity = isHovered ? 1 : 0
+      hoverIntensityRef.current += (targetHoverIntensity - hoverIntensityRef.current) * 0.06
+
+      const voiceIntensity = voiceIntensityRef.current
+      const hoverIntensity = hoverIntensityRef.current
+
+      ctx.clearRect(0, 0, width, height)
+
+      const baseWaveCount = 4
+      const waveCount = baseWaveCount + Math.floor(voiceIntensity * 3)
+      const baseSpeed = 0.025
+      const speed = baseSpeed + hoverIntensity * 0.015 + voiceIntensity * 0.05
+      const baseAmplitude = 6
+      const amplitude = baseAmplitude + hoverIntensity * 4 + voiceIntensity * 10
+
+      time += speed
+
+      const colors = voiceIntensity > 0.5 ? activeGradientColors : gradientColors
+      const pointCount = 80
+      const startPadding = width * 0.1
+      const endPadding = width * 0.1
+      const waveWidth = width - startPadding - endPadding
+
+      for (let w = 0; w < waveCount; w++) {
+        const waveOffset = (w / waveCount) * Math.PI * 2
+        const wavePhase = time + waveOffset
+        const colorIndex = w % colors.length
+        const alpha = 0.5 + (1 - w / waveCount) * 0.4 + voiceIntensity * 0.1
+
+        const points = []
+
+        for (let i = 0; i <= pointCount; i++) {
+          const t = i / pointCount
+          const envelope = Math.sin(t * Math.PI)
+          const taperEnvelope = Math.pow(envelope, 0.5)
+          const x = startPadding + t * waveWidth
+          const frequency = 0.025 + w * 0.008
+          const waveAmplitude = amplitude * (0.6 + w * 0.12) * taperEnvelope
+          const y = centerY + Math.sin(x * frequency + wavePhase) * waveAmplitude
+
+          points.push({ x, y })
+        }
+
+        ctx.globalAlpha = alpha
+        ctx.lineWidth = 2 + voiceIntensity + hoverIntensity * 0.5
+        ctx.lineCap = 'round'
+        ctx.lineJoin = 'round'
+
+        const gradient = ctx.createLinearGradient(startPadding, centerY, startPadding + waveWidth, centerY)
+        gradient.addColorStop(0, 'transparent')
+        gradient.addColorStop(0.1, colors[colorIndex].start)
+        gradient.addColorStop(0.5, colors[(colorIndex + 1) % colors.length].end)
+        gradient.addColorStop(0.9, colors[colorIndex].end)
+        gradient.addColorStop(1, 'transparent')
+        ctx.strokeStyle = gradient
+
+        ctx.beginPath()
+        points.forEach((point, idx) => {
+          if (idx === 0) {
+            ctx.moveTo(point.x, point.y)
+          } else {
+            ctx.lineTo(point.x, point.y)
+          }
+        })
+        ctx.stroke()
+
+        ctx.globalAlpha = 1
+      }
+
+      animationRef.current = requestAnimationFrame(animate)
+    }
+
+    animate()
+
+    return () => {
+      window.removeEventListener('resize', resize)
+      cancelAnimationFrame(animationRef.current)
+    }
+  }, [isHovered, isVoiceActive])
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="w-full h-20 pointer-events-none"
+      style={{ opacity: 0.9, mixBlendMode: 'normal' }}
+    />
+  )
+}
+
+// RoboDentist Component - Bottom section robot
+export function RoboDentist() {
+  const headRef = useRef(null)
+  const eyesRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (!headRef.current || !eyesRef.current) return
+
+      const { clientX, clientY } = e
+      const { innerWidth, innerHeight } = window
+
+      const x = (clientX - innerWidth / 2) / (innerWidth / 2)
+      const y = (clientY - innerHeight / 2) / (innerHeight / 2)
+
+      const rotateY = x * 40
+      const rotateX = -y * 30
+
+      headRef.current.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`
+
+      const eyeX = x * 10
+      const eyeY = y * 10
+      eyesRef.current.style.transform = `translate(${eyeX}px, ${eyeY}px)`
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
+  return (
+    <div className="relative w-80 h-80 flex items-center justify-center select-none pointer-events-none">
+      <style>{`
+        @keyframes floatBody {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        @keyframes blink {
+          0%, 96%, 100% { transform: scaleY(1); }
+          98% { transform: scaleY(0.1); }
+        }
+
+        .robot-perspective { perspective: 1000px; }
+
+        .robot-head {
+          width: 140px;
+          height: 110px;
+          background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #d4d4d4 100%);
+          border-radius: 45px;
+          position: relative;
+          z-index: 10;
+          box-shadow: inset 5px 5px 15px rgba(255,255,255,0.9), inset -5px -5px 15px rgba(0,0,0,0.1), 0 15px 35px rgba(0,0,0,0.15);
+          transform-style: preserve-3d;
+          transition: transform 0.1s ease-out;
+        }
+
+        .head-mirror-stick {
+          position: absolute;
+          top: -25px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 4px;
+          height: 30px;
+          background: #888;
+          z-index: 5;
+        }
+
+        .head-mirror {
+          position: absolute;
+          top: -45px;
+          left: 50%;
+          transform: translateX(-50%) rotateX(10deg);
+          width: 40px;
+          height: 40px;
+          background: radial-gradient(circle at 30% 30%, #fff 0%, #e0e0e0 60%, #999 100%);
+          border: 3px solid silver;
+          border-radius: 50%;
+          box-shadow: 0 0 10px rgba(255,255,255,0.8);
+          z-index: 6;
+        }
+
+        .face-screen {
+          width: 100px;
+          height: 60px;
+          background: #111;
+          border-radius: 30px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(10px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        .eyes-container {
+          display: flex;
+          gap: 18px;
+          transition: transform 0.1s ease-out;
+        }
+
+        .eye {
+          width: 20px;
+          height: 24px;
+          background: #00e5ff;
+          border-radius: 50%;
+          box-shadow: 0 0 15px #00e5ff;
+          animation: blink 4s infinite ease-in-out;
+          position: relative;
+        }
+
+        .eye::after {
+          content: '';
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          width: 6px;
+          height: 6px;
+          background: white;
+          border-radius: 50%;
+          opacity: 0.8;
+        }
+
+        .robot-body {
+          width: 90px;
+          height: 70px;
+          background: linear-gradient(to bottom, #f2f2f2, #e0e0e0);
+          border-radius: 40px 40px 20px 20px;
+          position: relative;
+          margin-top: -15px;
+          z-index: 5;
+          box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+          animation: floatBody 6s ease-in-out infinite;
+        }
+
+        .robot-neck {
+          width: 50px;
+          height: 20px;
+          background: #333;
+          border-radius: 10px;
+          margin: 0 auto;
+          transform: translateY(10px);
+          position: relative;
+          z-index: 4;
+        }
+
+        .badge {
+          position: absolute;
+          top: 25px;
+          right: 20px;
+          width: 8px;
+          height: 8px;
+          background: #ff4444;
+          border-radius: 50%;
+          box-shadow: 0 0 5px #ff4444;
+        }
+
+        .pocket {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: 25px;
+          height: 3px;
+          background: #ccc;
+          border-radius: 2px;
+        }
+
+        .shadow-floor {
+          width: 120px;
+          height: 20px;
+          background: black;
+          border-radius: 50%;
+          opacity: 0.1;
+          filter: blur(8px);
+          margin-top: 30px;
+          animation: shadowScale 6s ease-in-out infinite;
+        }
+
+        @keyframes shadowScale {
+          0%, 100% { transform: scale(1); opacity: 0.1; }
+          50% { transform: scale(0.8); opacity: 0.05; }
+        }
+      `}</style>
+
+      <div className="robot-perspective flex flex-col items-center">
+        <div ref={headRef} className="robot-head">
+          <div className="head-mirror-stick"></div>
+          <div className="head-mirror"></div>
+          <div className="face-screen">
+            <div ref={eyesRef} className="eyes-container">
+              <div className="eye"></div>
+              <div className="eye"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="robot-neck"></div>
+        <div className="robot-body">
+          <div className="pocket"></div>
+          <div className="badge"></div>
+        </div>
+
+        <div className="shadow-floor"></div>
+      </div>
+    </div>
+  )
+}
+
+// Floating Robot Head Component - Peeking from bottom right
+export function FloatingRobotHead() {
+  const [isVisible, setIsVisible] = useState(false)
+  const headRef = useRef(null)
+  const eyesRef = useRef(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollThreshold = window.innerHeight * 0.4
+      setIsVisible(window.scrollY > scrollThreshold)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (!headRef.current || !eyesRef.current || !isVisible) return
+
+      const { clientX, clientY } = e
+      const { innerWidth, innerHeight } = window
+
+      const x = (clientX - innerWidth / 2) / (innerWidth / 2)
+      const y = (clientY - innerHeight / 2) / (innerHeight / 2)
+
+      const rotateY = x * 20
+      const rotateX = -y * 15
+
+      headRef.current.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`
+
+      const eyeX = x * 8
+      const eyeY = y * 8
+      eyesRef.current.style.transform = `translate(${eyeX}px, ${eyeY}px)`
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [isVisible])
+
+  const handleClick = () => {
+    window.dispatchEvent(new CustomEvent('open-live-audio'))
+  }
+
+  if (!isVisible) return null
+
+  return (
+    <>
+      <style>{`
+        @keyframes peekUp {
+          0% { transform: translateY(100%); }
+          100% { transform: translateY(0); }
+        }
+
+        @keyframes floatBob {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-5px); }
+        }
+
+        @keyframes blinkEyes {
+          0%, 96%, 100% { transform: scaleY(1); }
+          98% { transform: scaleY(0.1); }
+        }
+
+        .floating-robot-container {
+          position: fixed;
+          bottom: 0;
+          right: 30px;
+          z-index: 1000;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+          animation: peekUp 0.5s ease-out forwards;
+        }
+
+        .floating-robot-container:hover {
+          transform: translateY(-10px);
+        }
+
+        .floating-head-wrapper {
+          animation: floatBob 3s ease-in-out infinite;
+        }
+
+        .floating-robot-head {
+          width: 100px;
+          height: 80px;
+          background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #d4d4d4 100%);
+          border-radius: 35px 35px 20px 20px;
+          position: relative;
+          box-shadow: inset 5px 5px 15px rgba(255,255,255,0.9), inset -5px -5px 15px rgba(0,0,0,0.1), 0 -5px 25px rgba(0,0,0,0.15), 0 0 40px rgba(0,229,255,0.2);
+          transform-style: preserve-3d;
+          transition: transform 0.1s ease-out;
+          perspective: 1000px;
+        }
+
+        .floating-robot-head::before {
+          content: '';
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 40px;
+          height: 15px;
+          background: linear-gradient(to bottom, #333, #222);
+          border-radius: 0 0 10px 10px;
+        }
+
+        .floating-face-screen {
+          width: 70px;
+          height: 42px;
+          background: #111;
+          border-radius: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        .floating-eyes-container {
+          display: flex;
+          gap: 12px;
+          transition: transform 0.1s ease-out;
+        }
+
+        .floating-eye {
+          width: 14px;
+          height: 18px;
+          background: #00e5ff;
+          border-radius: 50%;
+          box-shadow: 0 0 12px #00e5ff;
+          animation: blinkEyes 4s infinite ease-in-out;
+          position: relative;
+        }
+
+        .floating-eye::after {
+          content: '';
+          position: absolute;
+          top: 3px;
+          right: 3px;
+          width: 4px;
+          height: 4px;
+          background: white;
+          border-radius: 50%;
+          opacity: 0.8;
+        }
+
+        .robot-tooltip {
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-bottom: 15px;
+          padding: 8px 16px;
+          background: rgba(0,0,0,0.9);
+          color: white;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          white-space: nowrap;
+          border-radius: 20px;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .robot-tooltip::after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          border: 6px solid transparent;
+          border-top-color: rgba(0,0,0,0.9);
+        }
+
+        .floating-robot-container:hover .robot-tooltip {
+          opacity: 1;
+          transform: translateX(-50%) translateY(-5px);
+        }
+
+        .floating-mirror-stick {
+          position: absolute;
+          top: -18px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 3px;
+          height: 22px;
+          background: #888;
+        }
+
+        .floating-mirror {
+          position: absolute;
+          top: -32px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 28px;
+          height: 28px;
+          background: radial-gradient(circle at 30% 30%, #fff 0%, #e0e0e0 60%, #999 100%);
+          border: 2px solid #aaa;
+          border-radius: 50%;
+          box-shadow: 0 0 8px rgba(255,255,255,0.8);
+        }
+      `}</style>
+
+      <div className="floating-robot-container" onClick={handleClick}>
+        <div className="robot-tooltip">Talk to AI Assistant</div>
+        <div className="floating-head-wrapper">
+          <div ref={headRef} className="floating-robot-head">
+            <div className="floating-mirror-stick"></div>
+            <div className="floating-mirror"></div>
+            <div className="floating-face-screen">
+              <div ref={eyesRef} className="floating-eyes-container">
+                <div className="floating-eye"></div>
+                <div className="floating-eye"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+// Mic Icon Component
+export function MicIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+      <line x1="12" x2="12" y1="19" y2="22" />
+    </svg>
+  )
+}
+
+// Live Audio Widget Component - Manages Gemini voice session
+export function LiveAudioWidget({ clinic }) {
+  const [status, setStatus] = useState('idle') // 'idle' | 'connecting' | 'connected' | 'error'
+
+  const startSession = async () => {
+    if (status === 'connecting' || status === 'connected') return
+
+    setStatus('connecting')
+
+    // Simulate connection for demo
+    setTimeout(() => {
+      setStatus('connected')
+      window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: true } }))
+    }, 500)
+  }
+
+  const endSession = async () => {
+    setStatus('idle')
+    window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: false } }))
+  }
+
+  useEffect(() => {
+    const handleOpen = () => startSession()
+    window.addEventListener('open-live-audio', handleOpen)
+    return () => window.removeEventListener('open-live-audio', handleOpen)
+  }, [status])
+
+  useEffect(() => {
+    const handleEnd = () => endSession()
+    window.addEventListener('end-live-audio', handleEnd)
+    return () => window.removeEventListener('end-live-audio', handleEnd)
+  }, [])
+
+  return null
+}
+
+// Enhanced Hero Component with Robot and Sine Wave
+export function HeroWithRobot({ clinic, colorScheme }) {
+  const [isButtonHovered, setIsButtonHovered] = useState(false)
+  const [isCallActive, setIsCallActive] = useState(false)
+  const clinicName = clinic?.name || 'Dental Clinic'
+  const experience = clinic?.experience || 15
+  const estYear = 2024 - experience
+
+  useEffect(() => {
+    const handleVoiceChange = (e) => {
+      setIsCallActive(e.detail.active)
+    }
+    window.addEventListener('voice-session-change', handleVoiceChange)
+    return () => window.removeEventListener('voice-session-change', handleVoiceChange)
+  }, [])
+
+  const handleButtonClick = () => {
+    if (isCallActive) {
+      window.dispatchEvent(new CustomEvent('end-live-audio'))
+    } else {
+      window.dispatchEvent(new CustomEvent('open-live-audio'))
+    }
+  }
+
+  return (
+    <section className="relative w-full min-h-screen overflow-hidden bg-[#fdfdfd] flex flex-col">
+      {/* Dynamic Molecular Background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <MoleculeBackground />
+      </div>
+
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 1px 1px, #000 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }} />
+      </div>
+
+      {/* Main Content Container */}
+      <div className="relative z-10 flex-1 flex flex-col h-full max-w-[1400px] mx-auto w-full px-6">
+        {/* Top Section - Typography */}
+        <div className="flex-1 flex flex-col justify-center items-center text-center pt-20">
+          <span className="text-xs tracking-[0.4em] text-gray-400 uppercase mb-6 font-light">
+            {experience}+ Years of Excellence
+          </span>
+
+          <h1 className="font-light text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.1] text-gray-900 mb-6">
+            <span className="block">Where Science</span>
+            <span className="block">
+              Meets{' '}
+              <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500">
+                Artistry
+              </span>
+            </span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-gray-500 max-w-2xl leading-relaxed font-light">
+            {clinic?.description || `Experience precision dentistry powered by AI. Book your consultation with our intelligent assistant and discover your perfect smile.`}
+          </p>
+        </div>
+
+        {/* Bottom Section - Robot, Wave, Button */}
+        <div className="flex flex-col items-center pb-12 md:pb-16">
+          {/* Container for the robot with ambient glow */}
+          <div className="relative w-40 h-40 flex items-center justify-center">
+            <div className={`absolute inset-0 rounded-full blur-3xl opacity-40 animate-pulse transition-colors duration-500 ${
+              isCallActive ? 'bg-cyan-200' : 'bg-blue-50'
+            }`}></div>
+
+            <div className="relative z-10 transform scale-[0.65] md:scale-75 transition-transform duration-500">
+              <RoboDentist />
+            </div>
+          </div>
+
+          {/* Sine Wave Animation */}
+          <div className="w-80 -mt-8">
+            <SineWaveAnimation isHovered={isButtonHovered || isCallActive} />
+          </div>
+
+          {/* Voice Booking Button */}
+          <button
+            onClick={handleButtonClick}
+            onMouseEnter={() => setIsButtonHovered(true)}
+            onMouseLeave={() => setIsButtonHovered(false)}
+            className={`-mt-2 group relative px-8 py-4 rounded-full overflow-hidden transition-all duration-500 cursor-pointer z-20 ${
+              isCallActive
+                ? 'bg-red-500 border-2 border-red-500 hover:bg-red-600 shadow-lg shadow-red-500/30'
+                : 'bg-transparent border border-gray-300 hover:border-black'
+            }`}
+          >
+            <span className={`relative z-10 flex items-center gap-3 font-medium text-xs tracking-[0.2em] uppercase transition-colors ${
+              isCallActive ? 'text-white' : 'text-gray-800 group-hover:text-black'
+            }`}>
+              {isCallActive ? (
+                <>
+                  <svg className="w-4 h-4 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+                  </svg>
+                  End Call
+                </>
+              ) : (
+                <>
+                  <MicIcon />
+                  Book Appointment via AI
+                </>
+              )}
+            </span>
+            {!isCallActive && (
+              <div className="absolute inset-0 bg-gray-100 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
+            )}
+          </button>
+
+          {/* Call status indicator */}
+          {isCallActive && (
+            <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              <span>AI Assistant is listening...</span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Left Vertical Text */}
+      <div className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2">
+        <div className="rotate-180" style={{ writingMode: 'vertical-rl' }}>
+          <span className="text-sm tracking-[0.2em] text-gray-400 uppercase font-light">{clinicName.substring(0, 20)}</span>
+        </div>
+      </div>
+
+      {/* Right Vertical Text */}
+      <div className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2">
+        <div style={{ writingMode: 'vertical-rl' }}>
+          <span className="text-sm tracking-[0.2em] text-gray-400 uppercase font-light">Est. {estYear}</span>
+        </div>
+      </div>
+    </section>
   )
 }
