@@ -1,0 +1,7 @@
+{
+  "name": "Smile Bright Dental",
+  "description": "Dental clinic in Punjabi Bagh with 7 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

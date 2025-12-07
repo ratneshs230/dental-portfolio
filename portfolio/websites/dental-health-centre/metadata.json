@@ -1,0 +1,7 @@
+{
+  "name": "Dental Health Centre",
+  "description": "Dental clinic in Uttam Nagar with 16 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

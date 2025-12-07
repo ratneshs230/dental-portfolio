@@ -1,0 +1,7 @@
+{
+  "name": "Pearl Dental Care",
+  "description": "Dental clinic in Saket with 22 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

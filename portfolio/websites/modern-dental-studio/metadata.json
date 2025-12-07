@@ -1,0 +1,7 @@
+{
+  "name": "Modern Dental Studio",
+  "description": "Dental clinic in Preet Vihar with 18 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

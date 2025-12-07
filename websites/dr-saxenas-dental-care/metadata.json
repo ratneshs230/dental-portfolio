@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Saxena's Dental Care",
+  "description": "Dental clinic in Tilak Nagar with 24 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

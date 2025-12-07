@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Deepa Malhotra's Dental Clinic",
+  "description": "Dental clinic in Najafgarh with 21 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,13 +1,11 @@
 const fs = require('fs')
 const path = require('path')
 
-// Configuration
-const REPO_NAME = 'dental-portfolio'
-const GITHUB_USERNAME = process.env.GITHUB_USERNAME || 'YOUR_USERNAME'
-const BASE_URL = `https://${GITHUB_USERNAME}.github.io/${REPO_NAME}`
+// Configuration - Vercel URL
+const BASE_URL = 'https://portfolio-pearl-nine-41.vercel.app'
 
 // Read clinic data
-const websitesDir = path.join(__dirname, '..', '..', 'websites')
+const websitesDir = path.join(__dirname, '..', 'websites')
 const outputDir = path.join(__dirname, '..', 'public')
 
 // Ensure output directory exists

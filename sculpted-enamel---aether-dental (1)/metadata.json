@@ -1,0 +1,7 @@
+{
+  "name": "Sculpted Enamel - Aether Dental",
+  "description": "A premium dental clinic website featuring conversational AI and real-time voice interaction powered by Gemini Live API.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

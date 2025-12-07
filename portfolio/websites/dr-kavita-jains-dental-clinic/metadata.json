@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Kavita Jain's Dental Clinic",
+  "description": "Dental clinic in Saket with 13 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

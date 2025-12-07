@@ -1,0 +1,7 @@
+{
+  "name": "Dental Treatment Centre",
+  "description": "Dental clinic in Ashok Vihar with 14 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

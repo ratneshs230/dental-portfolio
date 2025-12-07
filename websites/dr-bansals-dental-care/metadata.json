@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Bansal's Dental Care",
+  "description": "Dental clinic in Lajpat Nagar with 16 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

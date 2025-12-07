@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Suresh Patel's Dental Clinic",
+  "description": "Dental clinic in South Extension with 14 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

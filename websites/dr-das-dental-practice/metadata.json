@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Das Dental Practice",
+  "description": "Dental clinic in Najafgarh with 24 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

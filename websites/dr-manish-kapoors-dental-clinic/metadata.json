@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Manish Kapoor's Dental Clinic",
+  "description": "Dental clinic in Patel Nagar with 19 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

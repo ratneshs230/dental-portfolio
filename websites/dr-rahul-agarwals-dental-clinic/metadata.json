@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Rahul Agarwal's Dental Clinic",
+  "description": "Dental clinic in Tilak Nagar with 23 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

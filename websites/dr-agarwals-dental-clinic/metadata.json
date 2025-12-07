@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Agarwal's Dental Clinic",
+  "description": "Dental clinic in Ashok Vihar with 6 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

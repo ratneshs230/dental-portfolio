@@ -1,0 +1,7 @@
+{
+  "name": "City Dental Clinic",
+  "description": "Dental clinic in Dwarka with 27 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

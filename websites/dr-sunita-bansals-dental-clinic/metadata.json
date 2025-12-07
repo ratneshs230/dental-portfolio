@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Sunita Bansal's Dental Clinic",
+  "description": "Dental clinic in Malviya Nagar with 8 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

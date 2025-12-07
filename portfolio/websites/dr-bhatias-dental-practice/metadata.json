@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Bhatia's Dental Practice",
+  "description": "Dental clinic in Karol Bagh with 25 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

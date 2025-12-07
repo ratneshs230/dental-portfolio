@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Verma's Dental Practice",
+  "description": "Dental clinic in Defence Colony with 14 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

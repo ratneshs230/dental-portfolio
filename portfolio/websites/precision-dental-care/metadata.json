@@ -1,0 +1,7 @@
+{
+  "name": "Precision Dental Care",
+  "description": "Dental clinic in Pitampura with 22 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Dental Arts Clinic",
+  "description": "Dental clinic in Mayur Vihar with 11 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

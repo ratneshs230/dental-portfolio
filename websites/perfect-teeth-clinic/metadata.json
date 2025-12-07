@@ -1,0 +1,7 @@
+{
+  "name": "Perfect Teeth Clinic",
+  "description": "Dental clinic in Rajouri Garden with 19 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

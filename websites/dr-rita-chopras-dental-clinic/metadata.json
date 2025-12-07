@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Rita Chopra's Dental Clinic",
+  "description": "Dental clinic in Rajendra Nagar with 28 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Nair's Dental Centre",
+  "description": "Dental clinic in Patel Nagar with 7 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

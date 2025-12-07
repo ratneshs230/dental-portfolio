@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Kapoor's Dental Clinic",
+  "description": "Dental clinic in Vasant Kunj with 25 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

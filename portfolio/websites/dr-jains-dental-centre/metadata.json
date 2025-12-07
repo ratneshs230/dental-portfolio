@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Jain's Dental Centre",
+  "description": "Dental clinic in Paschim Vihar with 8 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

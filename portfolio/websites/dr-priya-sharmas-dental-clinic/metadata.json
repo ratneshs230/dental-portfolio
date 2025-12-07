@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Priya Sharma's Dental Clinic",
+  "description": "Dental clinic in Karol Bagh with 4 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

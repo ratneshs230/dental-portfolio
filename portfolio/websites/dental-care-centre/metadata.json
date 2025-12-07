@@ -1,0 +1,7 @@
+{
+  "name": "Dental Care Centre",
+  "description": "Dental clinic in Preet Vihar with 22 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

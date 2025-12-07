@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Mittal's Dental Studio",
+  "description": "Dental clinic in Hauz Khas with 14 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

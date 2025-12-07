@@ -1,0 +1,7 @@
+{
+  "name": "Dental Care Plus",
+  "description": "Dental clinic in Patel Nagar with 23 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

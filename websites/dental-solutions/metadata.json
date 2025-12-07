@@ -1,0 +1,7 @@
+{
+  "name": "Dental Solutions",
+  "description": "Dental clinic in South Extension with 10 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

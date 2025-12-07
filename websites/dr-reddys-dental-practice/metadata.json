@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Reddy's Dental Practice",
+  "description": "Dental clinic in Laxmi Nagar with 23 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Sethi's Dental Clinic",
+  "description": "Dental clinic in Shahdara with 27 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

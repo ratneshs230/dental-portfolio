@@ -1,0 +1,7 @@
+{
+  "name": "Comprehensive Dental",
+  "description": "Dental clinic in Green Park with 5 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

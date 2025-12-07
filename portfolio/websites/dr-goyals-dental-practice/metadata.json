@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Goyal's Dental Practice",
+  "description": "Dental clinic in Kalkaji with 9 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

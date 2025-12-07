@@ -1,0 +1,7 @@
+{
+  "name": "Dental Cure Clinic",
+  "description": "Dental clinic in Paschim Vihar with 18 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

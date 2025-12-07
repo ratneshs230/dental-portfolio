@@ -1,0 +1,7 @@
+{
+  "name": "Dr. Kumar's Dental Centre",
+  "description": "Dental clinic in Janakpuri with 5 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

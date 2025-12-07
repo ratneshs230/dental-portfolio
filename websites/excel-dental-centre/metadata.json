@@ -1,0 +1,7 @@
+{
+  "name": "Excel Dental Centre",
+  "description": "Dental clinic in Kalkaji with 23 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

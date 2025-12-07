@@ -1,0 +1,7 @@
+{
+  "name": "Oral Care Clinic",
+  "description": "Dental clinic in Kirti Nagar with 15 years of experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
