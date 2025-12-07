@@ -1,7 +1,0 @@
-{
-  "name": "Oral Health Clinic",
-  "description": "Dental clinic in Okhla with 29 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

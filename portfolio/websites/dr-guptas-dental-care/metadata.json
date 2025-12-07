@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Gupta's Dental Care",
-  "description": "Dental clinic in Pitampura with 5 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Rao's Dental Studio",
-  "description": "Dental clinic in Shalimar Bagh with 21 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

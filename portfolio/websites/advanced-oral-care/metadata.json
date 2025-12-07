@@ -1,7 +1,0 @@
-{
-  "name": "Advanced Oral Care",
-  "description": "Dental clinic in Defence Colony with 4 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

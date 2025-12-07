@@ -1,7 +1,0 @@
-{
-  "name": "Elite Dental Care",
-  "description": "Dental clinic in Model Town with 24 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

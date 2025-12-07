@@ -1,7 +1,0 @@
-{
-  "name": "32 Pearls Dental",
-  "description": "Dental clinic in Vikaspuri with 8 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

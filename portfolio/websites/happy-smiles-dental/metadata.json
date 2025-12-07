@@ -1,7 +1,0 @@
-{
-  "name": "Happy Smiles Dental",
-  "description": "Dental clinic in Rohini with 4 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

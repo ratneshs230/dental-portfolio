@@ -1,7 +1,0 @@
-{
-  "name": "Crown Dental Clinic",
-  "description": "Dental clinic in Rajouri Garden with 28 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

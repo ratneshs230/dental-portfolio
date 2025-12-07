@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Pooja Reddy's Dental Clinic",
-  "description": "Dental clinic in Green Park with 18 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

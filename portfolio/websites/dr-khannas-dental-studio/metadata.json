@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Khanna's Dental Studio",
-  "description": "Dental clinic in Uttam Nagar with 23 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "name": "Dental Health Clinic",
-  "description": "Dental clinic in Tilak Nagar with 25 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

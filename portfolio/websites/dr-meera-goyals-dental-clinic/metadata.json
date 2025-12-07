@@ -1,7 +1,0 @@
-{
-  "name": "Dr. Meera Goyal's Dental Clinic",
-  "description": "Dental clinic in Nehru Place with 24 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

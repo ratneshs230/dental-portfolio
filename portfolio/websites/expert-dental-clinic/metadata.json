@@ -1,7 +1,0 @@
-{
-  "name": "Expert Dental Clinic",
-  "description": "Dental clinic in Kirti Nagar with 18 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

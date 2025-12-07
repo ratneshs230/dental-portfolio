@@ -1,7 +1,0 @@
-{
-  "name": "Smile Studio Dental",
-  "description": "Dental clinic in Greater Kailash with 4 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}

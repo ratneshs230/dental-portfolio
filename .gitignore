@@ -33,3 +33,7 @@ Thumbs.db
 
 # Package lock (optional - remove if you want to track it)
 # package-lock.json
+
+# Website subfolders - ignore their package-locks and node_modules
+websites/*/package-lock.json
+websites/*/node_modules/

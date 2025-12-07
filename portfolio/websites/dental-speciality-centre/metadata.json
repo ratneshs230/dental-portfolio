@@ -1,7 +1,0 @@
-{
-  "name": "Dental Speciality Centre",
-  "description": "Dental clinic in Malviya Nagar with 24 years of experience.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
