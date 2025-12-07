@@ -1,209 +1,121 @@
 'use client'
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import {
-  Menu, X, Phone, Clock, Star, MapPin, Award, Users,
-  Sparkles, Heart, Stethoscope, Siren, Quote,
-  Mail, Calendar, Send, Facebook, Instagram, Twitter
-} from 'lucide-react'
+import { useState, useEffect } from 'react'
 
-// Color utilities
-function getColorValue(scheme) {
-  const colors = {
-    'trust-blue': '#0EA5E9',
-    'calm-teal': '#14B8A6',
-    'fresh-green': '#22C55E',
-    'professional-slate': '#6366F1',
-    'warm-coral': '#F97316',
-  }
-  return colors[scheme] || '#6366F1'
+// Color themes based on clinic name hash
+const COLOR_THEMES = [
+  { primary: '#00e5ff', name: 'cyan' },
+  { primary: '#10b981', name: 'emerald' },
+  { primary: '#6366f1', name: 'indigo' },
+  { primary: '#f59e0b', name: 'amber' },
+  { primary: '#ec4899', name: 'pink' },
+  { primary: '#8b5cf6', name: 'violet' },
+  { primary: '#14b8a6', name: 'teal' },
+  { primary: '#f97316', name: 'orange' },
+]
+
+function getThemeColor(clinicName) {
+  const hash = (clinicName || '').split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
+  return COLOR_THEMES[hash % COLOR_THEMES.length]
 }
 
-function getLightColorValue(scheme) {
-  const colors = {
-    'trust-blue': '#EFF6FF',
-    'calm-teal': '#F0FDFA',
-    'fresh-green': '#F0FDF4',
-    'professional-slate': '#EEF2FF',
-    'warm-coral': '#FFF7ED',
-  }
-  return colors[scheme] || '#EEF2FF'
-}
-
-// Navbar Component
+// Header Component - Modern minimal design
 export function Navbar({ clinic, colorScheme, backLink }) {
-  const [isOpen, setIsOpen] = useState(false)
-  const primaryColor = getColorValue(colorScheme)
+  const [scrolled, setScrolled] = useState(false)
 
-  const navLinks = [
-    { href: '#', label: 'Home' },
-    { href: '#services', label: 'Services' },
-    { href: '#testimonials', label: 'Reviews' },
-    { href: '#contact', label: 'Contact' },
-  ]
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center gap-4">
-            {backLink && (
-              <Link href={backLink} className="text-gray-500 hover:text-gray-900">
-                ← Back
-              </Link>
-            )}
-            <Link href="#" className="flex items-center gap-3">
-              <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center text-white"
-                style={{ backgroundColor: primaryColor }}
-              >
-                🦷
-              </div>
-              <span className="font-display font-bold text-gray-900 hidden sm:block">
-                {clinic?.name || 'Dental Clinic'}
-              </span>
-            </Link>
-          </div>
-
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          <div className="hidden md:flex items-center gap-4">
-            <a href={`tel:${clinic?.phones?.[0] || ''}`} className="flex items-center gap-2 text-gray-600">
-              <Phone className="w-4 h-4" />
-              <span className="text-sm">{clinic?.phones?.[0]}</span>
-            </a>
-            <a
-              href="#book"
-              className="px-4 py-2 rounded-lg text-white font-medium transition-transform hover:scale-105"
-              style={{ backgroundColor: primaryColor }}
-            >
-              Book Now
-            </a>
-          </div>
-
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2">
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+    <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled ? 'py-4 bg-white/90 backdrop-blur-md shadow-sm' : 'py-6 bg-transparent'}`}>
+      <div className="max-w-[1600px] mx-auto px-6 flex justify-between items-center">
+        <div className="text-base md:text-lg font-medium tracking-wide uppercase truncate max-w-[200px] md:max-w-none">
+          {clinic?.name || 'Dental Clinic'}
         </div>
+        <nav className="flex items-center gap-4 md:gap-8">
+          <a href="#services" className="hidden md:block text-sm uppercase tracking-widest hover:opacity-60 transition">Services</a>
+          <a href="#reviews" className="hidden md:block text-sm uppercase tracking-widest hover:opacity-60 transition">Reviews</a>
+          <a href="#contact" className="hidden md:block text-sm uppercase tracking-widest hover:opacity-60 transition">Contact</a>
+        </nav>
       </div>
-
-      {isOpen && (
-        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="md:hidden bg-white border-t">
-          <div className="px-4 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <a key={link.label} href={link.href} className="block text-gray-600 hover:text-gray-900 py-2" onClick={() => setIsOpen(false)}>
-                {link.label}
-              </a>
-            ))}
-            <a href="#book" className="block w-full text-center px-4 py-2 rounded-lg text-white font-medium" style={{ backgroundColor: primaryColor }}>
-              Book Appointment
-            </a>
-          </div>
-        </motion.div>
-      )}
-    </nav>
+    </header>
   )
 }
 
-// Hero Component
+// Hero Component - Full screen modern design
 export function Hero({ clinic, colorScheme }) {
-  const primaryColor = getColorValue(colorScheme)
-  const lightColor = getLightColorValue(colorScheme)
+  const clinicName = clinic?.name || 'Dental Clinic'
+  const experience = clinic?.experience || 15
+  const estYear = 2024 - experience
 
   return (
-    <section className="relative overflow-hidden" style={{ backgroundColor: lightColor }}>
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-72 h-72 rounded-full blur-3xl" style={{ backgroundColor: primaryColor, opacity: 0.2 }} />
-        <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full blur-3xl" style={{ backgroundColor: primaryColor, opacity: 0.15 }} />
+    <section className="relative w-full min-h-screen overflow-hidden bg-[#fdfdfd] flex flex-col">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 1px 1px, #000 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }} />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            {clinic?.googleRating && (
-              <div className="flex items-center gap-2 mb-4">
-                <div className="flex items-center gap-1 px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">
-                  <Star className="w-4 h-4 fill-current" />
-                  <span className="font-medium">{clinic.googleRating}</span>
-                  <span className="text-yellow-600">({clinic.totalReviews} reviews)</span>
-                </div>
-              </div>
-            )}
+      {/* Gradient Orbs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-200 rounded-full blur-3xl opacity-20" />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-200 rounded-full blur-3xl opacity-20" />
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
-              {clinic?.name || 'Your Trusted Dental Care'}
-            </h1>
+      {/* Main Content */}
+      <div className="relative z-10 flex-1 flex flex-col h-full max-w-[1400px] mx-auto w-full px-6">
+        <div className="flex-1 flex flex-col justify-center items-center text-center pt-24 pb-12">
+          {/* Eyebrow text */}
+          <span className="text-xs tracking-[0.4em] text-gray-400 uppercase mb-6 font-light">
+            {experience}+ Years of Excellence
+          </span>
 
-            <p className="text-lg text-gray-600 mb-8 max-w-lg">
-              {clinic?.experience
-                ? `${clinic.experience}+ years of excellence in dental care. Professional, gentle, and personalized treatment for your entire family.`
-                : 'Professional dental care with a gentle touch.'}
-            </p>
+          {/* Main Heading */}
+          <h1 className="font-light text-4xl md:text-6xl lg:text-7xl tracking-tight leading-[1.1] text-gray-900 mb-6">
+            <span className="block">Where Science</span>
+            <span className="block">
+              Meets{' '}
+              <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500">
+                Artistry
+              </span>
+            </span>
+          </h1>
 
-            <div className="flex flex-wrap gap-4 mb-8">
-              {clinic?.experience && (
-                <div className="flex items-center gap-2 text-gray-600">
-                  <Award className="w-5 h-5" style={{ color: primaryColor }} />
-                  <span>{clinic.experience}+ Years Experience</span>
-                </div>
-              )}
-              {clinic?.patientBase && (
-                <div className="flex items-center gap-2 text-gray-600">
-                  <Users className="w-5 h-5" style={{ color: primaryColor }} />
-                  <span>{clinic.patientBase.toLocaleString()}+ Happy Patients</span>
-                </div>
-              )}
-            </div>
+          {/* Subheading */}
+          <p className="text-lg md:text-xl text-gray-500 max-w-2xl leading-relaxed font-light mb-10">
+            {clinic?.description || `Experience exceptional dental care at ${clinicName}. Book your consultation and discover your perfect smile.`}
+          </p>
 
-            <div className="flex flex-wrap gap-4">
-              <a href="#book" className="px-8 py-4 rounded-xl text-white font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105" style={{ backgroundColor: primaryColor }}>
-                Book Appointment
-              </a>
-              <a href={`tel:${clinic?.phones?.[0] || ''}`} className="px-8 py-4 rounded-xl border-2 font-semibold transition-all flex items-center gap-2" style={{ borderColor: primaryColor, color: primaryColor }}>
-                <Phone className="w-5 h-5" />
-                Call Now
-              </a>
-            </div>
+          {/* CTA Button */}
+          <a
+            href="#contact"
+            className="group relative px-8 py-4 rounded-full overflow-hidden transition-all duration-500 bg-transparent border border-gray-300 hover:border-black"
+          >
+            <span className="relative z-10 flex items-center gap-3 font-medium text-xs tracking-[0.2em] uppercase text-gray-800 group-hover:text-black">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Book Appointment
+            </span>
+            <div className="absolute inset-0 bg-gray-100 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
+          </a>
+        </div>
+      </div>
 
-            {clinic?.address && (
-              <div className="mt-8 flex items-start gap-2 text-gray-600">
-                <MapPin className="w-5 h-5 mt-0.5 shrink-0" style={{ color: primaryColor }} />
-                <span>{clinic.address}</span>
-              </div>
-            )}
-          </motion.div>
+      {/* Left Vertical Text */}
+      <div className="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2">
+        <div className="rotate-180" style={{ writingMode: 'vertical-rl' }}>
+          <span className="text-sm tracking-[0.2em] text-gray-400 uppercase font-light">{clinicName.substring(0, 20)}</span>
+        </div>
+      </div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }} className="relative">
-            <div className="w-full aspect-square rounded-3xl flex items-center justify-center" style={{ background: `linear-gradient(135deg, ${primaryColor} 0%, ${primaryColor}CC 100%)` }}>
-              <div className="text-center text-white p-8">
-                <span className="text-9xl">🦷</span>
-                <p className="text-xl font-semibold mt-4 opacity-90">Your Smile, Our Priority</p>
-              </div>
-            </div>
-            <motion.div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4" animate={{ y: [0, -10, 0] }} transition={{ duration: 3, repeat: Infinity }}>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: lightColor }}>
-                  <Clock className="w-6 h-6" style={{ color: primaryColor }} />
-                </div>
-                <div>
-                  <div className="text-sm text-gray-500">Open Today</div>
-                  <div className="font-semibold text-gray-900">9:00 AM - 8:00 PM</div>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
+      {/* Right Vertical Text */}
+      <div className="hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2">
+        <div style={{ writingMode: 'vertical-rl' }}>
+          <span className="text-sm tracking-[0.2em] text-gray-400 uppercase font-light">Est. {estYear}</span>
         </div>
       </div>
     </section>
@@ -212,42 +124,64 @@ export function Hero({ clinic, colorScheme }) {
 
 // Services Component
 export function Services({ clinic, colorScheme }) {
-  const primaryColor = getColorValue(colorScheme)
-  const services = clinic?.services || { general: [], cosmetic: [], specialized: [] }
-
-  const categories = [
-    { title: 'General Dentistry', icon: Stethoscope, items: services.general || [], description: 'Comprehensive care for your dental health' },
-    { title: 'Cosmetic Dentistry', icon: Sparkles, items: services.cosmetic || [], description: 'Enhance your smile with cosmetic procedures' },
-    { title: 'Specialized Care', icon: Heart, items: services.specialized || [], description: 'Advanced treatments by specialists' },
+  const services = [
+    { icon: '01', title: 'General Dentistry', description: 'Comprehensive dental care including checkups, cleanings, and preventive treatments for optimal oral health.', color: 'from-cyan-400 via-blue-500 to-purple-500' },
+    { icon: '02', title: 'Cosmetic Dentistry', description: 'Transform your smile with teeth whitening, veneers, and aesthetic enhancements tailored to you.', color: 'from-emerald-400 via-cyan-500 to-blue-500' },
+    { icon: '03', title: 'Dental Implants', description: 'Permanent tooth replacement solutions that look, feel, and function like natural teeth.', color: 'from-orange-400 via-pink-500 to-purple-500' },
+    { icon: '04', title: 'Orthodontics', description: 'Modern braces and invisible aligners for perfect teeth alignment with comfort.', color: 'from-yellow-400 via-orange-500 to-red-500' },
   ]
 
   return (
-    <section id="services" className="py-16 md:py-24 px-4 md:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: `${primaryColor}15`, color: primaryColor }}>
+    <section id="services" className="bg-white py-20 px-6 md:px-12">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="text-xs tracking-[0.3em] text-gray-400 uppercase mb-4 block">What We Offer</span>
+          <h2 className="text-3xl md:text-5xl font-light text-gray-900 tracking-tight">
             Our Services
-          </span>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Comprehensive Dental Care</h2>
-        </motion.div>
+          </h2>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {categories.map((category, idx) => (
-            <motion.div key={category.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-8">
-              <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: `${primaryColor}15` }}>
-                <category.icon className="w-7 h-7" style={{ color: primaryColor }} />
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          {services.map((service, index) => (
+            <div key={index} className="group relative">
+              {/* Gradient border on hover */}
+              <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[1px]`} />
+
+              <div className="relative bg-white p-8 md:p-10 rounded-3xl cursor-pointer overflow-hidden border border-gray-100 group-hover:border-transparent transition-colors duration-300">
+                {/* Inner glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                {/* Top line accent */}
+                <div className={`absolute top-0 left-1/2 -translate-x-1/2 h-[2px] w-0 group-hover:w-1/2 bg-gradient-to-r ${service.color} transition-all duration-500`} />
+
+                <div className="relative z-10">
+                  {/* Number */}
+                  <span className={`text-5xl font-thin text-gray-100 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${service.color} transition-all duration-500`}>
+                    {service.icon}
+                  </span>
+
+                  {/* Title */}
+                  <h3 className="text-xl font-medium text-gray-900 mt-4 mb-3">
+                    {service.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-gray-500 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  {/* Arrow */}
+                  <div className="mt-6 flex items-center gap-2 text-gray-400 group-hover:text-cyan-500 transition-colors">
+                    <span className="text-sm tracking-wide">Learn more</span>
+                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-2">{category.title}</h3>
-              <p className="text-gray-500 text-sm mb-6">{category.description}</p>
-              <ul className="space-y-3">
-                {category.items.slice(0, 5).map((service, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: primaryColor }} />
-                    <span className="text-gray-700">{service}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
@@ -255,197 +189,369 @@ export function Services({ clinic, colorScheme }) {
   )
 }
 
-// Testimonials Component
-const sampleTestimonials = [
-  { name: 'Priya Sharma', text: 'Excellent service! The doctor was very gentle and explained everything clearly.', rating: 5 },
-  { name: 'Rajesh Kumar', text: 'Best dental experience I have had. The clinic is clean and staff is friendly.', rating: 5 },
-  { name: 'Anita Gupta', text: 'Very professional team. They made me feel comfortable throughout my treatment.', rating: 5 },
-]
-
+// Testimonials/Reviews Component
 export function Testimonials({ clinic, colorScheme }) {
-  const primaryColor = getColorValue(colorScheme)
-  const lightColor = getLightColorValue(colorScheme)
+  const [activeIndex, setActiveIndex] = useState(0)
+  const clinicName = clinic?.name || 'this clinic'
+
+  const reviews = [
+    { name: 'Priya Sharma', role: 'Business Professional', content: `Excellent dental care at ${clinicName}! The staff is friendly and professional. My treatment was painless and the results exceeded my expectations.`, rating: 5 },
+    { name: 'Rajesh Kumar', role: 'IT Professional', content: `Best dental clinic in the area. Modern equipment and very hygienic environment. Highly recommend for all dental needs.`, rating: 5 },
+    { name: 'Anita Desai', role: 'Teacher', content: 'Very satisfied with my dental treatment. The doctor explained everything clearly and the procedure was smooth.', rating: 5 },
+  ]
 
   return (
-    <section id="testimonials" className="py-16 md:py-24 px-4 md:px-8" style={{ backgroundColor: lightColor }}>
-      <div className="max-w-7xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: `${primaryColor}15`, color: primaryColor }}>
-            Patient Reviews
-          </span>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">What Our Patients Say</h2>
-          {clinic?.googleRating && (
-            <div className="flex items-center justify-center gap-2">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className={`w-5 h-5 ${i < Math.floor(clinic.googleRating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
-                ))}
-              </div>
-              <span className="font-semibold text-gray-900">{clinic.googleRating}</span>
-              <span className="text-gray-500">({clinic.totalReviews} reviews)</span>
-            </div>
-          )}
-        </motion.div>
+    <section id="reviews" className="bg-[#fafafa] py-20 px-6 md:px-12 overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <span className="text-xs tracking-[0.3em] text-gray-400 uppercase mb-4 block">Testimonials</span>
+          <h2 className="text-3xl md:text-5xl font-light text-gray-900 tracking-tight">
+            What Our Patients Say
+          </h2>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {sampleTestimonials.map((testimonial, idx) => (
-            <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }} className="bg-white rounded-2xl p-8 shadow-lg relative">
-              <div className="absolute -top-4 left-8 w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: primaryColor }}>
-                <Quote className="w-4 h-4 text-white" />
+        {/* Main Review Card */}
+        <div className="max-w-4xl mx-auto relative">
+          <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg">
+            {/* Quote Icon */}
+            <svg className="w-10 h-10 text-cyan-200 mb-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+
+            {/* Review Content */}
+            <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-8 italic">
+              "{reviews[activeIndex].content}"
+            </p>
+
+            {/* Rating */}
+            <div className="flex gap-1 mb-6">
+              {[...Array(reviews[activeIndex].rating)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+
+            {/* Author */}
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="text-lg font-medium text-gray-900">{reviews[activeIndex].name}</h4>
+                <p className="text-gray-500 text-sm">{reviews[activeIndex].role}</p>
               </div>
-              <div className="flex mb-4 mt-2">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+
+              {/* Navigation Dots */}
+              <div className="flex gap-3">
+                {reviews.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveIndex(index)}
+                    className={`h-3 rounded-full transition-all duration-300 ${
+                      index === activeIndex
+                        ? 'bg-cyan-500 w-8 shadow-lg shadow-cyan-500/50'
+                        : 'bg-gray-200 hover:bg-gray-300 w-3'
+                    }`}
+                  />
                 ))}
               </div>
-              <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style={{ backgroundColor: primaryColor }}>
-                  {testimonial.name.charAt(0)}
-                </div>
-                <span className="font-semibold text-gray-900">{testimonial.name}</span>
-              </div>
-            </motion.div>
-          ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
   )
 }
 
-// Contact Component
+// Contact Component - Dark theme
 export function Contact({ clinic, colorScheme }) {
-  const primaryColor = getColorValue(colorScheme)
-  const lightColor = getLightColorValue(colorScheme)
+  const clinicName = clinic?.name || 'Dental Clinic'
+  const address = clinic?.address || clinic?.area ? `${clinic.area}, Delhi` : 'Delhi, India'
+  const phone = clinic?.phone || '+91 11-XXXX XXXX'
 
   return (
-    <section id="contact" className="py-16 md:py-24 px-4 md:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: `${primaryColor}15`, color: primaryColor }}>
-            Get In Touch
-          </span>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Contact Us</h2>
-        </motion.div>
+    <section id="contact" className="bg-[#0a0a0a] py-20 px-6 md:px-12 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }} />
+      </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Left Side - Info */}
+          <div>
+            <span className="text-xs tracking-[0.3em] text-gray-500 uppercase mb-4 block">Get In Touch</span>
+            <h2 className="text-3xl md:text-5xl font-light text-white tracking-tight mb-6">
+              Contact Us
+            </h2>
+            <p className="text-gray-400 text-lg leading-relaxed mb-10">
+              Ready to transform your smile? Reach out to schedule your consultation at {clinicName}.
+            </p>
+
+            {/* Contact Info */}
             <div className="space-y-6">
-              {clinic?.phones?.[0] && (
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: lightColor }}>
-                    <Phone className="w-6 h-6" style={{ color: primaryColor }} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href={`tel:${clinic.phones[0]}`} className="text-gray-600 hover:text-gray-900">{clinic.phones[0]}</a>
-                  </div>
-                </div>
-              )}
-              {clinic?.address && (
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: lightColor }}>
-                    <MapPin className="w-6 h-6" style={{ color: primaryColor }} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
-                    <p className="text-gray-600">{clinic.address}</p>
-                  </div>
-                </div>
-              )}
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: lightColor }}>
-                  <Clock className="w-6 h-6" style={{ color: primaryColor }} />
+              <div className="flex items-start gap-4 group">
+                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 group-hover:text-cyan-400 group-hover:border-cyan-500/50 transition-all duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Hours</h3>
-                  <p className="text-gray-600">Mon - Sat: 9:00 AM - 8:00 PM</p>
+                  <h4 className="text-white font-medium mb-1">Location</h4>
+                  <p className="text-gray-500">{address}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 group">
+                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 group-hover:text-cyan-400 group-hover:border-cyan-500/50 transition-all duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-white font-medium mb-1">Phone</h4>
+                  <p className="text-gray-500">{phone}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 group">
+                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 group-hover:text-cyan-400 group-hover:border-cyan-500/50 transition-all duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-white font-medium mb-1">Hours</h4>
+                  <p className="text-gray-500">Mon - Sat: 9:00 AM - 8:00 PM<br />Sunday: By Appointment</p>
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div id="book" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: lightColor }}>
-                  <Calendar className="w-6 h-6" style={{ color: primaryColor }} />
-                </div>
-                <div>
-                  <h3 className="font-display font-bold text-xl text-gray-900">Book Appointment</h3>
-                  <p className="text-gray-500 text-sm">We'll get back to you soon</p>
-                </div>
-              </div>
+          {/* Right Side - Form */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 md:p-10 relative overflow-hidden">
+            {/* Glow Effect */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl" />
+
+            <div className="relative z-10">
+              <h3 className="text-2xl md:text-3xl font-light text-white mb-4">
+                Book Your Visit
+              </h3>
+              <p className="text-gray-400 mb-8">
+                Fill out the form below and we'll get back to you shortly.
+              </p>
+
+              {/* Form */}
               <form className="space-y-4">
-                <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none" placeholder="Your name" />
-                <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none" placeholder="Phone number" />
-                <select className="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none">
-                  <option value="">Select a service</option>
-                  <option value="checkup">General Checkup</option>
-                  <option value="cleaning">Teeth Cleaning</option>
-                  <option value="other">Other</option>
-                </select>
-                <button type="submit" className="w-full py-4 rounded-xl text-white font-semibold flex items-center justify-center gap-2" style={{ backgroundColor: primaryColor }}>
-                  <Send className="w-5 h-5" />
-                  Request Appointment
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-5 py-4 bg-black/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-all duration-300"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="w-full px-5 py-4 bg-black/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-all duration-300"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full px-5 py-4 bg-black/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-all duration-300"
+                />
+                <textarea
+                  placeholder="Your Message"
+                  rows={3}
+                  className="w-full px-5 py-4 bg-black/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-all duration-300 resize-none"
+                />
+                <button
+                  type="submit"
+                  className="w-full py-4 bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 font-medium tracking-wide"
+                >
+                  Send Message
                 </button>
               </form>
             </div>
-          </motion.div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-600 text-sm">
+            © 2024 {clinicName}. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <a href="#" className="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Privacy</a>
+            <a href="#" className="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Terms</a>
+          </div>
         </div>
       </div>
     </section>
   )
 }
 
-// Footer Component
+// Footer Component (included in Contact, but kept for compatibility)
 export function Footer({ clinic, colorScheme }) {
-  const primaryColor = getColorValue(colorScheme)
-  const currentYear = new Date().getFullYear()
+  return null
+}
+
+// Lead Popup Component
+export function LeadPopup({ clinic }) {
+  const [isOpen, setIsOpen] = useState(false)
+  const [formData, setFormData] = useState({ name: '', phone: '', email: '' })
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const theme = getThemeColor(clinic?.name || '')
+  const clinicName = clinic?.name || 'Dental Clinic'
+
+  useEffect(() => {
+    const popupShown = sessionStorage.getItem('leadPopupShown')
+    if (!popupShown) {
+      const timer = setTimeout(() => {
+        setIsOpen(true)
+        sessionStorage.setItem('leadPopupShown', 'true')
+      }, 2500)
+      return () => clearTimeout(timer)
+    }
+  }, [])
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    console.log('Lead captured:', { ...formData, clinic: clinicName, timestamp: new Date().toISOString() })
+    setIsSubmitting(false)
+    setIsSubmitted(true)
+    setTimeout(() => setIsOpen(false), 2000)
+  }
+
+  const handleChange = (e) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  }
+
+  if (!isOpen) return null
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: primaryColor }}>🦷</div>
-              <span className="font-display font-bold text-xl">{clinic?.name || 'Dental Clinic'}</span>
+    <>
+      {/* Backdrop */}
+      <div
+        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999]"
+        onClick={() => setIsOpen(false)}
+        style={{ animation: 'fadeIn 0.3s ease-out' }}
+      />
+
+      {/* Popup */}
+      <div
+        className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[10000] w-[90%] max-w-md"
+        style={{ animation: 'scaleIn 0.4s ease-out' }}
+      >
+        <style jsx>{`
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          @keyframes scaleIn {
+            from { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+            to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+          }
+        `}</style>
+
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+          {/* Header */}
+          <div
+            className="p-6 text-white relative"
+            style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primary}88 100%)` }}
+          >
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <div className="pr-8">
+              <h2 className="text-2xl font-light mb-2">Welcome to {clinicName}</h2>
+              <p className="text-white/90 text-sm">
+                Get a free consultation! Leave your details and we'll get back to you shortly.
+              </p>
             </div>
-            <p className="text-gray-400 mb-6">
-              {clinic?.experience ? `Providing exceptional dental care for over ${clinic.experience} years.` : 'Quality dental care you can trust.'}
-            </p>
           </div>
-          <div>
-            <h3 className="font-display font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><a href="#services" className="text-gray-400 hover:text-white">Services</a></li>
-              <li><a href="#testimonials" className="text-gray-400 hover:text-white">Reviews</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white">Contact</a></li>
-            </ul>
+
+          {/* Form */}
+          <div className="p-6">
+            {isSubmitted ? (
+              <div className="text-center py-8">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-medium text-gray-900 mb-2">Thank You!</h3>
+                <p className="text-gray-500">We'll contact you soon.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    placeholder="Enter your name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/40 focus:border-cyan-500 transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                    placeholder="+91 XXXXX XXXXX"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/40 focus:border-cyan-500 transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    placeholder="your@email.com"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/40 focus:border-cyan-500 transition-all"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full py-3 text-white font-medium rounded-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+                  style={{ background: theme.primary }}
+                >
+                  {isSubmitting ? 'Submitting...' : 'Get Free Consultation'}
+                </button>
+
+                <p className="text-xs text-gray-400 text-center mt-3">
+                  By submitting, you agree to receive communications from us.
+                </p>
+              </form>
+            )}
           </div>
-          <div>
-            <h3 className="font-display font-bold text-lg mb-4">Contact</h3>
-            <ul className="space-y-3">
-              {clinic?.phones?.[0] && (
-                <li className="flex items-center gap-3">
-                  <Phone className="w-5 h-5" style={{ color: primaryColor }} />
-                  <span className="text-gray-400">{clinic.phones[0]}</span>
-                </li>
-              )}
-              {clinic?.address && (
-                <li className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 mt-0.5 shrink-0" style={{ color: primaryColor }} />
-                  <span className="text-gray-400">{clinic.address}</span>
-                </li>
-              )}
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-          © {currentYear} {clinic?.name || 'Dental Clinic'}. All rights reserved.
         </div>
       </div>
-    </footer>
+    </>
   )
 }
