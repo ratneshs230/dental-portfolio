@@ -133,9 +133,9 @@ export function Services({ clinic, colorScheme }) {
     { icon: '04', title: 'Orthodontics', description: 'Modern braces and invisible aligners for perfect teeth alignment with comfort.', color: 'from-yellow-400 via-orange-500 to-red-500' },
   ]
 
-  // Use clinic services if available, otherwise use defaults
-  const services = clinic?.services && clinic.services.length > 0
-    ? clinic.services.slice(0, 4).map((service, idx) => ({
+  // Convert clinic services to our format
+  const clinicServices = clinic?.services && clinic.services.length > 0
+    ? clinic.services.map((service, idx) => ({
         icon: String(idx + 1).padStart(2, '0'),
         title: typeof service === 'string' ? service : service.name,
         description: typeof service === 'string'
@@ -143,7 +143,21 @@ export function Services({ clinic, colorScheme }) {
           : service.description || `Professional ${service.name.toLowerCase()} services with modern techniques and personalized care.`,
         color: defaultServices[idx % defaultServices.length].color
       }))
-    : defaultServices
+    : []
+
+  // Ensure at least 4 services by filling with defaults
+  const services = clinicServices.length >= 4
+    ? clinicServices.slice(0, 4)
+    : [
+        ...clinicServices,
+        ...defaultServices
+          .filter(ds => !clinicServices.some(cs => cs.title.toLowerCase() === ds.title.toLowerCase()))
+          .slice(0, 4 - clinicServices.length)
+          .map((ds, idx) => ({
+            ...ds,
+            icon: String(clinicServices.length + idx + 1).padStart(2, '0')
+          }))
+      ]
 
   return (
     <section id="services" className="bg-white py-24 px-6 md:px-12">
@@ -731,161 +745,197 @@ export function Footer({ clinic, colorScheme }) {
   return null
 }
 
-// Lead Popup Component
+// Lead Gate Component - Blocks site access until form is filled
 export function LeadPopup({ clinic }) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [hasAccess, setHasAccess] = useState(true) // Start true to prevent flash
+  const [isMounted, setIsMounted] = useState(false)
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' })
-  const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
   const theme = getThemeColor(clinic?.name || '')
   const clinicName = clinic?.name || 'Dental Clinic'
+  const clinicSlug = clinic?.slug || 'dental-clinic'
 
+  // Check access on mount
   useEffect(() => {
-    const popupShown = sessionStorage.getItem('leadPopupShown')
-    if (!popupShown) {
-      const timer = setTimeout(() => {
-        setIsOpen(true)
-        sessionStorage.setItem('leadPopupShown', 'true')
-      }, 2500)
-      return () => clearTimeout(timer)
-    }
-  }, [])
+    setIsMounted(true)
+    const accessGranted = localStorage.getItem(`leadGate_${clinicSlug}`)
+    setHasAccess(accessGranted === 'true')
+  }, [clinicSlug])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    console.log('Lead captured:', { ...formData, clinic: clinicName, timestamp: new Date().toISOString() })
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setTimeout(() => setIsOpen(false), 2000)
+    setError('')
+
+    try {
+      // Build webhook URL with query params (GET request)
+      const webhookUrl = new URL('https://baklol23.app.n8n.cloud/webhook/a20d6f31-e0b7-41e4-b0f2-dc5c1c86045b')
+      webhookUrl.searchParams.append('name', formData.name)
+      webhookUrl.searchParams.append('phone', formData.phone)
+      webhookUrl.searchParams.append('email', formData.email)
+      webhookUrl.searchParams.append('clinic', clinicName)
+      webhookUrl.searchParams.append('clinic_slug', clinicSlug)
+      webhookUrl.searchParams.append('timestamp', new Date().toISOString())
+
+      // Send GET request to webhook
+      await fetch(webhookUrl.toString(), {
+        method: 'GET',
+        mode: 'no-cors' // Webhook may not have CORS headers
+      })
+
+      // Grant access and store in localStorage
+      localStorage.setItem(`leadGate_${clinicSlug}`, 'true')
+      setHasAccess(true)
+    } catch (err) {
+      console.error('Webhook error:', err)
+      // Still grant access even if webhook fails (to not block user)
+      localStorage.setItem(`leadGate_${clinicSlug}`, 'true')
+      setHasAccess(true)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  if (!isOpen) return null
+  // Don't render anything during SSR or if user has access
+  if (!isMounted || hasAccess) return null
 
   return (
     <>
       <style>{`
-        @keyframes popupFadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
+        @keyframes gateSlideIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes popupScaleIn {
-          from { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
-          to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        @keyframes gatePulse {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(${theme.rgb}, 0.4); }
+          50% { box-shadow: 0 0 0 10px rgba(${theme.rgb}, 0); }
         }
       `}</style>
 
-      {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999]"
-        onClick={() => setIsOpen(false)}
-        style={{ animation: 'popupFadeIn 0.3s ease-out' }}
-      />
+      {/* Full screen blocking overlay */}
+      <div className="fixed inset-0 z-[99999] bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center p-4">
+        {/* Background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 1px 1px, #fff 1px, transparent 0)',
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
 
-      {/* Popup */}
-      <div
-        className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[10000] w-[90%] max-w-md"
-        style={{ animation: 'popupScaleIn 0.4s ease-out' }}
-      >
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+        {/* Gradient orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-20"
+          style={{ background: theme.primary }} />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl opacity-10"
+          style={{ background: theme.primary }} />
+
+        {/* Form Card */}
+        <div
+          className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden"
+          style={{ animation: 'gateSlideIn 0.6s ease-out' }}
+        >
           {/* Header */}
           <div
-            className="p-6 text-white relative"
-            style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primary}88 100%)` }}
+            className="p-8 text-white text-center"
+            style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primary}cc 100%)` }}
           >
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            {/* Dental Icon */}
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C9.38 2 7.25 4.13 7.25 6.75c0 .74.17 1.44.48 2.06L5.35 12.9c-.83 1.36-.44 3.12.87 4.04l2.02 1.43c.53.38.8 1.02.7 1.66l-.56 3.48c-.16.99.47 1.93 1.45 2.13l1.04.21c.47.1.96-.04 1.33-.37.37-.33.58-.81.58-1.31v-1.95c0-.55.45-1 1-1h.44c.55 0 1 .45 1 1v1.95c0 .5.21.98.58 1.31.37.33.86.47 1.33.37l1.04-.21c.98-.2 1.61-1.14 1.45-2.13l-.56-3.48c-.1-.64.17-1.28.7-1.66l2.02-1.43c1.31-.92 1.7-2.68.87-4.04l-2.38-4.09c.31-.62.48-1.32.48-2.06C16.75 4.13 14.62 2 12 2z"/>
               </svg>
-            </button>
-
-            <div className="pr-8">
-              <h2 className="text-2xl font-light mb-2">Welcome to {clinicName}</h2>
-              <p className="text-white/90 text-sm">
-                Get a free consultation! Leave your details and we'll get back to you shortly.
-              </p>
             </div>
+            <h2 className="text-2xl font-light mb-2">Welcome to</h2>
+            <h1 className="text-xl font-medium">{clinicName}</h1>
+            <p className="text-white/80 text-sm mt-3">
+              Enter your details to access our website and get a free consultation
+            </p>
           </div>
 
           {/* Form */}
-          <div className="p-6">
-            {isSubmitted ? (
-              <div className="text-center py-8">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-2">Thank You!</h3>
-                <p className="text-gray-500">We'll contact you soon.</p>
+          <div className="p-8">
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter your full name"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-opacity-100 transition-all"
+                  style={{ '--tw-border-opacity': 0.5 }}
+                  onFocus={(e) => e.target.style.borderColor = theme.primary}
+                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
+                />
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Enter your name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:border-transparent transition-all"
-                    style={{ '--tw-ring-color': `${theme.primary}40` }}
-                  />
-                </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    placeholder="+91 XXXXX XXXXX"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:border-transparent transition-all"
-                    style={{ '--tw-ring-color': `${theme.primary}40` }}
-                  />
-                </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder="+91 XXXXX XXXXX"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none transition-all"
+                  onFocus={(e) => e.target.style.borderColor = theme.primary}
+                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
+                />
+              </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="your@email.com"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:border-transparent transition-all"
-                    style={{ '--tw-ring-color': `${theme.primary}40` }}
-                  />
-                </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  placeholder="your@email.com"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none transition-all"
+                  onFocus={(e) => e.target.style.borderColor = theme.primary}
+                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
+                />
+              </div>
 
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full py-3 text-white font-medium rounded-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed"
-                  style={{ background: theme.primary }}
-                >
-                  {isSubmitting ? 'Submitting...' : 'Get Free Consultation'}
-                </button>
+              {error && (
+                <p className="text-red-500 text-sm text-center">{error}</p>
+              )}
 
-                <p className="text-xs text-gray-400 text-center mt-3">
-                  By submitting, you agree to receive communications from us.
-                </p>
-              </form>
-            )}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full py-4 text-white font-medium rounded-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed hover:opacity-90 hover:shadow-lg"
+                style={{
+                  background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primary}dd 100%)`,
+                  animation: !isSubmitting ? 'gatePulse 2s infinite' : 'none'
+                }}
+              >
+                {isSubmitting ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                    </svg>
+                    Processing...
+                  </span>
+                ) : (
+                  'Access Website'
+                )}
+              </button>
+
+              <p className="text-xs text-gray-400 text-center">
+                By continuing, you agree to receive communications about our dental services.
+              </p>
+            </form>
           </div>
         </div>
       </div>
@@ -895,13 +945,20 @@ export function LeadPopup({ clinic }) {
 
 // Cursor Follower Component
 export function CursorFollower() {
+  const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
-  const [position, setPosition] = useState({ x: -100, y: -100 })
   const positionRef = useRef({ x: -100, y: -100 })
   const mouseRef = useRef({ x: -100, y: -100 })
   const cursorRef = useRef(null)
 
+  // Only run on client
   useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isMounted) return
+
     const onMouseMove = (e) => {
       if (!isVisible) {
         positionRef.current = { x: e.clientX, y: e.clientY }
@@ -912,9 +969,11 @@ export function CursorFollower() {
 
     window.addEventListener('mousemove', onMouseMove)
     return () => window.removeEventListener('mousemove', onMouseMove)
-  }, [isVisible])
+  }, [isMounted, isVisible])
 
   useEffect(() => {
+    if (!isMounted) return
+
     let animationFrameId
 
     const animate = () => {
@@ -936,7 +995,10 @@ export function CursorFollower() {
 
     animate()
     return () => cancelAnimationFrame(animationFrameId)
-  }, [])
+  }, [isMounted])
+
+  // Don't render on server
+  if (!isMounted) return null
 
   return (
     <div
@@ -1401,11 +1463,19 @@ export function RoboDentist() {
 
 // Floating Robot Head Component - Peeking from bottom right
 export function FloatingRobotHead() {
+  const [isMounted, setIsMounted] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const headRef = useRef(null)
   const eyesRef = useRef(null)
 
+  // Only run on client
   useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isMounted) return
+
     const handleScroll = () => {
       const scrollThreshold = window.innerHeight * 0.4
       setIsVisible(window.scrollY > scrollThreshold)
@@ -1414,7 +1484,7 @@ export function FloatingRobotHead() {
     window.addEventListener('scroll', handleScroll)
     handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isMounted])
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -1444,7 +1514,8 @@ export function FloatingRobotHead() {
     window.dispatchEvent(new CustomEvent('open-live-audio'))
   }
 
-  if (!isVisible) return null
+  // Don't render on server or when not visible
+  if (!isMounted || !isVisible) return null
 
   return (
     <>
