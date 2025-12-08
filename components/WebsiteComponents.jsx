@@ -745,26 +745,108 @@ export function Footer({ clinic, colorScheme }) {
   return null
 }
 
-// Cute Robot Component for Lead Gate Form
-function LeadGateRobot({ isWaving = false }) {
+// Cute Robot Component for Lead Gate Form with Sine Waves
+function LeadGateRobot({ isActive = false }) {
+  const canvasRef = useRef(null)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const dpr = window.devicePixelRatio || 1
+    canvas.width = 200 * dpr
+    canvas.height = 140 * dpr
+    ctx.scale(dpr, dpr)
+
+    let time = 0
+    let animationId
+
+    const animate = () => {
+      ctx.clearRect(0, 0, 200, 140)
+
+      const centerX = 100
+      const centerY = 70
+      const waveCount = isActive ? 5 : 3
+      const speed = isActive ? 0.08 : 0.04
+      const maxRadius = isActive ? 85 : 65
+
+      time += speed
+
+      // Draw circular sine waves emanating from center
+      for (let w = 0; w < waveCount; w++) {
+        const phase = (w / waveCount) * Math.PI * 2
+        const baseRadius = 30 + ((time + phase) % (maxRadius - 30))
+        const alpha = 1 - (baseRadius - 30) / (maxRadius - 30)
+
+        if (alpha > 0) {
+          ctx.beginPath()
+
+          // Draw wavy circle
+          for (let angle = 0; angle <= Math.PI * 2; angle += 0.05) {
+            const waveAmplitude = isActive ? 5 + Math.sin(time * 2) * 2 : 3
+            const frequency = 8
+            const wave = Math.sin(angle * frequency + time * 3) * waveAmplitude
+            const r = baseRadius + wave
+
+            const x = centerX + Math.cos(angle) * r
+            const y = centerY + Math.sin(angle) * r
+
+            if (angle === 0) {
+              ctx.moveTo(x, y)
+            } else {
+              ctx.lineTo(x, y)
+            }
+          }
+
+          ctx.closePath()
+          ctx.strokeStyle = isActive
+            ? `rgba(0, 229, 255, ${alpha * 0.8})`
+            : `rgba(0, 229, 255, ${alpha * 0.5})`
+          ctx.lineWidth = isActive ? 2.5 : 1.5
+          ctx.stroke()
+        }
+      }
+
+      animationId = requestAnimationFrame(animate)
+    }
+
+    animate()
+
+    return () => cancelAnimationFrame(animationId)
+  }, [isActive])
+
   return (
-    <div className="lead-gate-robot">
+    <div className="lead-gate-robot-container">
       <style>{`
+        .lead-gate-robot-container {
+          position: relative;
+          width: 200px;
+          height: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .lead-gate-waves-canvas {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 200px;
+          height: 140px;
+          pointer-events: none;
+        }
+
         .lead-gate-robot {
           position: relative;
-          width: 80px;
-          height: 90px;
+          z-index: 10;
         }
 
         @keyframes robotBounce {
           0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-5px); }
-        }
-
-        @keyframes robotWave {
-          0%, 100% { transform: rotate(0deg); }
-          25% { transform: rotate(20deg); }
-          75% { transform: rotate(-10deg); }
+          50% { transform: translateY(-4px); }
         }
 
         @keyframes robotBlink {
@@ -779,7 +861,12 @@ function LeadGateRobot({ isWaving = false }) {
 
         @keyframes heartFloat {
           0%, 100% { transform: translateY(0) scale(1); opacity: 1; }
-          50% { transform: translateY(-8px) scale(1.1); opacity: 0.8; }
+          50% { transform: translateY(-6px) scale(1.1); opacity: 0.8; }
+        }
+
+        @keyframes antennaPulse {
+          0%, 100% { box-shadow: 0 0 8px rgba(255,107,107,0.5); }
+          50% { box-shadow: 0 0 15px rgba(255,107,107,0.8), 0 0 25px rgba(255,107,107,0.4); }
         }
 
         .robot-body-lead {
@@ -787,10 +874,10 @@ function LeadGateRobot({ isWaving = false }) {
         }
 
         .robot-head-lead {
-          width: 60px;
-          height: 50px;
+          width: 55px;
+          height: 45px;
           background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #e0e0e0 100%);
-          border-radius: 25px 25px 20px 20px;
+          border-radius: 22px 22px 18px 18px;
           position: relative;
           margin: 0 auto;
           box-shadow:
@@ -800,10 +887,10 @@ function LeadGateRobot({ isWaving = false }) {
         }
 
         .robot-face-lead {
-          width: 45px;
-          height: 28px;
+          width: 40px;
+          height: 25px;
           background: #111;
-          border-radius: 15px;
+          border-radius: 12px;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -816,8 +903,8 @@ function LeadGateRobot({ isWaving = false }) {
         }
 
         .robot-eye-lead {
-          width: 10px;
-          height: 12px;
+          width: 9px;
+          height: 11px;
           background: #00e5ff;
           border-radius: 50%;
           box-shadow: 0 0 8px #00e5ff;
@@ -826,22 +913,23 @@ function LeadGateRobot({ isWaving = false }) {
 
         .robot-eye-lead.happy {
           animation: robotBlink 3s infinite ease-in-out, robotHappy 1s infinite ease-in-out;
-          height: 8px;
+          height: 7px;
+          box-shadow: 0 0 12px #00e5ff, 0 0 20px rgba(0,229,255,0.5);
         }
 
         .robot-antenna-lead {
           position: absolute;
-          top: -12px;
+          top: -10px;
           left: 50%;
           transform: translateX(-50%);
           width: 3px;
-          height: 12px;
+          height: 10px;
           background: #888;
         }
 
         .robot-antenna-ball {
           position: absolute;
-          top: -18px;
+          top: -16px;
           left: 50%;
           transform: translateX(-50%);
           width: 10px;
@@ -851,96 +939,64 @@ function LeadGateRobot({ isWaving = false }) {
           box-shadow: 0 0 8px rgba(255,107,107,0.5);
         }
 
-        .robot-arm-lead {
-          position: absolute;
-          width: 8px;
-          height: 25px;
-          background: linear-gradient(to bottom, #e8e8e8, #d0d0d0);
-          border-radius: 4px;
-          top: 55px;
-        }
-
-        .robot-arm-lead.left {
-          left: 5px;
-          transform-origin: top center;
-        }
-
-        .robot-arm-lead.right {
-          right: 5px;
-          transform-origin: top center;
-        }
-
-        .robot-arm-lead.waving {
-          animation: robotWave 0.5s ease-in-out infinite;
-        }
-
-        .robot-hand-lead {
-          position: absolute;
-          bottom: -5px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 12px;
-          height: 10px;
-          background: #d0d0d0;
-          border-radius: 50%;
+        .robot-antenna-ball.active {
+          animation: antennaPulse 0.8s ease-in-out infinite;
         }
 
         .robot-body-main-lead {
-          width: 50px;
-          height: 35px;
+          width: 45px;
+          height: 30px;
           background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
-          border-radius: 15px 15px 10px 10px;
-          margin: 5px auto 0;
+          border-radius: 12px 12px 8px 8px;
+          margin: 4px auto 0;
           position: relative;
           box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
         }
 
         .robot-heart {
           position: absolute;
-          top: 8px;
+          top: 6px;
           left: 50%;
           transform: translateX(-50%);
-          font-size: 12px;
+          font-size: 11px;
           animation: heartFloat 1.5s ease-in-out infinite;
         }
 
         .robot-cheeks {
           position: absolute;
-          width: 6px;
-          height: 4px;
-          background: rgba(255,150,150,0.5);
+          width: 5px;
+          height: 3px;
+          background: rgba(255,150,150,0.6);
           border-radius: 50%;
-          top: 32px;
+          top: 28px;
         }
 
-        .robot-cheeks.left { left: 8px; }
-        .robot-cheeks.right { right: 8px; }
+        .robot-cheeks.left { left: 6px; }
+        .robot-cheeks.right { right: 6px; }
       `}</style>
 
-      <div className="robot-body-lead">
-        {/* Head */}
-        <div className="robot-head-lead">
-          <div className="robot-antenna-lead"></div>
-          <div className="robot-antenna-ball"></div>
-          <div className="robot-face-lead">
-            <div className={`robot-eye-lead ${isWaving ? 'happy' : ''}`}></div>
-            <div className={`robot-eye-lead ${isWaving ? 'happy' : ''}`}></div>
+      {/* Sine wave canvas */}
+      <canvas ref={canvasRef} className="lead-gate-waves-canvas" />
+
+      {/* Robot */}
+      <div className="lead-gate-robot">
+        <div className="robot-body-lead">
+          {/* Head */}
+          <div className="robot-head-lead">
+            <div className="robot-antenna-lead"></div>
+            <div className={`robot-antenna-ball ${isActive ? 'active' : ''}`}></div>
+            <div className="robot-face-lead">
+              <div className={`robot-eye-lead ${isActive ? 'happy' : ''}`}></div>
+              <div className={`robot-eye-lead ${isActive ? 'happy' : ''}`}></div>
+            </div>
+            <div className="robot-cheeks left"></div>
+            <div className="robot-cheeks right"></div>
           </div>
-          <div className="robot-cheeks left"></div>
-          <div className="robot-cheeks right"></div>
-        </div>
 
-        {/* Arms */}
-        <div className={`robot-arm-lead left ${isWaving ? '' : ''}`}>
-          <div className="robot-hand-lead"></div>
-        </div>
-        <div className={`robot-arm-lead right ${isWaving ? 'waving' : ''}`}>
-          <div className="robot-hand-lead"></div>
-        </div>
-
-        {/* Body */}
-        <div className="robot-body-main-lead">
-          <div className="robot-heart">❤️</div>
+          {/* Body - No arms */}
+          <div className="robot-body-main-lead">
+            <div className="robot-heart">❤️</div>
+          </div>
         </div>
       </div>
     </div>
@@ -954,7 +1010,7 @@ export function LeadPopup({ clinic }) {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
-  const [robotWaving, setRobotWaving] = useState(true)
+  const [robotActive, setRobotActive] = useState(true)
 
   const theme = getThemeColor(clinic?.name || '')
   const clinicName = clinic?.name || 'Dental Clinic'
@@ -967,9 +1023,9 @@ export function LeadPopup({ clinic }) {
     setHasAccess(accessGranted === 'true')
   }, [clinicSlug])
 
-  // Robot waves when form fields are focused
-  const handleInputFocus = () => setRobotWaving(true)
-  const handleInputBlur = () => setRobotWaving(false)
+  // Robot activates when form fields are focused
+  const handleInputFocus = () => setRobotActive(true)
+  const handleInputBlur = () => setRobotActive(false)
 
   const handleSkip = () => {
     // Grant access without submitting form
@@ -1061,9 +1117,9 @@ export function LeadPopup({ clinic }) {
             className="p-6 pb-4 text-white text-center relative"
             style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primary}cc 100%)` }}
           >
-            {/* Robot */}
-            <div className="flex justify-center mb-3">
-              <LeadGateRobot isWaving={robotWaving} />
+            {/* Robot with Sine Waves */}
+            <div className="flex justify-center mb-2">
+              <LeadGateRobot isActive={robotActive} />
             </div>
 
             <h2 className="text-xl font-light mb-1">Welcome to</h2>
