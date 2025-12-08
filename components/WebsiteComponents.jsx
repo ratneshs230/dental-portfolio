@@ -745,6 +745,208 @@ export function Footer({ clinic, colorScheme }) {
   return null
 }
 
+// Cute Robot Component for Lead Gate Form
+function LeadGateRobot({ isWaving = false }) {
+  return (
+    <div className="lead-gate-robot">
+      <style>{`
+        .lead-gate-robot {
+          position: relative;
+          width: 80px;
+          height: 90px;
+        }
+
+        @keyframes robotBounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-5px); }
+        }
+
+        @keyframes robotWave {
+          0%, 100% { transform: rotate(0deg); }
+          25% { transform: rotate(20deg); }
+          75% { transform: rotate(-10deg); }
+        }
+
+        @keyframes robotBlink {
+          0%, 90%, 100% { transform: scaleY(1); }
+          95% { transform: scaleY(0.1); }
+        }
+
+        @keyframes robotHappy {
+          0%, 100% { border-radius: 50%; }
+          50% { border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; }
+        }
+
+        @keyframes heartFloat {
+          0%, 100% { transform: translateY(0) scale(1); opacity: 1; }
+          50% { transform: translateY(-8px) scale(1.1); opacity: 0.8; }
+        }
+
+        .robot-body-lead {
+          animation: robotBounce 2s ease-in-out infinite;
+        }
+
+        .robot-head-lead {
+          width: 60px;
+          height: 50px;
+          background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #e0e0e0 100%);
+          border-radius: 25px 25px 20px 20px;
+          position: relative;
+          margin: 0 auto;
+          box-shadow:
+            inset 3px 3px 10px rgba(255,255,255,0.9),
+            inset -3px -3px 10px rgba(0,0,0,0.1),
+            0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .robot-face-lead {
+          width: 45px;
+          height: 28px;
+          background: #111;
+          border-radius: 15px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          overflow: hidden;
+        }
+
+        .robot-eye-lead {
+          width: 10px;
+          height: 12px;
+          background: #00e5ff;
+          border-radius: 50%;
+          box-shadow: 0 0 8px #00e5ff;
+          animation: robotBlink 3s infinite ease-in-out;
+        }
+
+        .robot-eye-lead.happy {
+          animation: robotBlink 3s infinite ease-in-out, robotHappy 1s infinite ease-in-out;
+          height: 8px;
+        }
+
+        .robot-antenna-lead {
+          position: absolute;
+          top: -12px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 3px;
+          height: 12px;
+          background: #888;
+        }
+
+        .robot-antenna-ball {
+          position: absolute;
+          top: -18px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 10px;
+          height: 10px;
+          background: radial-gradient(circle at 30% 30%, #ff6b6b, #ee5a5a);
+          border-radius: 50%;
+          box-shadow: 0 0 8px rgba(255,107,107,0.5);
+        }
+
+        .robot-arm-lead {
+          position: absolute;
+          width: 8px;
+          height: 25px;
+          background: linear-gradient(to bottom, #e8e8e8, #d0d0d0);
+          border-radius: 4px;
+          top: 55px;
+        }
+
+        .robot-arm-lead.left {
+          left: 5px;
+          transform-origin: top center;
+        }
+
+        .robot-arm-lead.right {
+          right: 5px;
+          transform-origin: top center;
+        }
+
+        .robot-arm-lead.waving {
+          animation: robotWave 0.5s ease-in-out infinite;
+        }
+
+        .robot-hand-lead {
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 12px;
+          height: 10px;
+          background: #d0d0d0;
+          border-radius: 50%;
+        }
+
+        .robot-body-main-lead {
+          width: 50px;
+          height: 35px;
+          background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+          border-radius: 15px 15px 10px 10px;
+          margin: 5px auto 0;
+          position: relative;
+          box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+        }
+
+        .robot-heart {
+          position: absolute;
+          top: 8px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 12px;
+          animation: heartFloat 1.5s ease-in-out infinite;
+        }
+
+        .robot-cheeks {
+          position: absolute;
+          width: 6px;
+          height: 4px;
+          background: rgba(255,150,150,0.5);
+          border-radius: 50%;
+          top: 32px;
+        }
+
+        .robot-cheeks.left { left: 8px; }
+        .robot-cheeks.right { right: 8px; }
+      `}</style>
+
+      <div className="robot-body-lead">
+        {/* Head */}
+        <div className="robot-head-lead">
+          <div className="robot-antenna-lead"></div>
+          <div className="robot-antenna-ball"></div>
+          <div className="robot-face-lead">
+            <div className={`robot-eye-lead ${isWaving ? 'happy' : ''}`}></div>
+            <div className={`robot-eye-lead ${isWaving ? 'happy' : ''}`}></div>
+          </div>
+          <div className="robot-cheeks left"></div>
+          <div className="robot-cheeks right"></div>
+        </div>
+
+        {/* Arms */}
+        <div className={`robot-arm-lead left ${isWaving ? '' : ''}`}>
+          <div className="robot-hand-lead"></div>
+        </div>
+        <div className={`robot-arm-lead right ${isWaving ? 'waving' : ''}`}>
+          <div className="robot-hand-lead"></div>
+        </div>
+
+        {/* Body */}
+        <div className="robot-body-main-lead">
+          <div className="robot-heart">❤️</div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 // Lead Gate Component - Blocks site access until form is filled
 export function LeadPopup({ clinic }) {
   const [hasAccess, setHasAccess] = useState(true) // Start true to prevent flash
@@ -752,6 +954,7 @@ export function LeadPopup({ clinic }) {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
+  const [robotWaving, setRobotWaving] = useState(true)
 
   const theme = getThemeColor(clinic?.name || '')
   const clinicName = clinic?.name || 'Dental Clinic'
@@ -763,6 +966,16 @@ export function LeadPopup({ clinic }) {
     const accessGranted = localStorage.getItem(`leadGate_${clinicSlug}`)
     setHasAccess(accessGranted === 'true')
   }, [clinicSlug])
+
+  // Robot waves when form fields are focused
+  const handleInputFocus = () => setRobotWaving(true)
+  const handleInputBlur = () => setRobotWaving(false)
+
+  const handleSkip = () => {
+    // Grant access without submitting form
+    localStorage.setItem(`leadGate_${clinicSlug}`, 'true')
+    setHasAccess(true)
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -816,6 +1029,10 @@ export function LeadPopup({ clinic }) {
           0%, 100% { box-shadow: 0 0 0 0 rgba(${theme.rgb}, 0.4); }
           50% { box-shadow: 0 0 0 10px rgba(${theme.rgb}, 0); }
         }
+        @keyframes skipBtnHover {
+          0%, 100% { transform: translateX(0); }
+          50% { transform: translateX(3px); }
+        }
       `}</style>
 
       {/* Full screen blocking overlay */}
@@ -839,70 +1056,69 @@ export function LeadPopup({ clinic }) {
           className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden"
           style={{ animation: 'gateSlideIn 0.6s ease-out' }}
         >
-          {/* Header */}
+          {/* Header with Robot */}
           <div
-            className="p-8 text-white text-center"
+            className="p-6 pb-4 text-white text-center relative"
             style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primary}cc 100%)` }}
           >
-            {/* Dental Icon */}
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C9.38 2 7.25 4.13 7.25 6.75c0 .74.17 1.44.48 2.06L5.35 12.9c-.83 1.36-.44 3.12.87 4.04l2.02 1.43c.53.38.8 1.02.7 1.66l-.56 3.48c-.16.99.47 1.93 1.45 2.13l1.04.21c.47.1.96-.04 1.33-.37.37-.33.58-.81.58-1.31v-1.95c0-.55.45-1 1-1h.44c.55 0 1 .45 1 1v1.95c0 .5.21.98.58 1.31.37.33.86.47 1.33.37l1.04-.21c.98-.2 1.61-1.14 1.45-2.13l-.56-3.48c-.1-.64.17-1.28.7-1.66l2.02-1.43c1.31-.92 1.7-2.68.87-4.04l-2.38-4.09c.31-.62.48-1.32.48-2.06C16.75 4.13 14.62 2 12 2z"/>
-              </svg>
+            {/* Robot */}
+            <div className="flex justify-center mb-3">
+              <LeadGateRobot isWaving={robotWaving} />
             </div>
-            <h2 className="text-2xl font-light mb-2">Welcome to</h2>
-            <h1 className="text-xl font-medium">{clinicName}</h1>
-            <p className="text-white/80 text-sm mt-3">
+
+            <h2 className="text-xl font-light mb-1">Welcome to</h2>
+            <h1 className="text-lg font-medium">{clinicName}</h1>
+            <p className="text-white/80 text-xs mt-2">
               Enter your details to access our website and get a free consultation
             </p>
           </div>
 
           {/* Form */}
-          <div className="p-8">
-            <form onSubmit={handleSubmit} className="space-y-5">
+          <div className="p-6 pt-5">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Name *</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
+                  onFocus={handleInputFocus}
+                  onBlur={handleInputBlur}
                   required
                   placeholder="Enter your full name"
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-opacity-100 transition-all"
                   style={{ '--tw-border-opacity': 0.5 }}
-                  onFocus={(e) => e.target.style.borderColor = theme.primary}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1.5">Phone Number *</label>
                 <input
                   type="tel"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
+                  onFocus={handleInputFocus}
+                  onBlur={handleInputBlur}
                   required
                   placeholder="+91 XXXXX XXXXX"
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none transition-all"
-                  onFocus={(e) => e.target.style.borderColor = theme.primary}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1.5">Email Address *</label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  onFocus={handleInputFocus}
+                  onBlur={handleInputBlur}
                   required
                   placeholder="your@email.com"
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none transition-all"
-                  onFocus={(e) => e.target.style.borderColor = theme.primary}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
                 />
               </div>
 
@@ -913,7 +1129,7 @@ export function LeadPopup({ clinic }) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 text-white font-medium rounded-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed hover:opacity-90 hover:shadow-lg"
+                className="w-full py-3.5 text-white font-medium rounded-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed hover:opacity-90 hover:shadow-lg"
                 style={{
                   background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primary}dd 100%)`,
                   animation: !isSubmitting ? 'gatePulse 2s infinite' : 'none'
@@ -930,6 +1146,23 @@ export function LeadPopup({ clinic }) {
                 ) : (
                   'Access Website'
                 )}
+              </button>
+
+              {/* Skip Button */}
+              <button
+                type="button"
+                onClick={handleSkip}
+                className="w-full py-2.5 text-gray-500 text-sm font-medium rounded-xl transition-all hover:text-gray-700 hover:bg-gray-100 flex items-center justify-center gap-2 group"
+              >
+                <span>Skip for now</span>
+                <svg
+                  className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </button>
 
               <p className="text-xs text-gray-400 text-center">
@@ -1800,6 +2033,17 @@ export function MicIcon() {
   )
 }
 
+// Helper function to play notification sound
+const playNotificationSound = () => {
+  try {
+    const audio = new Audio('/sounds/notification.mp3')
+    audio.volume = 0.5
+    audio.play().catch(e => console.log('Audio play failed:', e))
+  } catch (e) {
+    console.log('Could not play notification sound:', e)
+  }
+}
+
 // Live Audio Widget Component - Manages Gemini voice session
 export function LiveAudioWidget({ clinic }) {
   const [status, setStatus] = useState('idle') // 'idle' | 'connecting' | 'connected' | 'error'
@@ -1823,12 +2067,14 @@ export function LiveAudioWidget({ clinic }) {
 
       sessionManagerRef.current.onConnect = () => {
         console.log('Voice session connected!')
+        playNotificationSound() // Play sound on connect
         setStatus('connected')
         window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: true } }))
       }
 
       sessionManagerRef.current.onDisconnect = () => {
         console.log('Voice session disconnected')
+        playNotificationSound() // Play sound on disconnect
         setStatus('idle')
         window.dispatchEvent(new CustomEvent('voice-session-change', { detail: { active: false } }))
       }

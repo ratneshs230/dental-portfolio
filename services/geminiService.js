@@ -11,6 +11,9 @@ const bookAppointmentTool = {
   parameters: {
     type: Type.OBJECT,
     properties: {
+      patientName: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.patientName },
+      age: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.age },
+      gender: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.gender },
       date: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.date },
       time: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.time },
       service: { type: Type.STRING, description: TOOL_DESCRIPTIONS.bookAppointment.parameters.service }
@@ -90,6 +93,8 @@ export class LiveSessionManager {
           onopen: () => {
             console.log("Live Session Opened");
             this.startAudioInput();
+            // Send initial prompt to trigger AI to speak first
+            this.sendInitialGreeting();
             this.onConnect();
           },
           onmessage: (message) => this.handleMessage(message),
@@ -116,6 +121,22 @@ export class LiveSessionManager {
       console.error("Connection error:", err);
       this.onError(err);
     }
+  }
+
+  sendInitialGreeting() {
+    // Send a text message to trigger the AI to introduce itself
+    this.sessionPromise?.then((session) => {
+      console.log("Sending initial greeting trigger...");
+      session.sendClientContent({
+        turns: [{
+          role: "user",
+          parts: [{ text: "[Call connected. Please introduce yourself and greet the caller.]" }]
+        }],
+        turnComplete: true
+      });
+    }).catch(e => {
+      console.error("Error sending initial greeting:", e);
+    });
   }
 
   startAudioInput() {
@@ -166,6 +187,9 @@ export class LiveSessionManager {
         const source = this.outputAudioContext.createBufferSource();
         source.buffer = audioBuffer;
 
+        // Speed up playback by 10% (1.1x speed)
+        source.playbackRate.value = 1.1;
+
         // Basic gain node for volume control
         const gainNode = this.outputAudioContext.createGain();
         source.connect(gainNode);
@@ -176,7 +200,8 @@ export class LiveSessionManager {
         });
 
         source.start(this.nextStartTime);
-        this.nextStartTime += audioBuffer.duration;
+        // Adjust duration for faster playback
+        this.nextStartTime += audioBuffer.duration / 1.1;
         this.sources.add(source);
       } catch (e) {
         console.error("Error playing audio:", e);
@@ -190,12 +215,12 @@ export class LiveSessionManager {
 
       const functionResponses = message.toolCall.functionCalls.map(fc => {
         if (fc.name === 'bookAppointment') {
-          const { date, time, service } = fc.args || {};
-          console.log(`Booking confirmed: ${date} at ${time} for ${service || 'checkup'}`);
+          const { patientName, age, gender, date, time, service } = fc.args || {};
+          console.log(`Booking confirmed: ${patientName} (${age}y, ${gender}) - ${date} at ${time} for ${service || 'checkup'}`);
           return {
             id: fc.id,
             name: fc.name,
-            response: { result: `Success. Appointment booked for ${date} at ${time}.` }
+            response: { result: `Success. Appointment booked for ${patientName} (${age} years, ${gender}) on ${date} at ${time} for ${service || 'dental checkup'}.` }
           };
         }
         if (fc.name === 'endSession') {
